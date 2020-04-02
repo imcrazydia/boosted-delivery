@@ -4,26 +4,36 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, user-scalable=no ,initial-scale=1, maximum-scale=1.0, minimum-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>General Layout</title>
+    <title>Boosted Delivery</title>
 
     <!-- Styles -->
     <link rel="stylesheet" href="<?php echo asset('/css/app.css')?>">
   </head>
   <body>
     <header>
-      HEADER
+      <h2>
+        @section('header')
+          Boosted Delivery
+        @show
+      </h2>
     </header>
 
     <nav>
-      NAVIGATION
+      @section('nav')
+        <a href="{{ url('/') }}">Home</a>
+        <a href="{{ url('/producten') }}">Producten</a>
+        <a href="{{ url('/abonnementen') }}">Abonnementen</a>
+      @show
     </nav>
 
     <main>
-      MAIN
+      @yield('content')
     </main>
 
     <footer>
-      FOOTER        
+      @section('footer')
+        Boosted Footer
+      @show
     </footer>
   </body>
 </html>

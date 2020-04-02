@@ -1,23 +1,15 @@
-<!DOCTYPE html>
-<html lang="{{ str_replace('_', '-', app()->getLocale()) }}">
-    <head>
-        <meta charset="utf-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1">
+@extends('layouts.general')
 
-        <title>Boosted Delivery</title>
+@section('header')
+  Boosted Delivery | Home
+@endsection
 
-        <!-- Styles -->
-        <link rel="stylesheet" href="<?php echo asset('/css/app.css')?>">
-    </head>
-    <body>
-        <div class="flex-center position-ref full-height">
-            <div class="content">
-                <div class="title m-b-md">Welkom bij Boosted Delivery!</div>
-                <div class="links">
-                    <a href="{{ url('/abonnementen') }}">Abonnementen</a>
-                    <a href="{{ url('/producten') }}">Producten</a>
-                </div>
-            </div>
-        </div>
-    </body>
-</html>
+@section('content')
+  <p>
+    Welkom op Boosted Delivery waar wij <b>Energie Drank</b> naar je voordeur brengen!
+  </p>
+@endsection
+
+@section('footer')
+  Boosted Footer | Home
+@endsection
