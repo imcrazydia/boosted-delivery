@@ -12,10 +12,10 @@
     <body>
         <div class="flex-center position-ref full-height">
             <div class="content">
-                <div class="title m-b-md">Welkom bij Boosted Delivery!</div>
+                <div class="title m-b-md">Producten</div>
                 <div class="links">
+                    <a href="{{ url('/') }}">Home</a>
                     <a href="{{ url('/abonnementen') }}">Abonnementen</a>
-                    <a href="{{ url('/producten') }}">Producten</a>
                 </div>
             </div>
         </div>

@@ -15,4 +15,9 @@ use Illuminate\Support\Facades\Route;
 
 Route::get('/', function () {
     return view('home');
-});
+})->name('home');
+Route::get('/abonnementen', function () {
+    return view('abonnementen');
+})->name('abonnementen');
+
+Route::get('/producten', 'ProductController@index');
