@@ -1,0 +1,30 @@
+body {
+    background-color: $color--primary;
+    text-align: center;
+}
+
+.abonnementen__title {
+  color: $color--secondary;
+  text-shadow: 2px 2px $color--davy-grey;
+}
+
+.abonnementen__cards {
+  display: flex;
+  flex-direction: column;
+  margin: 10px;
+
+ @media #{$normal} {
+    flex-direction: row;
+    justify-content: center;
+  }
+}
+
+.abonnementen__cards__content {
+  background-color: $color--secondary;
+  margin-bottom: 10px;
+
+  @media #{$normal} {
+    margin-bottom: 0;
+    margin-right: 10px;
+  }
+}
