@@ -12,7 +12,8 @@
   @php($pc = "powercrate")
 
   <h2 class="abonnementen__title">Weekelijkse Abonnementen</h2>
-  <form action="" method="post">
+<form action="{{ route('abonnementen.store') }}" method="POST">
+  @csrf
     <div class="abonnementen__cards">
       <!-- Basic -->
       <div class="abonnementen__cards__content">
@@ -20,7 +21,7 @@
         <p class="abonnementen__cards__content__amount">7</p>
         <p class="abonnementen__cards__content__description">hier komt description</p>
         <div class="abonnementen__cards__content__price">10 euro</div>
-        <a href="" class="abonnementen__cards__content__purchase">Bestel</a> <br />
+        <button type="submit" name="keuze" value="basic" class="abonnementen__cards__content__purchase">Bestel</button> <br />
       <img src="{{URL::to('/')}}/img/icons/basic.png" class="abonnementen__cards__content__icon" alt="card_icon" style="width: 45px;" />
       </div>
       <!-- Boosted -->
@@ -29,7 +30,7 @@
         <p class="abonnementen__cards__content__amount">14</p>
         <p class="abonnementen__cards__content__description">hier komt description</p>
         <div class="abonnementen__cards__content__price">20 euro</div>
-        <a href="" class="abonnementen__cards__content__purchase">Bestel</a> <br />
+        <button type="submit" name="keuze" value="boosted" class="abonnementen__cards__content__purchase">Bestel</button> <br />
         <img src="{{URL::to('/')}}/img/icons/boosted.png" class="abonnementen__cards__content__icon" alt="card_icon" />
       </div>
       <!-- Extreme -->
@@ -38,7 +39,7 @@
         <p class="abonnementen__cards__content__amount">21</p>
         <p class="abonnementen__cards__content__description">hier komt description</p>
         <div class="abonnementen__cards__content__price">30 euro</div>
-        <a href="" class="abonnementen__cards__content__purchase">Bestel</a> <br />
+        <button type="submit" name="keuze" value="extreme" class="abonnementen__cards__content__purchase">Bestel</button> <br />
         <img src="{{URL::to('/')}}/img/icons/extreme.png" class="abonnementen__cards__content__icon" alt="card_icon" style="width: 115px;" />
       </div>
     </div>
