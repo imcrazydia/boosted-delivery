@@ -12,33 +12,35 @@
   @php($pc = "powercrate")
 
   <h2 class="abonnementen__title">Weekelijkse Abonnementen</h2>
-  <div class="abonnementen__cards">
-    <!-- Basic -->
-    <div class="abonnementen__cards__content">
-    <h3 class="abonnementen__cards__content__title">Basic {{ $pc }}</h3>
-      <p class="abonnementen__cards__content__amount">7</p>
-      <p class="abonnementen__cards__content__description">hier komt description</p>
-      <div class="abonnementen__cards__content__price">10 euro</div>
-      <a href="" class="abonnementen__cards__content__purchase">Bestel</a> <br />
-      <img src="" class="abonnementen__cards__content__icon" alt="card_icon" />
+  <form action="" method="post">
+    <div class="abonnementen__cards">
+      <!-- Basic -->
+      <div class="abonnementen__cards__content">
+      <h3 class="abonnementen__cards__content__title">Basic {{ $pc }}</h3>
+        <p class="abonnementen__cards__content__amount">7</p>
+        <p class="abonnementen__cards__content__description">hier komt description</p>
+        <div class="abonnementen__cards__content__price">10 euro</div>
+        <a href="" class="abonnementen__cards__content__purchase">Bestel</a> <br />
+      <img src="{{URL::to('/')}}/img/icons/basic.png" class="abonnementen__cards__content__icon" alt="card_icon" style="width: 45px;" />
+      </div>
+      <!-- Boosted -->
+      <div class="abonnementen__cards__content">
+        <h3 class="abonnementen__cards__content__title">Boosted {{ $pc }}</h3>
+        <p class="abonnementen__cards__content__amount">14</p>
+        <p class="abonnementen__cards__content__description">hier komt description</p>
+        <div class="abonnementen__cards__content__price">20 euro</div>
+        <a href="" class="abonnementen__cards__content__purchase">Bestel</a> <br />
+        <img src="{{URL::to('/')}}/img/icons/boosted.png" class="abonnementen__cards__content__icon" alt="card_icon" />
+      </div>
+      <!-- Extreme -->
+      <div class="abonnementen__cards__content">
+        <h3 class="abonnementen__cards__content__title">Extreme {{ $pc }}</h3>
+        <p class="abonnementen__cards__content__amount">21</p>
+        <p class="abonnementen__cards__content__description">hier komt description</p>
+        <div class="abonnementen__cards__content__price">30 euro</div>
+        <a href="" class="abonnementen__cards__content__purchase">Bestel</a> <br />
+        <img src="{{URL::to('/')}}/img/icons/extreme.png" class="abonnementen__cards__content__icon" alt="card_icon" style="width: 115px;" />
+      </div>
     </div>
-    <!-- Boosted -->
-    <div class="abonnementen__cards__content">
-      <h3 class="abonnementen__cards__content__title">Boosted {{ $pc }}</h3>
-      <p class="abonnementen__cards__content__amount">14</p>
-      <p class="abonnementen__cards__content__description">hier komt description</p>
-      <div class="abonnementen__cards__content__price">20 euro</div>
-      <a href="" class="abonnementen__cards__content__purchase">Bestel</a> <br />
-      <img src="" class="abonnementen__cards__content__icon" alt="card_icon" />
-    </div>
-    <!-- Extreme -->
-    <div class="abonnementen__cards__content">
-      <h3 class="abonnementen__cards__content__title">Extreme {{ $pc }}</h3>
-      <p class="abonnementen__cards__content__amount">21</p>
-      <p class="abonnementen__cards__content__description">hier komt description</p>
-      <div class="abonnementen__cards__content__price">30 euro</div>
-      <a href="" class="abonnementen__cards__content__purchase">Bestel</a> <br />
-      <img src="" class="abonnementen__cards__content__icon" alt="card_icon" />
-    </div>
-  </div>
+  </form>
 @endsection

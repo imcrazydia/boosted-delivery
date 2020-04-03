@@ -6,7 +6,7 @@
 
 nav {
   width: 100%;
-  background-color: #232323;
+  background-color: #942e2a;
   color: #fff;
 }
 
@@ -19,13 +19,12 @@ footer {
 }
 
 body {
-  background-color: #fe1e27;
+  background-color: #fff;
   text-align: center;
 }
 
 .abonnementen__title {
-  color: #fff;
-  text-shadow: 2px 2px #232323;
+  color: #000;
 }
 
 .abonnementen__cards {
@@ -42,14 +41,36 @@ body {
 }
 
 .abonnementen__cards__content {
-  background-color: #fff;
+  position: relative;
   margin-bottom: 10px;
+  padding-bottom: 30px;
+  background-color: #942e2a;
+  color: #fff;
 }
 
 @media screen and (min-width: 992px) {
   .abonnementen__cards__content {
+    height: 70vh;
+    width: 33vw;
     margin-bottom: 0;
     margin-right: 10px;
+    padding: 0 20px 20px 20px;
   }
+}
+
+.abonnementen__cards__content__purchase {
+  background-color: #232323;
+  color: #fff;
+  text-decoration: none;
+}
+
+.abonnementen__cards__content__purchase:hover {
+  color: #942e2a;
+}
+
+.abonnementen__cards__content__icon {
+  position: absolute;
+  bottom: 5%;
+  width: 80px;
 }
 

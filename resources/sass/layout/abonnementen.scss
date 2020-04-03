@@ -1,11 +1,10 @@
 body {
-    background-color: $color--primary;
+    background-color: $color--secondary;
     text-align: center;
 }
 
 .abonnementen__title {
-  color: $color--secondary;
-  text-shadow: 2px 2px $color--davy-grey;
+  color: $color--black;
 }
 
 .abonnementen__cards {
@@ -20,11 +19,33 @@ body {
 }
 
 .abonnementen__cards__content {
-  background-color: $color--secondary;
+  position: relative;
   margin-bottom: 10px;
+  padding-bottom: 30px;
+  background-color: $color--primary;
+  color: $color--secondary;
 
   @media #{$normal} {
+    height: 70vh;
+    width: 33vw;
     margin-bottom: 0;
     margin-right: 10px;
+    padding: 0 20px 20px 20px;
   }
+}
+
+.abonnementen__cards__content__purchase {
+    background-color: $color--davy-grey;
+    color: $color--secondary;
+    text-decoration: none;
+
+    &:hover {
+        color: $color--primary;
+    }
+}
+
+.abonnementen__cards__content__icon {
+    position: absolute;
+    bottom: 5%;
+    width: 80px;
 }

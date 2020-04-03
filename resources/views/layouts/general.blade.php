@@ -22,9 +22,5 @@
     <main class="abonnementen">
       @yield('content')
     </main>
-    <!-- The footer of the page -->
-    <footer>
-      made in 2020
-    </footer>
   </body>
 </html>
