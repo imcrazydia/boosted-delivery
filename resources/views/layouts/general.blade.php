@@ -14,6 +14,17 @@
     <link rel="stylesheet" href="<?php echo asset('/css/app.css')?>">
   </head>
   <body>
-    @yield('body')
+    <!-- The navigation of the page -->
+    <nav>
+      Boosted Delivery
+    </nav>
+    <!-- This is where all the pages content comes -->
+    <main class="abonnementen">
+      @yield('content')
+    </main>
+    <!-- The footer of the page -->
+    <footer>
+      made in 2020
+    </footer>
   </body>
 </html>

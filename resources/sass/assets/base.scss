@@ -6,3 +6,17 @@ body {
     padding: 0;
     font-family: 'Inter', 'Open Sans';
 }
+
+nav {
+    width: 100%;
+    background-color: $color--davy-grey;
+    color: $color--secondary;
+}
+
+footer {
+    width: 100%;
+    position: absolute;
+    bottom: 0;
+    background-color: $color--davy-grey;
+    color: $color--secondary;
+}
