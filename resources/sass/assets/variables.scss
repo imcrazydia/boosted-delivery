@@ -1,5 +1,83 @@
 // -----------------------------------------------------------------------------
 //
+// Grid utilities
+//
+// -----------------------------------------------------------------------------
+$grid-breakpoints: (xs: 0,
+  sm: 576px,
+  md: 768px,
+  lg: 992px,
+  xl: 1240px,
+  xxl: 2000px,
+);
+
+$container-small-max-widths: (sm: 540px,
+  md: 800px,
+  xl: 800px,
+  xxl: 800px,
+);
+
+$container-max-widths: (sm: 540px,
+  md: 720px,
+  lg: 960px,
+  xl: 1200px,
+  xxl: 1200px,
+);
+
+$grid-gutter-width-base: 40px;
+$grid-xs-gutter-width-base: 40px;
+$grid-sm-gutter-width-base: 40px;
+$grid-md-gutter-width-base: 40px;
+$grid-lg-gutter-width-base: 40px;
+$grid-xl-gutter-width-base: 40px;
+$grid-xxl-gutter-width-base: 40px;
+
+$grid-gutter-widths: (xs: $grid-xs-gutter-width-base,
+  sm: $grid-sm-gutter-width-base,
+  md: $grid-md-gutter-width-base,
+  lg: $grid-lg-gutter-width-base,
+  xl: $grid-xl-gutter-width-base,
+  xxl: $grid-xxl-gutter-width-base,
+);
+
+$screen-sm: #{map-get($grid-breakpoints, sm)};
+$screen-md: #{map-get($grid-breakpoints, md)};
+$screen-lg: #{map-get($grid-breakpoints, lg)};
+$screen-xl: #{map-get($grid-breakpoints, xl)};
+$screen-xxl: #{map-get($grid-breakpoints, xxl)};
+
+$screen-phone: $screen-sm;
+$screen-tablet: $screen-md;
+$screen-desktop: $screen-lg;
+$screen-lg-desktop: $screen-xl;
+$screen-xl-desktop: $screen-xxl;
+
+$screen-xs-max: #{map-get($grid-breakpoints, sm) - 1};
+$screen-sm-max: #{map-get($grid-breakpoints, md) - 1};
+$screen-md-max: #{map-get($grid-breakpoints, lg) - 1};
+$screen-lg-max: #{map-get($grid-breakpoints, xl) - 1};
+$screen-xl-max: #{map-get($grid-breakpoints, xxl) - 1};
+
+$grid-float-breakpoint: $screen-sm;
+$grid-float-breakpoint-min: $screen-sm-max;
+
+// Lazy media query variables.
+$mobile: 'screen and (min-width: #{$screen-sm})';
+$tablet: 'screen and (min-width: #{$screen-md})';
+$normal: 'screen and (min-width: #{$screen-lg})';
+$wide: 'screen and (min-width: #{$screen-xl})';
+$huge: 'screen and (min-width: #{$screen-xxl})';
+$mobile-only: 'screen and (max-width: #{$screen-sm-max})';
+$tablet-only: 'screen and (min-width: #{$screen-md}) and (max-width: #{$screen-md-max})';
+$normal-only: 'screen and (min-width: #{$screen-lg}) and (max-width: #{$screen-lg-max})';
+$wide-only: 'screen and (min-width: #{$screen-xl}) and (max-width: #{$screen-xl-max})';
+$mobile-down: 'screen and (max-width: #{$screen-sm-max})';
+$tablet-down: 'screen and (max-width: #{$screen-md-max})';
+$normal-down: 'screen and (max-width: #{$screen-lg-max})';
+$wide-down: 'screen and (max-width: #{$screen-xl-max})';
+
+// -----------------------------------------------------------------------------
+//
 // Colors
 //
 // -----------------------------------------------------------------------------
@@ -23,3 +101,15 @@ $color--battleship-grey: #707070;
 
 $color--primary: $color--alizarin-crimson;
 $color--secondary: $color--white;
+
+// -----------------------------------------------------------------------------
+//
+// z-index
+//
+// -----------------------------------------------------------------------------
+$z-index-0: 0;
+$z-index-1: 10;
+$z-index-2: 20;
+$z-index-3: 30;
+$z-index-4: 100;
+$z-index-5: 1000;
