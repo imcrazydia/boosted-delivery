@@ -2,13 +2,7 @@
 @import './typography.scss';
 
 body {
-    background: $color--secondary;
+    margin: 0;
+    padding: 0;
     font-family: 'Inter', 'Open Sans';
-    color: $color--secondary;
-}
-
-header, main, nav, footer {
-    background-color: $color--primary;
-    padding: 20px;
-    margin: 20px;
 }
