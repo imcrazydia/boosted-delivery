@@ -84,10 +84,11 @@ $wide-down: 'screen and (max-width: #{$screen-xl-max})';
 // -----------------------------------------------------------------------------
 
 // Primary
-$color--black: #000;
+$color--auburn: #942e2a;
 $color--white: #fff;
 
 // Secondary:
+$color--black: #000;
 
 // System
 $color-approve: #00D896;
@@ -97,8 +98,8 @@ $color-filter: rgba(245, 127, 39, 0.05);
 
 // Potential House style
 $color--alizarin-crimson: #fe1e27;
-$color--auburn: #942e2a;
 $color--davy-grey: #232323;
+$color--davy-transpar: #2323237e;
 $color--battleship-grey: #707070;
 
 $color--primary: $color--auburn;

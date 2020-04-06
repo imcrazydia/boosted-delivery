@@ -40,38 +40,104 @@ body {
   }
 }
 
-.abonnementen__cards__content {
+.abonnementen__cards .abonnementen__cards__content {
   position: relative;
   margin-bottom: 10px;
-  padding-bottom: 30px;
+  padding-bottom: 240px;
   background-color: #942e2a;
   color: #fff;
+  border-radius: 20px;
+  box-shadow: #2323237e 8px 8px 8px;
 }
 
 @media screen and (min-width: 992px) {
-  .abonnementen__cards__content {
+  .abonnementen__cards .abonnementen__cards__content {
     height: 70vh;
-    width: 33vw;
+    width: 20vw;
     margin-bottom: 0;
-    margin-right: 10px;
+    margin-left: 20px;
+    margin-right: 20px;
     padding: 0 20px 20px 20px;
   }
 }
 
-.abonnementen__cards__content__purchase {
+.abonnementen__cards .abonnementen__cards__content .abonnementen__cards__content__recommended {
+  position: absolute;
+  width: 100px;
+  right: 0;
+  top: 0;
+}
+
+.abonnementen__cards .abonnementen__cards__content .abonnementen__cards__content__title {
+  text-shadow: #000 2px 2px;
+}
+
+.abonnementen__cards .abonnementen__cards__content .abonnementen__cards__content__amount {
+  font-weight: bold;
+}
+
+.abonnementen__cards .abonnementen__cards__content .abonnementen__cards__content__description {
+  text-align: left;
+  padding: 0 25px 0 30px;
+}
+
+.abonnementen__cards .abonnementen__cards__content .abonnementen__cards__content__price {
+  position: absolute;
+  left: 25%;
+  right: 25%;
+  top: 48%;
+  font-size: 50px;
+}
+
+.abonnementen__cards .abonnementen__cards__content .extreme_price {
+  top: 50%;
+}
+
+.abonnementen__cards .abonnementen__cards__content .abonnementen__cards__content__purchase {
+  position: absolute;
+  bottom: 25%;
+  left: 36%;
+  padding: 10px 25px;
+  font-size: 18px;
   background-color: #232323;
   color: #fff;
   text-decoration: none;
+  border: none;
+  border-radius: 10px;
 }
 
-.abonnementen__cards__content__purchase:hover {
-  color: #942e2a;
+.abonnementen__cards .abonnementen__cards__content .abonnementen__cards__content__purchase:hover {
+  color: #fe1e27;
+  cursor: pointer;
 }
 
-.abonnementen__cards__content__icon {
+@media screen and (min-width: 992px) {
+  .abonnementen__cards .abonnementen__cards__content .abonnementen__cards__content__purchase {
+    bottom: 25%;
+  }
+}
+
+.abonnementen__cards .abonnementen__cards__content .abonnementen__cards__content__icon {
   position: absolute;
   bottom: 5%;
   width: 80px;
+}
+
+.abonnementen__cards .abonnementen__cards__content .icon-basic {
+  width: 40px;
+  left: 44%;
+  right: 44%;
+}
+
+.abonnementen__cards .abonnementen__cards__content .icon-boosted {
+  left: 38%;
+  right: 38%;
+}
+
+.abonnementen__cards .abonnementen__cards__content .icon-extreme {
+  width: 115px;
+  left: 33%;
+  right: 33%;
 }
 
 .overzicht__counter--color {

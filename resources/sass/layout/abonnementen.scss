@@ -3,10 +3,12 @@ body {
     text-align: center;
 }
 
+// Page title
 .abonnementen__title {
   color: $color--black;
 }
 
+// Subscriptions
 .abonnementen__cards {
   display: flex;
   flex-direction: column;
@@ -16,36 +18,105 @@ body {
     flex-direction: row;
     justify-content: center;
   }
-}
 
-.abonnementen__cards__content {
-  position: relative;
-  margin-bottom: 10px;
-  padding-bottom: 30px;
-  background-color: $color--primary;
-  color: $color--secondary;
-
-  @media #{$normal} {
-    height: 70vh;
-    width: 33vw;
-    margin-bottom: 0;
-    margin-right: 10px;
-    padding: 0 20px 20px 20px;
-  }
-}
-
-.abonnementen__cards__content__purchase {
-    background-color: $color--davy-grey;
+  // Content of abonnementen__cards
+  .abonnementen__cards__content {
+    position: relative;
+    margin-bottom: 10px;
+    padding-bottom: 240px;
+    background-color: $color--primary;
     color: $color--secondary;
-    text-decoration: none;
+    border-radius: 20px;
+    box-shadow: $color--davy-transpar 8px 8px 8px;
 
-    &:hover {
-        color: $color--primary;
+    @media #{$normal} {
+      height: 70vh;
+      width: 20vw;
+      margin-bottom: 0;
+      margin-left: 20px;
+      margin-right: 20px;
+      padding: 0 20px 20px 20px;
     }
-}
 
-.abonnementen__cards__content__icon {
-    position: absolute;
-    bottom: 5%;
-    width: 80px;
+    // Content of abonnementen__cards__content
+    .abonnementen__cards__content__recommended {
+      position: absolute;
+      width: 100px;
+      right: 0;
+      top: 0;
+    }
+  
+    // Card title
+    .abonnementen__cards__content__title {
+      text-shadow: $color--black 2px 2px;
+    }
+
+    //Amount
+    .abonnementen__cards__content__amount {
+      font-weight: bold;
+    }
+
+    // Card description
+    .abonnementen__cards__content__description {
+      text-align: left;
+      padding: 0 25px 0 30px;
+    }
+
+    // Card price
+    .abonnementen__cards__content__price {
+      position: absolute;
+      left: 25%;
+      right: 25%;
+      top: 48%;
+      font-size: 50px;
+    }
+    .extreme_price {
+      top: 50%;
+    }
+
+    // Card "Bestel" button
+    .abonnementen__cards__content__purchase {
+      position: absolute;
+      bottom: 25%;
+      left: 36%;
+      padding: 10px 25px;
+      font-size: 18px;
+      background-color: $color--davy-grey;
+      color: $color--secondary;
+      text-decoration: none;
+      border: none;
+      border-radius: 10px;
+
+      &:hover {
+        color: $color--alizarin-crimson;
+        cursor: pointer;
+      }
+
+      @media #{$normal} {
+        bottom: 25%;
+      }
+    }
+
+    // Subcription icon
+    .abonnementen__cards__content__icon {
+      position: absolute;
+      bottom: 5%;
+      width: 80px;
+    }
+
+    .icon-basic {
+      width: 40px;
+      left: 44%;
+      right: 44%;
+    }
+    .icon-boosted {
+      left: 38%;
+      right: 38%;
+    }
+    .icon-extreme {
+      width: 115px;
+      left: 33%;
+      right: 33%;
+    }
+  }
 }
