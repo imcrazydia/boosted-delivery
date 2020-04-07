@@ -9,28 +9,29 @@
 <!-- This is where the body starts and since there is a yield in the layout you can just create a section and start adding content -->
 @section('content')
 <form action="{{ route('product.store') }}" method="POST" enctype="multipart/form-data">
+  @csrf
   <div>
-      <label for="">Titel</label>
+      <label for="">Titel:</label>
       <input type="text" name="title">
   </div>
   <div>
-    <label for="">Beschrijving</label>
+    <label for="">Beschrijving:</label>
     <input type="text" name="description">
   </div>
   <div>
-    <label for="">Calorieën</label>
+    <label for="">Calorieën:</label>
     <input type="text" name="calories">
   </div>
   <div>
-    <label for="">Koolhydraten</label>
+    <label for="">Koolhydraten:</label>
     <input type="text" name="carbs">
   </div>
   <div>
-    <label for="">Sodium</label>
+    <label for="">Sodium:</label>
     <input type="text" name="sodium">
   </div>
   <div>
-    <label for="">Suiker</label>
+    <label for="">Suiker:</label>
     <input type="text" name="sugars">
   </div>
   <div>

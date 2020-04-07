@@ -41,22 +41,8 @@ class ProductController extends Controller
      */
     public function store(Request $request)
     {
-        
-        $postData = $request->validate(
-            [
-                'title' => 'required|min:3|max:255',
-                'content' => 'required|min:10',
-                'pub_date' => 'required|after_or_equal:today',
-                'image' => 'image'
-            ]
-        );
 
-        $newFileName = $postData['image']->store('img', 'public');
-        $postData['image'] = $newFileName;
-
-        Product::create($postData);
-
-        return redirect()->route('blog.list');
+        return redirect()->route('product.list');
     }
 
     /*
@@ -64,9 +50,8 @@ class ProductController extends Controller
      */
     public function list()
     {
-        $posts = Product::orderBy('created_at', 'desc')->paginate(20);
 
-        return view('blog.list', ['posts'=> $posts]);
+        return view('product.list');
     }
 
     /**
@@ -91,11 +76,11 @@ class ProductController extends Controller
     }
 
     /*
-     * goes to the overzicht page
+     * Redirects back to the abonnementen page
      */
     public function showOverview()
     {
-        return view('abo_overzicht');
+        return redirect()->route('abonnementen');
     }
 
     /**
