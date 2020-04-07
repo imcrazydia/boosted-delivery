@@ -28,7 +28,7 @@ class ProductController extends Controller
      */
     public function create()
     {
-        return view('abo_overzicht');
+        
     }
 
     /**
@@ -39,9 +39,18 @@ class ProductController extends Controller
      */
     public function store(Request $request)
     {
-        $keuze = $request->input('keuze');
+        
+    }
 
-        return view('abo_overzicht', compact('keuze'));
+    public function showChoice(Request $request) {
+      $keuze = $request->input('keuze');
+
+      return view('abo_overzicht', compact('keuze'));
+    }
+
+    public function showOverview()
+    {
+        return view('abo_overzicht');
     }
 
     /**

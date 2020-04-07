@@ -12,7 +12,7 @@
   @php($pc = "PowerCrate")
 
   <h2 class="abonnementen__title">Weekelijkse Abonnementen</h2>
-<form action="{{ route('abonnementen.store') }}" method="POST">
+<form action="{{ route('abonnementen.choice') }}" method="POST">
   @csrf
     <div class="abonnementen__cards">
       <!-- Basic -->
