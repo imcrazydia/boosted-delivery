@@ -21,9 +21,12 @@ Route::get('/overzicht', 'ProductController@showOverview')->name('abonnementen.o
 Route::post('/overzicht', 'ProductController@showChoice')->name('abonnementen.choice');
 });
 
-Route::prefix('/admin')->group(function(){
-Route::get('/add', 'ProductController@create')->name('product.add');
-Route::post('/add', 'ProductController@store')->name('product.store');
-Route::get('/list', 'ProductController@list')->name('product.list');
-Route::get('/list/{id}', 'ProductController@detail')->name('product.detail');
+Route::prefix('/product')->group(function(){
+Route::get('/lijst', 'ProductController@list')->name('product.list');
+Route::get('/lijst/{id}', 'ProductController@detail')->name('product.detail');
 });
+
+Route::prefix('/admin')->group(function(){
+    Route::get('/add', 'ProductController@create')->name('product.add');
+    Route::post('/add', 'ProductController@store')->name('product.store');
+    });
