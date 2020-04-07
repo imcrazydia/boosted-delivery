@@ -15,8 +15,15 @@ use Illuminate\Support\Facades\Route;
 
 Route::get('/', 'HomeController@index')->name('home');
 
-Route::get('/abonnementen', 'ProductController@abonnementen')->name('abonnementen');
-Route::get('/abonnementen/overzicht', 'ProductController@showOverview')->name('abonnementen.overzicht');
-Route::post('/abonnementen/overzicht', 'ProductController@showChoice')->name('abonnementen.choice');
+Route::prefix('/abonnementen')->group(function(){
+Route::get('/', 'ProductController@subscriptions')->name('abonnementen');
+Route::get('/overzicht', 'ProductController@showOverview')->name('abonnementen.overzicht');
+Route::post('/overzicht', 'ProductController@showChoice')->name('abonnementen.choice');
+});
 
-Route::get('/producten', 'ProductController@index');
+Route::prefix('/admin')->group(function(){
+Route::get('/add', 'ProductController@create')->name('product.add');
+Route::post('/add', 'ProductController@store')->name('product.store');
+Route::get('/list', 'ProductController@list')->name('product.list');
+Route::get('/list/{id}', 'ProductController@detail')->name('product.detail');
+});
