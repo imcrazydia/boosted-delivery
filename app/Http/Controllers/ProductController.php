@@ -73,9 +73,9 @@ class ProductController extends Controller
      * @param  int  $id
      * @return \Illuminate\Http\Response
      */
-    public function detail($id)
+    public function detail($title)
     {
-        $product = Product::find($id);
+        $product = Product::find($title);
         return view('product.detail', ['fullproduct'=> $product]);
     }
 

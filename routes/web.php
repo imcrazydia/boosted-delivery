@@ -23,7 +23,7 @@ Route::prefix('/abonnementen')->group(function(){
 
 Route::prefix('/product')->group(function(){
   Route::get('/lijst', 'ProductController@list')->name('product.list');
-  Route::get('/lijst/{id}', 'ProductController@detail')->name('product.detail');
+  Route::get('/lijst/{title}', 'ProductController@detail')->name('product.detail');
 });
 
 Route::prefix('/admin')->group(function(){
