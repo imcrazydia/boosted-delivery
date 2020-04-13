@@ -84,8 +84,9 @@ class ProductController extends Controller
      */
     public function showChoice(Request $request) {
       $keuze = $request->input('keuze');
+      $products = Product::all();
 
-      return view('abo_overzicht', compact('keuze'));
+      return view('abo_overzicht', compact('keuze'), ['products' => $products]);
     }
 
     /*
