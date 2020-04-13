@@ -41,17 +41,30 @@ class ProductController extends Controller
      */
     public function store(Request $request)
     {
+        $productData = $request->validate(
+            [
+                'title' => 'required|min:3',
+                'description' => 'required|min:10',
+                'calories' => 'required',
+                'carbs' => 'required',
+                'sodium' => 'required',
+                'sugars' => 'required'
+            ]
+        );
+
+        Product::create($productData);
 
         return redirect()->route('product.list');
     }
 
     /*
-     * Displays all posts
+     * Displays all products
      */
     public function list()
     {
+        $products = Product::all();
 
-        return view('product.list');
+        return view('product.list', ['products' => $products]);
     }
 
     /**
@@ -62,8 +75,8 @@ class ProductController extends Controller
      */
     public function detail($id)
     {
-        $post = Product::find($id);
-        return view('product.detail', ['fullproduct'=> $post]);
+        $product = Product::find($id);
+        return view('product.detail', ['fullproduct'=> $product]);
     }
 
     /*
