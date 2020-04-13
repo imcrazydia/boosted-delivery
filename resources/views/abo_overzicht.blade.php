@@ -2,18 +2,31 @@
 $pc = "powercrate";
 
 switch ($keuze) {
-  case 'basic':
+  case 'Weekelijkse - Basic':
     $title = "$keuze $pc";
     $amount = 7;
     break;
-  case 'boosted':
+  case 'Weekelijkse - Boosted':
   $title = "$keuze $pc";
   $amount = 14;
     break;
-  case 'extreme':
+  case 'Weekelijkse - Extreme':
     $title = "$keuze $pc";
     $amount = 21;
     break;
+  case 'Maandelijkse - Basic':
+    $title = "$keuze $pc";
+    $amount = 15;
+    break;
+  case 'Maandelijkse - Boosted':
+    $title = "$keuze $pc";
+    $amount = 30;
+    break;
+  case 'Maandelijkse - Extreme':
+    $title = "$keuze $pc";
+    $amount = 60;
+    break;
+
   default:
     echo "ERROR";
     break;
@@ -33,5 +46,14 @@ switch ($keuze) {
   <div class="overzicht">
     <h2 class="overzicht__title">{{ $title }}</h2>
     <p class="overzicht__counter">Je hebt nog <span class="overzicht__counter--color">{{ $amount }}</span> vrije plekken</p>
+
+    <table>
+      @foreach ($products as $product)
+        <tr>
+          <td><a href="{{ route('product.detail', ['id' => $product->id]) }}">{{ $product->title }}</a></td>
+          <td>{{ $product->description }}</td>
+        </tr>        
+      @endforeach
+    </table>
   </div>
 @endsection
