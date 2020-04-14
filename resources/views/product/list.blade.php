@@ -13,6 +13,7 @@
       <tr>
         <td><a href="{{ route('product.detail', ['title' => $product->title]) }}">{{ $product->title }}</a></td>
         <td>{{ $product->description }}</td>
+        <td><img src="{{ asset('storage/' . $product->image) }}" alt="product image" width="100"></td>
       </tr>        
     @endforeach
   </table>

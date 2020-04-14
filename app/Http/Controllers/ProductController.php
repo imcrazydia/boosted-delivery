@@ -44,6 +44,7 @@ class ProductController extends Controller
         $productData = $request->validate(
             [
                 'title' => 'required|min:3',
+                'image' => 'image',
                 'description' => 'required|min:10',
                 'calories' => 'required',
                 'carbs' => 'required',
@@ -51,6 +52,9 @@ class ProductController extends Controller
                 'sugars' => 'required'
             ]
         );
+
+        $newFileName = $productData['image']->store('products', 'public');
+        $productData['image'] = $newFileName;
 
         Product::create($productData);
 

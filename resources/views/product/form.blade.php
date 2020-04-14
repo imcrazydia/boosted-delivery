@@ -15,6 +15,10 @@
       <input type="text" name="title">
   </div>
   <div>
+    <label for="">Afbeelding</label>
+    <input type="file" name="image">
+  </div>
+  <div>
     <label for="">Beschrijving:</label>
     <input type="text" name="description">
   </div>
