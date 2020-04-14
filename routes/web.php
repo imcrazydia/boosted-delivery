@@ -14,6 +14,7 @@ use Illuminate\Support\Facades\Route;
 */
 
 Route::get('/', 'HomeController@index')->name('home');
+Route::get('/over-ons', 'HomeController@about')->name('about');
 
 Route::prefix('/abonnementen')->group(function(){
   Route::get('/', 'ProductController@subscriptions')->name('abonnementen');
