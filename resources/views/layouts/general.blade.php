@@ -9,6 +9,7 @@
         Boosted Delivery
       @show
     </title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
 
     <!-- Styles -->
     <link rel="stylesheet" href="<?php echo asset('/css/app.css')?>">
