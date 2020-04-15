@@ -29,10 +29,12 @@ Route::prefix('/product')->group(function(){
   Route::get('/lijst/{title}', 'ProductController@detail')->name('product.detail');
 });
 
-Route::prefix('/admin')->group(function(){
+Route::prefix('/admin')->middleware('auth')->group(function(){
   Route::get('/add', 'ProductController@create')->name('product.add');
   Route::post('/add', 'ProductController@store')->name('product.store');
 });
 
 Auth::routes();
+
+Route::get('/profiel', 'HomeController@profile')->name('profiel');
 

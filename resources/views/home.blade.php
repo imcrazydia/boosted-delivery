@@ -1,23 +1,12 @@
-@extends('layouts.app')
+<!-- This extends the layout to this page so that I don't have to place the header in each page individually -->
+@extends('layouts.general')
+<!-- This section changes the title from the page -->
+<!-- Even though the <title> is in the <head> you can still use it like his -->
+@section('title')
+  Boosted Delivery
+@endsection
 
+<!-- This is where the body starts and since there is a yield in the layout you can just create a section and start adding content -->
 @section('content')
-<div class="container">
-    <div class="row justify-content-center">
-        <div class="col-md-8">
-            <div class="card">
-                <div class="card-header">Dashboard</div>
-
-                <div class="card-body">
-                    @if (session('status'))
-                        <div class="alert alert-success" role="alert">
-                            {{ session('status') }}
-                        </div>
-                    @endif
-
-                    You are logged in!
-                </div>
-            </div>
-        </div>
-    </div>
-</div>
+HOME PAGINA
 @endsection
