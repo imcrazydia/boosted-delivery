@@ -1,15 +1,23 @@
-@extends('layouts.general')
-
-@section('header')
-  Boosted Delivery | Home
-@endsection
+@extends('layouts.app')
 
 @section('content')
-  <p>
-    Welkom op Boosted Delivery waar wij <b>Energie Drank</b> naar je voordeur brengen!
-  </p>
-@endsection
+<div class="container">
+    <div class="row justify-content-center">
+        <div class="col-md-8">
+            <div class="card">
+                <div class="card-header">Dashboard</div>
 
-@section('footer')
-  Boosted Footer | Home
+                <div class="card-body">
+                    @if (session('status'))
+                        <div class="alert alert-success" role="alert">
+                            {{ session('status') }}
+                        </div>
+                    @endif
+
+                    You are logged in!
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
 @endsection

@@ -22,6 +22,7 @@ body {
   // Content of abonnementen__cards
   .abonnementen__cards__content {
     position: relative;
+    padding-top: 20px;
     margin-bottom: 10px;
     padding-bottom: 240px;
     background-color: $color--primary;
@@ -31,11 +32,11 @@ body {
 
     @media #{$normal} {
       height: 70vh;
-      width: 20vw;
+      width: 25vw;
       margin-bottom: 0;
       margin-left: 20px;
       margin-right: 20px;
-      padding: 0 20px 20px 20px;
+      padding: 20px;
     }
 
     // Content of abonnementen__cards__content
@@ -48,6 +49,7 @@ body {
   
     // Card title
     .abonnementen__cards__content__title {
+      font-size: 20px;
       text-shadow: $color--black 2px 2px;
     }
 
@@ -66,7 +68,7 @@ body {
     .abonnementen__cards__content__price {
       position: absolute;
       left: 25%;
-      right: 25%;
+      right: 27%;
       top: 48%;
       font-size: 50px;
     }
