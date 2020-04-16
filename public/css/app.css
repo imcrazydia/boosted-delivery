@@ -10984,7 +10984,7 @@ body {
   background-color: #942e2a;
   color: #fff;
   border-radius: 20px;
-  box-shadow: #fff 6px 4px 10px;
+  box-shadow: #fff 1px 1px 5px;
 }
 
 @media screen and (min-width: 992px) {
@@ -10995,6 +10995,7 @@ body {
     margin-left: 20px;
     margin-right: 20px;
     padding: 20px;
+    box-shadow: #fff 6px 4px 10px;
   }
 }
 

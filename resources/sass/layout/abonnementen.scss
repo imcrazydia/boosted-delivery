@@ -30,7 +30,7 @@ body {
     background-color: $color--primary;
     color: $color--secondary;
     border-radius: 20px;
-    box-shadow: $color--white 6px 4px 10px;
+    box-shadow: $color--white 1px 1px 5px;
 
     @media #{$normal} {
       height: 70vh;
@@ -39,6 +39,7 @@ body {
       margin-left: 20px;
       margin-right: 20px;
       padding: 20px;
+      box-shadow: $color--white 6px 4px 10px;
     }
 
     // Content of abonnementen__cards__content

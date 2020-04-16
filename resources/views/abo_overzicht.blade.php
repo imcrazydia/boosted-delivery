@@ -3,27 +3,27 @@ $pc = "powercrate";
 
 switch ($keuze) {
   case 'Weekelijkse - Basic':
-    $title = "$keuze $pc";
+    $package = "$keuze $pc";
     $amount = 7;
     break;
   case 'Weekelijkse - Boosted':
-  $title = "$keuze $pc";
+  $package = "$keuze $pc";
   $amount = 14;
     break;
   case 'Weekelijkse - Extreme':
-    $title = "$keuze $pc";
+    $package = "$keuze $pc";
     $amount = 21;
     break;
   case 'Maandelijkse - Basic':
-    $title = "$keuze $pc";
+    $package = "$keuze $pc";
     $amount = 15;
     break;
   case 'Maandelijkse - Boosted':
-    $title = "$keuze $pc";
+    $package = "$keuze $pc";
     $amount = 30;
     break;
   case 'Maandelijkse - Extreme':
-    $title = "$keuze $pc";
+    $package = "$keuze $pc";
     $amount = 60;
     break;
 
@@ -44,7 +44,7 @@ switch ($keuze) {
 <!-- This is where the body starts and since there is a yield in the layout you can just create a section and start adding content -->
 @section('content')
   <div class="overzicht">
-    <h2 class="overzicht__title">{{ $title }}</h2>
+    <h2 class="overzicht__title">{{ $package }}</h2>
     <p class="overzicht__counter">Je hebt nog <span class="overzicht__counter--color">{{ $amount }}</span> vrije plekken</p>
 
     <table>
