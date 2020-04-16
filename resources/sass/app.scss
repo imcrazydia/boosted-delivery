@@ -4,11 +4,11 @@
 //assets
 @import './assets/base';
 @import './assets/typography';
-@import './assets/variables.scss';
+@import './assets/variables';
 
 //components
-
+@import './components/navigation';
 
 //layouts
 @import './layout/abonnementen';
-@import './layout/abo_overzicht.scss';
+@import './layout/abo_overzicht';
