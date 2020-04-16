@@ -1,0 +1,28 @@
+.product-form {
+    margin: 2em .5em;
+    padding: 2em 1em;
+    background-color: $color--primary;
+    text-align: center;
+
+    @media #{$normal} {
+        margin: 3em 20em;
+    }
+
+    &__content {
+      display: inline-block;
+      text-align: left;
+    }
+
+    &__item {
+        margin-bottom: 1em;
+    }
+
+    label {
+        color: $color--white;
+    }
+
+    &__button {
+        margin-top: 1em;
+        padding: 5px 10px;
+    }
+}

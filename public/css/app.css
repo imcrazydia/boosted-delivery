@@ -11120,3 +11120,34 @@ body {
   color: #942e2a;
 }
 
+.product-form {
+  margin: 2em 0.5em;
+  padding: 2em 1em;
+  background-color: #942e2a;
+  text-align: center;
+}
+
+@media screen and (min-width: 992px) {
+  .product-form {
+    margin: 3em 20em;
+  }
+}
+
+.product-form__content {
+  display: inline-block;
+  text-align: left;
+}
+
+.product-form__item {
+  margin-bottom: 1em;
+}
+
+.product-form label {
+  color: #fff;
+}
+
+.product-form__button {
+  margin-top: 1em;
+  padding: 5px 10px;
+}
+

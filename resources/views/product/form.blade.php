@@ -8,38 +8,40 @@
 
 <!-- This is where the body starts and since there is a yield in the layout you can just create a section and start adding content -->
 @section('content')
-<form action="{{ route('product.store') }}" method="POST" enctype="multipart/form-data">
+<form class="product-form" action="{{ route('product.store') }}" method="POST" enctype="multipart/form-data">
   @csrf
-  <div>
-      <label for="">Titel:</label>
+  <div class="product-form__content">
+    <div class="product-form__item">
+      <label for="title">Titel:</label> <br />
       <input type="text" name="title">
   </div>
-  <div>
-    <label for="">Afbeelding</label>
-    <input type="file" name="image">
+  <div class="product-form__item">
+    <label for="image">Afbeelding</label> <br />
+    <input style="color:white;" type="file" name="image">
   </div>
-  <div>
-    <label for="">Beschrijving:</label>
+  <div class="product-form__item">
+    <label for="description">Beschrijving:</label> <br />
     <input type="text" name="description">
   </div>
-  <div>
-    <label for="">Calorieën:</label>
+  <div class="product-form__item">
+    <label for="description">Calorieën:</label> <br />
     <input type="text" name="calories">
   </div>
-  <div>
-    <label for="">Koolhydraten:</label>
+  <div class="product-form__item">
+    <label for="carbs">Koolhydraten:</label> <br />
     <input type="text" name="carbs">
   </div>
-  <div>
-    <label for="">Sodium:</label>
+  <div class="product-form__item">
+    <label for="carbs">Sodium:</label> <br />
     <input type="text" name="sodium">
   </div>
-  <div>
-    <label for="">Suiker:</label>
+  <div class="product-form__item">
+    <label for="carbs">Suiker:</label> <br />
     <input type="text" name="sugars">
   </div>
   <div>
-    <button type="submit">Product opslaan</button>
+    <button class="product-form__button" type="submit">Product opslaan</button>
 </div>
+  </div>
   </form>
 @endsection
