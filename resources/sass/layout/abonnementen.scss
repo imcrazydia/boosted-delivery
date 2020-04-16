@@ -5,7 +5,9 @@ body {
 
 // Page title
 .abonnementen__title {
-  color: $color--black;
+  margin-top: 1em;
+  margin-bottom: .5em;
+  color: $color--white;
 }
 
 // Subscriptions
@@ -28,7 +30,7 @@ body {
     background-color: $color--primary;
     color: $color--secondary;
     border-radius: 20px;
-    box-shadow: $color--davy-transpar 8px 8px 8px;
+    box-shadow: $color--white 6px 4px 10px;
 
     @media #{$normal} {
       height: 70vh;

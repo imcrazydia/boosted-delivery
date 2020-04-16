@@ -10958,7 +10958,9 @@ body {
 }
 
 .abonnementen__title {
-  color: #000;
+  margin-top: 1em;
+  margin-bottom: 0.5em;
+  color: #fff;
 }
 
 .abonnementen__cards {
@@ -10982,7 +10984,7 @@ body {
   background-color: #942e2a;
   color: #fff;
   border-radius: 20px;
-  box-shadow: #2323237e 8px 8px 8px;
+  box-shadow: #fff 6px 4px 10px;
 }
 
 @media screen and (min-width: 992px) {

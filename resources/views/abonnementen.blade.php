@@ -12,7 +12,7 @@ Boosted Delivery | Abonnementen
 @php($pc = "PowerCrate")
 
 <!-- Maandelijkse Abonnementen -->
-<h2 class="abonnementen__title">Weekelijkse Abonnementen</h2>
+<h1 class="abonnementen__title">Weekelijkse Abonnementen</h1>
 <form action="{{ route('abonnementen.choice') }}" method="POST">
     @csrf
     <div class="abonnementen__cards">
@@ -61,7 +61,7 @@ Boosted Delivery | Abonnementen
 </form>
 
 <!-- Maandelijkse Abonnementen -->
-<h2 class="abonnementen__title">Maandelijkse Abonnementen</h2>
+<h1 class="abonnementen__title">Maandelijkse Abonnementen</h1>
 <form action="{{ route('abonnementen.choice') }}" method="POST">
     @csrf
     <div class="abonnementen__cards">
