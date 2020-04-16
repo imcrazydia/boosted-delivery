@@ -10909,7 +10909,22 @@ footer {
 @media screen and (min-width: 992px) {
   .desktop-nav {
     display: block;
+    background-color: #942e2a;
   }
+}
+
+.desktop-nav .nav-link,
+.desktop-nav .dropdown-item {
+  color: #fff;
+}
+
+.dropdown-menu {
+  background-color: #942e2a;
+}
+
+.dropdown-menu .dropdown-item:hover {
+  color: #232323;
+  background-color: #fff;
 }
 
 .mobile-nav {

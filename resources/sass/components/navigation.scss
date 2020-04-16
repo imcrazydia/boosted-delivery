@@ -3,6 +3,22 @@
 
     @media #{$normal} {
         display: block;
+        background-color: $color--primary;
+    }
+
+    .nav-link, .dropdown-item {
+        color: $color--secondary;
+    }
+}
+
+.dropdown-menu {
+    background-color: $color--primary;
+
+    .dropdown-item {
+        &:hover {
+            color: $color--davy-grey;
+            background-color: $color--white;
+        }
     }
 }
 

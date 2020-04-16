@@ -25,10 +25,10 @@
     <div id="app">
         <!-- Desktop Nav -->
         <div class="desktop-nav">
-            <nav class="navbar navbar-expand-md navbar-light bg-white shadow-sm">
+            <nav class="navbar navbar-expand-md shadow-sm">
                 <div class="container">
                     <a class="navbar-brand" href="{{ url('/') }}">
-                        <img src="{{URL::to('/')}}/img/logo/logo_zwart.png" class="website-logo" alt="card_icon" />
+                        <img src="{{URL::to('/')}}/img/logo/logo_wit.png" class="website-logo" alt="card_icon" />
                     </a>
                     <button class="navbar-toggler" type="button" data-toggle="collapse"
                         data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
@@ -43,7 +43,7 @@
                                 <a class="nav-link" href="{{ route('product.list') }}">{{ __('Producten') }}</a>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link" href="{{ route('abonnementen') }}">{{ __('Store?') }}</a>
+                                <a class="nav-link" href="{{ route('abonnementen') }}">{{ __('Abonnementen') }}</a>
                             </li>
                             <li class="nav-item">
                                 <a class="nav-link" href="{{ route('about') }}">{{ __('Over ons') }}</a>
