@@ -10902,6 +10902,37 @@ footer {
   color: #fff;
 }
 
+.desktop-nav {
+  display: none;
+}
+
+@media screen and (min-width: 992px) {
+  .desktop-nav {
+    display: block;
+  }
+}
+
+.mobile-nav {
+  overflow: hidden;
+  background-color: #942e2a;
+}
+
+.mobile-nav .mobile-nav--item {
+  float: left;
+  display: block;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 35px;
+}
+
+@media screen and (min-width: 992px) {
+  .mobile-nav {
+    display: none;
+  }
+}
+
 .website-logo {
   width: 100px;
 }
@@ -11032,5 +11063,9 @@ body {
 
 .overzicht__counter--color {
   color: #fe1e27;
+}
+
+.product-list {
+  padding-top: 2em;
 }
 

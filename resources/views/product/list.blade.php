@@ -8,13 +8,10 @@
 
 <!-- This is where the body starts and since there is a yield in the layout you can just create a section and start adding content -->
 @section('content')
-  <table>
+  <div class="product-list">
     @foreach ($products as $product)
-      <tr>
-        <td><a href="{{ route('product.detail', ['title' => $product->title]) }}">{{ $product->title }}</a></td>
-        <td>{{ $product->description }}</td>
-        <td><img src="{{ asset('storage/' . $product->image) }}" alt="product image" width="100"></td>
-      </tr>        
+        <img src="{{ asset('storage/' . $product->image) }}" alt="product image" width="100">
+        <h2><a href="{{ route('product.detail', ['title' => $product->title]) }}">{{ $product->title }}</a></h2> 
     @endforeach
-  </table>
+  </div>
 @endsection
