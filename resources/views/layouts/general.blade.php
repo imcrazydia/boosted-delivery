@@ -43,7 +43,7 @@
                         <a class="nav-link" href="{{ route('product.list') }}">{{ __('Producten') }}</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="{{ route('abonnementen') }}">{{ __('Store?') }}</a>
+                        <a class="nav-link" href="{{ route('abonnementen') }}">{{ __('Abonnementen') }}</a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link" href="{{ route('about') }}">{{ __('Over ons') }}</a>
