@@ -1,0 +1,30 @@
+.card {
+    border: none;
+
+    &-header {
+        background-color: $color--primary;
+        border: solid 1px $color--davy-grey;
+        color: $color--white;
+    }
+
+    &-bottom {
+
+        &__button {
+            background-color: $color--primary;
+            border: $color--primary;
+
+            &:hover {
+                background-color: $color--davy-grey;
+                color: $color--white;
+            }
+        }
+
+        &__link {
+            color: $color--primary;
+
+            &:hover {
+                color: $color--davy-grey;
+            }
+        }
+    }
+}

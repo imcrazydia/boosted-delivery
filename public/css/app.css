@@ -11151,3 +11151,31 @@ body {
   padding: 5px 10px;
 }
 
+.card {
+  border: none;
+}
+
+.card-header {
+  background-color: #942e2a;
+  border: solid 1px #232323;
+  color: #fff;
+}
+
+.card-bottom__button {
+  background-color: #942e2a;
+  border: #942e2a;
+}
+
+.card-bottom__button:hover {
+  background-color: #232323;
+  color: #fff;
+}
+
+.card-bottom__link {
+  color: #942e2a;
+}
+
+.card-bottom__link:hover {
+  color: #232323;
+}
+
