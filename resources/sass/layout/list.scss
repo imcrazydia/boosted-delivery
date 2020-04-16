@@ -1,3 +1,33 @@
+body {
+    background-color: $color--davy-grey;
+}
+
 .product-list {
+    display: flex;
+    flex-direction: column;
     padding-top: 2em;
+  
+   @media #{$normal} {
+      flex-flow: row wrap;
+      justify-content: center;
+    }
+
+    &__card {
+        padding: 20px;
+        background-color: $color--secondary;
+        margin: 0 1em 1em 1em;
+
+        @media #{$normal} {
+            padding: 20px 80px 20px 80px;
+          }
+
+        &__title {
+            text-decoration: none;
+            color: $color--black;
+
+            &:hover {
+                color: $color--primary;
+            }
+        }
+    }
 }

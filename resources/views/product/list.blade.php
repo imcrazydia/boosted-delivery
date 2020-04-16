@@ -10,8 +10,10 @@
 @section('content')
   <div class="product-list">
     @foreach ($products as $product)
+      <div class="product-list__card">
         <img src="{{ asset('storage/' . $product->image) }}" alt="product image" width="100">
-        <h2><a href="{{ route('product.detail', ['title' => $product->title]) }}">{{ $product->title }}</a></h2> 
+        <h2><a class="product-list__card__title" href="{{ route('product.detail', ['title' => $product->title]) }}">{{ $product->title }}</a></h2>
+      </div>
     @endforeach
   </div>
 @endsection
