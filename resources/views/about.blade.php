@@ -8,5 +8,5 @@
 
 <!-- This is where the body starts and since there is a yield in the layout you can just create a section and start adding content -->
 @section('content')
-
+<h1> hoi </h1>
 @endsection
