@@ -11180,3 +11180,32 @@ body {
   color: #232323;
 }
 
+.about__title {
+  display: flex;
+  flex-direction: row;
+  color: #fff;
+}
+
+.about__content {
+  display: flex;
+  color: #fff;
+  width: 400px;
+  text-align: left;
+}
+
+.about__inhoud {
+  display: flex;
+  margin-left: 250px;
+  margin-top: 150px;
+}
+
+.about__img {
+  width: 20px;
+  height: auto;
+}
+
+.about__rij {
+  display: flex;
+  flex-direction: column;
+}
+

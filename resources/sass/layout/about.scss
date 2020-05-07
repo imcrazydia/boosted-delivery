@@ -1,0 +1,33 @@
+@import '../assets/variables';
+
+.about {    
+    &__title {
+    display: flex;
+    flex-direction: row;
+    color: $color--white;
+    }
+    
+    &__content{
+        display: flex;
+        color:  $color--white;
+        width: 400px;
+        text-align: left;
+    }
+    
+    &__inhoud {
+       display: flex;
+    margin-left: 250px;
+    margin-top: 150px;
+    }
+    &__img {
+        img{width: 10px;
+        height: auto;
+    }
+        
+    }
+
+    &__rij {
+        display: flex;
+        flex-direction: column;
+    }
+}
