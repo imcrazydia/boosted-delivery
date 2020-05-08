@@ -11352,6 +11352,8 @@ LinkedIn
     width: 40vw;
     margin: 1em 0;
     opacity: 0.7;
+    border-radius: 4px;
+    box-shadow: 10px 10px 5px rgba(0, 0, 0, 0.3);
   }
 }
 

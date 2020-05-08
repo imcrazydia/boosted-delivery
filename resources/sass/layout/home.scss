@@ -53,6 +53,8 @@
           width: 40vw;
           margin: 1em 0;
           opacity: .7;
+          border-radius: 4px;
+          box-shadow: 10px 10px 5px rgba(0,0,0,0.3);
         }
       }
     }
@@ -222,6 +224,7 @@
 
       &__overview {
         &__card {
+
           &:not(:last-child) {
             margin-bottom: 2em;
           }
@@ -231,6 +234,7 @@
             right: 5%;
             top: 10%;
           }
+
           &__title {
             background-color: #363131;
             text-transform: uppercase;
@@ -238,6 +242,7 @@
             font-size: 1.8em;
             padding: 1em;
           }
+
           &__price{
             background-color: #443c3c;
             font-weight: bold;
@@ -247,6 +252,7 @@
               font-size: 3.5em;
             }
           }
+
           &__benefits{
             background-color: #363131;
             padding: 1.5em;
