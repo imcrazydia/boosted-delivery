@@ -35,7 +35,7 @@
             </div>
             <!-- Header button -->
             <div class="home__section__header__content__button-wrapper col col-12 col-md-8">
-              <a href="">Abonneer</a>
+              <a href="#subscription">Abonneer</a>
             </div>
           </div>
         </div>
@@ -45,28 +45,28 @@
         </div>
       </div>
     </section>
-    <!-- PowerCrates -->
-    <section class="home__section__powercrate">
-      <div class="home__section__powercrate__wrapper row">
+    <!-- Our service -->
+    <section class="home__section__service">
+      <div class="home__section__service__wrapper row">
         <div class="col col-12">
-          <h1 class="home__section__powercrate__title">Onze service</h1>
-          <div class="home__section__powercrate__explanation row">
-            <div class="home__section__powercrate__explanation__card col col-12 col-md-4">
-              <img class="home__section__powercrate__explanation__card__icon" src="{{URL::to('/')}}/img/icons/truck.png" alt="Truck icon" />
-              <div class="home__section__powercrate__explanation__card__text">
+          <h1 class="home__section__service__title">Onze service</h1>
+          <div class="home__section__service__explanation row">
+            <div class="home__section__service__explanation__card col col-12 col-md-4">
+              <img class="home__section__service__explanation__card__icon" src="{{URL::to('/')}}/img/icons/truck.png" alt="Truck icon" />
+              <div class="home__section__service__explanation__card__text">
                 Wij bezorgen de PowerCrates zelf met een truck.
               </div>
             </div>
-            <div class="home__section__powercrate__explanation__card col col-12 col-md-4">
-              <img class="home__section__powercrate__explanation__card__icon" src="{{URL::to('/')}}/img/icons/cooler.png" alt="Cooler icon" />
-              <div class="home__section__powercrate__explanation__card__text">
+            <div class="home__section__service__explanation__card col col-12 col-md-4">
+              <img class="home__section__service__explanation__card__icon" src="{{URL::to('/')}}/img/icons/cooler.png" alt="Cooler icon" />
+              <div class="home__section__service__explanation__card__text">
                 Wij hebben een speciale koelbox waar de energie drankjes in worden bewaard,
                 zodat ze koel blijven. Ook is er droog ijs aanwezig in de koelbox dus wanneer je hem opent zal er een mist uitrollen voor extra effect.
               </div>
             </div>
-            <div class="home__section__powercrate__explanation__card col col-12 col-md-4">
-              <img class="home__section__powercrate__explanation__card__icon" src="{{URL::to('/')}}/img/icons/drink.png" alt="Drink icon" />
-              <div class="home__section__powercrate__explanation__card__text">
+            <div class="home__section__service__explanation__card col col-12 col-md-4">
+              <img class="home__section__service__explanation__card__icon" src="{{URL::to('/')}}/img/icons/drink.png" alt="Drink icon" />
+              <div class="home__section__service__explanation__card__text">
                 Wij hebben verschillende de keuzes aan energie drank waar u zelf uit kan kiezen na het selecteren van een abonnement.
               </div>
             </div>
@@ -75,8 +75,72 @@
       </div>
     </section>
     <!-- Subscriptions -->
-    <section class="home__section__subscribe">
-
+    <section class="home__section__subscription" id="subscription">
+      <div class="home__section__subscription__wrapper row">
+        <div class="col col-12">
+          <h1 class="home__section__subscription__title">Kies het abonnement dat bij jou past</h1>
+          <div class="home__section__subscription__container">
+            <div class="home__section__subscription__container__selection tab col col-12">
+              <a class="home__section__subscription__container__selection__link tablinks" onclick="openSubscription(event, 'weekly')" id="defaultOpen">Weekelijks</a>
+              <a class="home__section__subscription__container__selection__link tablinks" onclick="openSubscription(event, 'monthly')">Maandelijks</a>
+            </div>
+            
+            <div id="weekly" class="home__section__subscription__container__overview tabcontent row">
+              <div class="home__section__subscription__container__overview__card col col-12 col-md-4">
+                <img class="home__section__subscription__container__overview__card__icon" src="{{URL::to('/')}}/img/icons/basic_icon.png" alt="subscription icon">
+                <div class="home__section__subscription__container__overview__card__title">Basic</div>
+                <div class="home__section__subscription__container__overview__card__price"><span class="front-price">€4.49</span>/ we</div>
+                <div class="home__section__subscription__container__overview__card__benefits">
+                  <ul>
+                    <li>Keuze uit 7 drankjes</li>
+                  </ul>
+                </div>
+              </div>
+              <div class="home__section__subscription__container__overview__card col col-12 col-md-4">
+                <img class="home__section__subscription__container__overview__card__icon" src="{{URL::to('/')}}/img/icons/boosted_icon.png" alt="subscription icon">
+                <div class="home__section__subscription__container__overview__card__title">Boosted</div>
+                <div class="home__section__subscription__container__overview__card__price"><span class="front-price">€13.99</span>/ we</div>
+                <div class="home__section__subscription__container__overview__card__benefits">
+                  <ul>
+                    <li>Keuze uit 14 drankjes</li>
+                  </ul>
+                </div>
+              </div>
+              <div class="home__section__subscription__container__overview__card col col-12 col-md-4">
+                <img class="home__section__subscription__container__overview__card__icon" src="{{URL::to('/')}}/img/icons/extreme_icon.png" alt="subscription icon">
+                <div class="home__section__subscription__container__overview__card__title">Extreme</div>
+                <div class="home__section__subscription__container__overview__card__price"><span class="front-price">€17.99</span>/ we</div>
+                <div class="home__section__subscription__container__overview__card__benefits">
+                  <ul>
+                    <li>Keuze uit 21 drankjes</li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+            
+            <div id="monthly" class="home__section__subscription__container__overview tabcontent row">
+              <div class="home__section__subscription__container__overview__card col col-12 col-md-4">
+                <img class="home__section__subscription__container__overview__card__icon" src="{{URL::to('/')}}/img/icons/basic_icon.png" alt="subscription icon">
+                <div class="home__section__subscription__container__overview__card__title">Basic</div>
+                <div class="home__section__subscription__container__overview__card__price"><span class="front-price">€8.49</span>/ mo</div>
+                <div class="home__section__subscription__container__overview__card__benefits">yes</div>
+              </div>
+              <div class="home__section__subscription__container__overview__card col col-12 col-md-4">
+                <img class="home__section__subscription__container__overview__card__icon" src="{{URL::to('/')}}/img/icons/boosted_icon.png" alt="subscription icon">
+                <div class="home__section__subscription__container__overview__card__title">Boosted</div>
+                <div class="home__section__subscription__container__overview__card__price"><span class="front-price">€19.99</span>/ mo</div>
+                <div class="home__section__subscription__container__overview__card__benefits">yes</div>
+              </div>
+              <div class="home__section__subscription__container__overview__card col col-12 col-md-4">
+                <img class="home__section__subscription__container__overview__card__icon" src="{{URL::to('/')}}/img/icons/extreme_icon.png" alt="subscription icon">
+                <div class="home__section__subscription__container__overview__card__title">Extreme</div>
+                <div class="home__section__subscription__container__overview__card__price"><span class="front-price">€24.99</span>/ mo</div>
+                <div class="home__section__subscription__container__overview__card__benefits">yes</div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
     </section>
     <!-- Mail -->
     <section class="home__section__mail">

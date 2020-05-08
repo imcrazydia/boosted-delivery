@@ -38,3 +38,12 @@ footer {
 h1 {
   text-shadow: 0 4px 0 rgba(0,0,0,0.3);
 }
+
+.active {
+  background-image: radial-gradient(at 50% 0, $color--alizarin-crimson, $color--primary);
+  text-shadow: 0 4px 0 rgba(0,0,0,0.3);
+
+  &:hover {
+    background-image: radial-gradient(at 50% 0, $color--alizarin-crimson-dark, $color--auburn-dark);
+  }
+}

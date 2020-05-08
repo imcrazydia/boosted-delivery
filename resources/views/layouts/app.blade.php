@@ -79,5 +79,6 @@
 
     <!-- More scripts -->
     <script src="{{ asset('js/menu.js') }}" defer></script>
+    <script src="{{ asset('js/tabs.js') }}" defer></script>
   </body>
 </html>

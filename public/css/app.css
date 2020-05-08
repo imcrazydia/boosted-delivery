@@ -10921,6 +10921,15 @@ h1 {
   text-shadow: 0 4px 0 rgba(0, 0, 0, 0.3);
 }
 
+.active {
+  background-image: radial-gradient(at 50% 0, #bd221c, #aa3935);
+  text-shadow: 0 4px 0 rgba(0, 0, 0, 0.3);
+}
+
+.active:hover {
+  background-image: radial-gradient(at 50% 0, #961d19, #8b2e2b);
+}
+
 /*
 =====
 DEPENDENCES
@@ -11392,7 +11401,7 @@ LinkedIn
   background-image: radial-gradient(at 50% 0, #bd221c, #aa3935);
   margin-top: 2.5em;
   padding: 1.5em 0.5em;
-  border-radius: 6px;
+  border-radius: 4px;
 }
 
 @media screen and (min-width: 992px) {
@@ -11413,63 +11422,144 @@ LinkedIn
   color: #fff;
 }
 
-.home__section__powercrate {
+.home__section__service {
   border-top: solid 2px #272729;
   padding-top: 1em;
 }
 
 @media screen and (min-width: 992px) {
-  .home__section__powercrate {
+  .home__section__service {
     border-top: none;
     padding-top: 0;
   }
 }
 
-.home__section__powercrate__wrapper {
+.home__section__service__wrapper {
   padding: 2em 0;
   margin: 0;
 }
 
 @media screen and (min-width: 992px) {
-  .home__section__powercrate__wrapper {
+  .home__section__service__wrapper {
     padding: 6em 0;
   }
 }
 
-.home__section__powercrate__title {
+.home__section__service__title {
   font-weight: bold;
   font-size: 2.25em;
 }
 
-.home__section__powercrate__explanation {
+.home__section__service__explanation {
   background-color: #443c3c;
   margin: 2em 1em;
   padding: 3em 0;
+  border-radius: 4px;
 }
 
 @media screen and (min-width: 992px) {
-  .home__section__powercrate__explanation {
-    background-image: linear-gradient(to bottom, #443c3c, #443c3c 60%, #2e2e30 60%, #363131 85%, #363131 85%);
+  .home__section__service__explanation {
+    background-image: linear-gradient(to bottom, #443c3c, #443c3c 60%, #383535 60%, #363131 85%, #363131 85%);
     margin: 2em 4em;
   }
 }
 
-.home__section__powercrate__explanation__card:not(:last-child) {
+.home__section__service__explanation__card:not(:last-child) {
   margin-bottom: 4em;
 }
 
 @media screen and (min-width: 992px) {
-  .home__section__powercrate__explanation__card:not(:last-child) {
+  .home__section__service__explanation__card:not(:last-child) {
     margin-bottom: 0;
   }
 }
 
-.home__section__powercrate__explanation__card__icon {
+.home__section__service__explanation__card__icon {
   width: 100px;
 }
 
-.home__section__powercrate__explanation__card__text {
+.home__section__service__explanation__card__text {
   margin-top: 1em;
+}
+
+.home__section__subscription__wrapper {
+  padding: 2em 0;
+  margin: 0;
+}
+
+.home__section__subscription__title {
+  font-weight: bold;
+  font-size: 2.25em;
+}
+
+.home__section__subscription__container__selection {
+  text-align: center;
+  margin: 2em 0;
+}
+
+.home__section__subscription__container__selection__link {
+  cursor: pointer;
+  background-color: #443c3c;
+  color: #fff;
+  font-size: 1.25em;
+  font-weight: bold;
+  line-height: 3.75em;
+  text-align: center;
+  text-transform: uppercase;
+  padding: 1em 1.5em;
+}
+
+.home__section__subscription__container__selection__link:nth-of-type(1) {
+  border-radius: 10px 0 0 10px;
+  margin-right: -2.5px;
+}
+
+.home__section__subscription__container__selection__link:nth-of-type(2) {
+  border-radius: 0 10px 10px 0;
+  margin-left: -2.5px;
+}
+
+.home__section__subscription__container__selection__link:hover {
+  background-color: #363131;
+}
+
+@media screen and (min-width: 992px) {
+  .home__section__subscription__container__selection__link {
+    padding: 1em 2em;
+  }
+}
+
+.home__section__subscription__container__overview__card:not(:last-child) {
+  margin-bottom: 2em;
+}
+
+.home__section__subscription__container__overview__card__icon {
+  position: absolute;
+  right: 5%;
+  top: 10%;
+}
+
+.home__section__subscription__container__overview__card__title {
+  background-color: #363131;
+  text-transform: uppercase;
+  font-weight: bold;
+  font-size: 1.8em;
+  padding: 1em;
+}
+
+.home__section__subscription__container__overview__card__price {
+  background-color: #443c3c;
+  font-weight: bold;
+  padding: 4em 1em;
+}
+
+.home__section__subscription__container__overview__card__price .front-price {
+  font-size: 3.5em;
+}
+
+.home__section__subscription__container__overview__card__benefits {
+  background-color: #363131;
+  padding: 1.5em;
 }
 
 .abonnementen__title {

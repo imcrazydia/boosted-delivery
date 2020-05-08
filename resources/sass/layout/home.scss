@@ -100,7 +100,7 @@
         background-image: radial-gradient(at 50% 0, $color--alizarin-crimson, $color--primary);
         margin-top: 2.5em;
         padding: 1.5em .5em;
-        border-radius: 6px;
+        border-radius: 4px;
 
         @media #{$normal} {
           padding: 2em 1em;
@@ -121,7 +121,7 @@
     }
   }
 
-  &__section__powercrate {
+  &__section__service {
     border-top: solid 2px #272729;
     padding-top: 1em;
 
@@ -148,9 +148,10 @@
       background-color: #443c3c;
       margin: 2em 1em;
       padding: 3em 0;
+      border-radius: 4px;
 
       @media #{$normal} {
-        background-image: linear-gradient(to bottom, #443c3c, #443c3c 60%, #2e2e30 60%, #363131 85%, #363131 85%);
+        background-image: linear-gradient(to bottom, #443c3c, #443c3c 60%, #383535 60%, #363131 85%, #363131 85%);
         margin: 2em 4em;
       }
 
@@ -169,6 +170,87 @@
 
         &__text {
           margin-top: 1em;
+        }
+      }
+    }
+  }
+
+  &__section__subscription {
+    &__wrapper {
+      padding: 2em 0;
+      margin: 0;
+    }
+
+    &__title {
+      font-weight: bold;
+      font-size: 2.25em
+    }
+
+    &__container {
+      &__selection {
+        text-align: center;
+        margin: 2em 0;
+
+        &__link {
+          cursor: pointer;
+          background-color: #443c3c;
+          color: $color--secondary;
+          font-size: 1.25em;
+          font-weight: bold;
+          line-height: 3.75em;
+          text-align: center;
+          text-transform: uppercase;
+          padding: 1em 1.5em;
+          &:nth-of-type(1) {
+            border-radius: 10px 0 0 10px;
+            margin-right: -2.5px;
+          }
+          &:nth-of-type(2) {
+            border-radius: 0 10px 10px 0;
+            margin-left: -2.5px;
+          }
+
+          &:hover {
+            background-color: #363131;
+          }
+
+          @media #{$normal} {
+            padding: 1em 2em;
+          }
+        }
+      }
+
+      &__overview {
+        &__card {
+          &:not(:last-child) {
+            margin-bottom: 2em;
+          }
+
+          &__icon {
+            position: absolute;
+            right: 5%;
+            top: 10%;
+          }
+          &__title {
+            background-color: #363131;
+            text-transform: uppercase;
+            font-weight: bold;
+            font-size: 1.8em;
+            padding: 1em;
+          }
+          &__price{
+            background-color: #443c3c;
+            font-weight: bold;
+            padding: 4em 1em;
+
+            .front-price {
+              font-size: 3.5em;
+            }
+          }
+          &__benefits{
+            background-color: #363131;
+            padding: 1.5em;
+          }
         }
       }
     }
