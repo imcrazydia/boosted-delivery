@@ -1,4 +1,4 @@
-@import url(https://fonts.googleapis.com/css2?family=Inter&display=swap);@import url(https://fonts.googleapis.com/css?family=Nunito);@charset "UTF-8";
+@import url(https://fonts.googleapis.com/css2?family=Inter&display=swap);@import url(https://fonts.googleapis.com/css?family=Nunito);@import url(https://fonts.googleapis.com/css2?family=Merienda:wght@700&display=swap);@charset "UTF-8";
 
 /*!
  * Bootstrap v4.4.1 (https://getbootstrap.com/)
@@ -10886,11 +10886,24 @@ body {
   margin: 0;
   padding: 0;
   font-family: "Inter", "Open Sans";
+  text-align: center;
+  scroll-behavior: smooth;
+  background-color: #1b1b1d;
+}
+
+body ::-moz-selection {
+  /* Code for Firefox */
+  color: #1b1b1d;
+  background: #aa3935;
+}
+
+body ::selection {
+  color: #1b1b1d;
+  background: #aa3935;
 }
 
 nav {
   width: 100%;
-  background-color: #942e2a;
   color: #fff;
 }
 
@@ -11167,7 +11180,7 @@ SETTINGS
 
 :root {
   --colorWhite: #fff;
-  --colorMain: #942e2a;
+  --colorMain: #aa3935;
   --rLinkTextColor: var(--colorMain);
   --menuCircleSize: 100px;
   --menuCircleBgColor: var(--colorMain);
@@ -11260,9 +11273,131 @@ LinkedIn
   color: #ff5c5c;
 }
 
-body {
-  background-color: #fff;
+.home {
+  width: 100vw;
+  color: #fff;
   text-align: center;
+}
+
+.home__section__header {
+  text-shadow: 0 4px 0 rgba(0, 0, 0, 0.3);
+  text-transform: uppercase;
+}
+
+.home__section__header__hero {
+  display: none;
+}
+
+@media screen and (min-width: 992px) {
+  .home__section__header__hero {
+    display: block;
+    position: absolute;
+    z-index: -1;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    background-repeat: no-repeat;
+    opacity: 0.3;
+  }
+}
+
+.home__section__header__wrapper {
+  padding: 4em 0;
+  margin: 0;
+}
+
+.home__section__header__image--mobile {
+  display: block;
+  width: 90vw;
+  height: auto;
+  margin: 2em 0;
+  opacity: 0.7;
+}
+
+@media screen and (min-width: 992px) {
+  .home__section__header__image--mobile {
+    display: none;
+  }
+}
+
+.home__section__header__image--desktop {
+  display: none;
+}
+
+@media screen and (min-width: 992px) {
+  .home__section__header__image--desktop {
+    display: block;
+    width: 40vw;
+    margin: 1em 0;
+    opacity: 0.7;
+  }
+}
+
+.home__section__header__title {
+  font-family: "Merienda", cursive;
+  font-size: 3em;
+}
+
+.home__section__header__title--second {
+  color: #aa3935;
+}
+
+.home__section__header__content {
+  text-align: left;
+}
+
+@media screen and (min-width: 992px) {
+  .home__section__header__content {
+    margin-left: 7.5em;
+  }
+}
+
+.home__section__header__content__intro-text {
+  margin-top: 25px;
+  font-size: 1.5em;
+  font-weight: bold;
+  line-height: 1.37;
+}
+
+.home__section__header__content__intro-points {
+  margin-top: 25px;
+  font-weight: bold;
+}
+
+.home__section__header__content__intro-points ul {
+  padding-left: 1.5em;
+}
+
+.home__section__header__content__intro-points ul li {
+  font-size: 1.25em;
+  padding: 0.5em 0;
+}
+
+.home__section__header__content__button-wrapper {
+  text-align: center;
+  cursor: pointer;
+  background-image: radial-gradient(at 50% 0, #bd221c, #aa3935);
+  margin-top: 2.5em;
+  padding: 1.5em 0.5em;
+  border-radius: 6px;
+}
+
+@media screen and (min-width: 992px) {
+  .home__section__header__content__button-wrapper {
+    padding: 2em 1em;
+    margin-left: 1em;
+  }
+}
+
+.home__section__header__content__button-wrapper:hover {
+  background-image: radial-gradient(at 50% 0, #961d19, #8b2e2b);
+}
+
+.home__section__header__content__button-wrapper a {
+  text-decoration: none;
+  font-size: 1.25em;
+  font-weight: bold;
+  color: #fff;
 }
 
 .abonnementen__title {
@@ -11289,7 +11424,7 @@ body {
   padding-top: 20px;
   margin-bottom: 10px;
   padding-bottom: 240px;
-  background-color: #942e2a;
+  background-color: #aa3935;
   color: #fff;
   border-radius: 20px;
   box-shadow: #fff 1px 1px 5px;
@@ -11354,7 +11489,7 @@ body {
 }
 
 .abonnementen__cards .abonnementen__cards__content .abonnementen__cards__content__purchase:hover {
-  color: #fe1e27;
+  color: #bd221c;
   cursor: pointer;
 }
 
@@ -11388,11 +11523,7 @@ body {
 }
 
 .overzicht__counter--color {
-  color: #fe1e27;
-}
-
-body {
-  background-color: #232323;
+  color: #bd221c;
 }
 
 .product-list {
@@ -11426,13 +11557,13 @@ body {
 }
 
 .product-list__card__title:hover {
-  color: #942e2a;
+  color: #aa3935;
 }
 
 .product-form {
   margin: 2em 0.5em;
   padding: 2em 1em;
-  background-color: #942e2a;
+  background-color: #aa3935;
   text-align: center;
 }
 
@@ -11465,14 +11596,14 @@ body {
 }
 
 .card-header {
-  background-color: #942e2a;
+  background-color: #aa3935;
   border: solid 1px #232323;
   color: #fff;
 }
 
 .card-bottom__button {
-  background-color: #942e2a;
-  border: #942e2a;
+  background-color: #aa3935;
+  border: #aa3935;
 }
 
 .card-bottom__button:hover {
@@ -11481,7 +11612,7 @@ body {
 }
 
 .card-bottom__link {
-  color: #942e2a;
+  color: #aa3935;
 }
 
 .card-bottom__link:hover {

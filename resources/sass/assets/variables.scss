@@ -84,11 +84,13 @@ $wide-down: 'screen and (max-width: #{$screen-xl-max})';
 // -----------------------------------------------------------------------------
 
 // Primary
-$color--auburn: #942e2a;
+$color--auburn-dark: #8b2e2b;
+$color--auburn: #aa3935;
 $color--white: #fff;
 
 // Secondary:
 $color--black: #000;
+$color--dark-grey: #1b1b1d;
 
 // System
 $color-approve: #00D896;
@@ -97,7 +99,8 @@ $color-warning: #FFBB4A;
 $color-filter: rgba(245, 127, 39, 0.05);
 
 // Potential House style
-$color--alizarin-crimson: #fe1e27;
+$color--alizarin-crimson-dark: #961d19;
+$color--alizarin-crimson: #bd221c;
 $color--davy-grey: #232323;
 $color--davy-transpar: #2323237e;
 $color--battleship-grey: #707070;

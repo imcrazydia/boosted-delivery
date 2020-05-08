@@ -5,11 +5,23 @@ body {
     margin: 0;
     padding: 0;
     font-family: 'Inter', 'Open Sans';
+    text-align: center;
+    scroll-behavior: smooth;
+    background-color: $color--dark-grey;
+
+    ::-moz-selection { /* Code for Firefox */
+      color: $color--dark-grey;
+      background: $color--primary;
+    }
+      
+    ::selection {
+      color: $color--dark-grey;
+      background: $color--primary;
+    }
 }
 
 nav {
     width: 100%;
-    background-color: $color--primary;
     color: $color--secondary;
 }
 

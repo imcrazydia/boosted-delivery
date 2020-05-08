@@ -1,0 +1,118 @@
+.home {
+  width: 100vw;
+  color: $color--secondary;
+  text-align: center;
+
+  &__section__header {
+    text-shadow: 0 4px 0 rgba(0,0,0,0.3);
+    text-transform: uppercase;
+
+    &__hero {
+     display: none;
+
+     @media #{$normal} {
+      display: block;
+      position: absolute;
+      z-index: -1;
+      left: 0;
+      width: 100vw;
+      height: 100vh;
+      background-repeat: no-repeat;
+      opacity: .3;
+     }
+    }
+
+    &__wrapper {
+      padding: 4em 0;
+      margin: 0;
+    }
+
+    &__image {
+      &--mobile {
+        display: block;
+        width: 90vw;
+        height: auto;
+        margin: 2em 0;
+        opacity: .7;
+
+        @media #{$normal} {
+          display: none;
+        }
+      }
+
+      &--desktop {
+        display: none;
+
+        @media #{$normal} {
+          display: block;
+          width: 40vw;
+          margin: 1em 0;
+          opacity: .7;
+        }
+      }
+    }
+
+    &__title {
+      font-family: 'Merienda', cursive;
+      font-size: 3em;
+  
+      &--second {
+        color: $color--primary;
+      }
+    }
+
+    &__content {
+      text-align: left;
+
+      @media #{$normal} {
+        margin-left: 7.5em;
+      }
+
+      &__intro-text {
+        margin-top: 25px;
+        font-size: 1.5em;
+        font-weight: bold;
+        line-height: 1.37;
+      }
+
+      &__intro-points {
+        margin-top: 25px;
+        font-weight: bold;
+
+        ul {
+          padding-left: 1.5em;
+
+          li {
+            font-size: 1.25em;
+            padding: 0.5em 0;
+          }
+        }
+      }
+
+      &__button-wrapper {
+        text-align: center;
+        cursor: pointer;
+        background-image: radial-gradient(at 50% 0, $color--alizarin-crimson, $color--primary);
+        margin-top: 2.5em;
+        padding: 1.5em .5em;
+        border-radius: 6px;
+
+        @media #{$normal} {
+          padding: 2em 1em;
+          margin-left: 1em;
+        }
+
+        &:hover {
+          background-image: radial-gradient(at 50% 0, $color--alizarin-crimson-dark, $color--auburn-dark);
+        }
+
+        a {
+          text-decoration: none;
+          font-size: 1.25em;
+          font-weight: bold;
+          color: $color--secondary;
+        }
+      }
+    }
+  }
+}
