@@ -47,7 +47,32 @@
     </section>
     <!-- PowerCrates -->
     <section class="home__section__powercrate">
-
+      <div class="home__section__powercrate__wrapper row">
+        <div class="col col-12">
+          <h1 class="home__section__powercrate__title">Onze service</h1>
+          <div class="home__section__powercrate__explanation row">
+            <div class="home__section__powercrate__explanation__card col col-12 col-md-4">
+              <img class="home__section__powercrate__explanation__card__icon" src="{{URL::to('/')}}/img/icons/truck.png" alt="Truck icon" />
+              <div class="home__section__powercrate__explanation__card__text">
+                Wij bezorgen de PowerCrates zelf met een truck.
+              </div>
+            </div>
+            <div class="home__section__powercrate__explanation__card col col-12 col-md-4">
+              <img class="home__section__powercrate__explanation__card__icon" src="{{URL::to('/')}}/img/icons/cooler.png" alt="Cooler icon" />
+              <div class="home__section__powercrate__explanation__card__text">
+                Wij hebben een speciale koelbox waar de energie drankjes in worden bewaard,
+                zodat ze koel blijven. Ook is er droog ijs aanwezig in de koelbox dus wanneer je hem opent zal er een mist uitrollen voor extra effect.
+              </div>
+            </div>
+            <div class="home__section__powercrate__explanation__card col col-12 col-md-4">
+              <img class="home__section__powercrate__explanation__card__icon" src="{{URL::to('/')}}/img/icons/drink.png" alt="Drink icon" />
+              <div class="home__section__powercrate__explanation__card__text">
+                Wij hebben verschillende de keuzes aan energie drank waar u zelf uit kan kiezen na het selecteren van een abonnement.
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
     </section>
     <!-- Subscriptions -->
     <section class="home__section__subscribe">

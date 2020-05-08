@@ -10883,12 +10883,14 @@ a.text-dark:focus {
 }
 
 body {
+  max-width: 100%;
   margin: 0;
   padding: 0;
   font-family: "Inter", "Open Sans";
   text-align: center;
   scroll-behavior: smooth;
   background-color: #1b1b1d;
+  overflow-x: hidden;
 }
 
 body ::-moz-selection {
@@ -10913,6 +10915,10 @@ footer {
   bottom: 0;
   background-color: #232323;
   color: #fff;
+}
+
+h1 {
+  text-shadow: 0 4px 0 rgba(0, 0, 0, 0.3);
 }
 
 /*
@@ -11282,6 +11288,13 @@ LinkedIn
 .home__section__header {
   text-shadow: 0 4px 0 rgba(0, 0, 0, 0.3);
   text-transform: uppercase;
+  margin-bottom: 1em;
+}
+
+@media screen and (min-width: 992px) {
+  .home__section__header {
+    margin-bottom: 4em;
+  }
 }
 
 .home__section__header__hero {
@@ -11398,6 +11411,65 @@ LinkedIn
   font-size: 1.25em;
   font-weight: bold;
   color: #fff;
+}
+
+.home__section__powercrate {
+  border-top: solid 2px #272729;
+  padding-top: 1em;
+}
+
+@media screen and (min-width: 992px) {
+  .home__section__powercrate {
+    border-top: none;
+    padding-top: 0;
+  }
+}
+
+.home__section__powercrate__wrapper {
+  padding: 2em 0;
+  margin: 0;
+}
+
+@media screen and (min-width: 992px) {
+  .home__section__powercrate__wrapper {
+    padding: 6em 0;
+  }
+}
+
+.home__section__powercrate__title {
+  font-weight: bold;
+  font-size: 2.25em;
+}
+
+.home__section__powercrate__explanation {
+  background-color: #443c3c;
+  margin: 2em 1em;
+  padding: 3em 0;
+}
+
+@media screen and (min-width: 992px) {
+  .home__section__powercrate__explanation {
+    background-image: linear-gradient(to bottom, #443c3c, #443c3c 60%, #2e2e30 60%, #363131 85%, #363131 85%);
+    margin: 2em 4em;
+  }
+}
+
+.home__section__powercrate__explanation__card:not(:last-child) {
+  margin-bottom: 4em;
+}
+
+@media screen and (min-width: 992px) {
+  .home__section__powercrate__explanation__card:not(:last-child) {
+    margin-bottom: 0;
+  }
+}
+
+.home__section__powercrate__explanation__card__icon {
+  width: 100px;
+}
+
+.home__section__powercrate__explanation__card__text {
+  margin-top: 1em;
 }
 
 .abonnementen__title {
