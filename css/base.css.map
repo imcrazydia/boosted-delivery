@@ -1,0 +1,11 @@
+{
+    "version": 3,
+    "mappings": "AECA,OAAO,CAAC,kEAAI;AACZ,OAAO,CAAC,qDAAI;AFCZ,AAAA,IAAI,CAAC;EACD,MAAM,EAAE,CAAC;EACT,OAAO,EAAE,CAAC;EACV,WAAW,EAAE,oBAAoB;CACpC;;AAED,AAAA,GAAG,CAAC;EACA,KAAK,EAAE,IAAI;EACX,gBAAgB,EC2EJ,OAAO;ED1EnB,KAAK,EC2EM,IAAI;CD1ElB;;AAED,AAAA,MAAM,CAAC;EACH,KAAK,EAAE,IAAI;EACX,QAAQ,EAAE,QAAQ;EAClB,MAAM,EAAE,CAAC;EACT,gBAAgB,ECiFD,OAAO;EDhFtB,KAAK,ECmEM,IAAI;CDlElB",
+    "sources": [
+        "../resources/sass/assets/base.scss",
+        "../resources/sass/assets/variables.scss",
+        "../resources/sass/assets/typography.scss"
+    ],
+    "names": [],
+    "file": "base.css"
+}
