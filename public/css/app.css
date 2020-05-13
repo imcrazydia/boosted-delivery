@@ -1,4 +1,4 @@
-@import url(https://fonts.googleapis.com/css2?family=Inter&display=swap);@import url(https://fonts.googleapis.com/css?family=Nunito);@import url(https://fonts.googleapis.com/css2?family=Merienda:wght@700&display=swap);@charset "UTF-8";
+@import url(https://fonts.googleapis.com/css2?family=Inter&display=swap);@import url(https://fonts.googleapis.com/css?family=Nunito);@charset "UTF-8";
 
 /*!
  * Bootstrap v4.4.1 (https://getbootstrap.com/)
@@ -10883,29 +10883,14 @@ a.text-dark:focus {
 }
 
 body {
-  max-width: 100%;
   margin: 0;
   padding: 0;
   font-family: "Inter", "Open Sans";
-  text-align: center;
-  scroll-behavior: smooth;
-  background-color: #1b1b1d;
-  overflow-x: hidden;
-}
-
-body ::-moz-selection {
-  /* Code for Firefox */
-  color: #1b1b1d;
-  background: #aa3935;
-}
-
-body ::selection {
-  color: #1b1b1d;
-  background: #aa3935;
 }
 
 nav {
   width: 100%;
+  background-color: #942e2a;
   color: #fff;
 }
 
@@ -10915,19 +10900,6 @@ footer {
   bottom: 0;
   background-color: #232323;
   color: #fff;
-}
-
-h1 {
-  text-shadow: 0 4px 0 rgba(0, 0, 0, 0.3);
-}
-
-.active {
-  background-image: radial-gradient(at 50% 0, #bd221c, #aa3935);
-  text-shadow: 0 4px 0 rgba(0, 0, 0, 0.3);
-}
-
-.active:hover {
-  background-image: radial-gradient(at 50% 0, #961d19, #8b2e2b);
 }
 
 /*
@@ -11195,7 +11167,7 @@ SETTINGS
 
 :root {
   --colorWhite: #fff;
-  --colorMain: #aa3935;
+  --colorMain: #942e2a;
   --rLinkTextColor: var(--colorMain);
   --menuCircleSize: 100px;
   --menuCircleBgColor: var(--colorMain);
@@ -11288,6 +11260,11 @@ LinkedIn
   color: #ff5c5c;
 }
 
+body {
+  background-color: #fff;
+  text-align: center;
+}
+
 .abonnementen__title {
   margin-top: 1em;
   margin-bottom: 0.5em;
@@ -11312,7 +11289,7 @@ LinkedIn
   padding-top: 20px;
   margin-bottom: 10px;
   padding-bottom: 240px;
-  background-color: #aa3935;
+  background-color: #942e2a;
   color: #fff;
   border-radius: 20px;
   box-shadow: #fff 1px 1px 5px;
@@ -11377,7 +11354,7 @@ LinkedIn
 }
 
 .abonnementen__cards .abonnementen__cards__content .abonnementen__cards__content__purchase:hover {
-  color: #bd221c;
+  color: #fe1e27;
   cursor: pointer;
 }
 
@@ -11411,7 +11388,11 @@ LinkedIn
 }
 
 .overzicht__counter--color {
-  color: #bd221c;
+  color: #fe1e27;
+}
+
+body {
+  background-color: #232323;
 }
 
 .product-list {
@@ -11445,13 +11426,13 @@ LinkedIn
 }
 
 .product-list__card__title:hover {
-  color: #aa3935;
+  color: #942e2a;
 }
 
 .product-form {
   margin: 2em 0.5em;
   padding: 2em 1em;
-  background-color: #aa3935;
+  background-color: #942e2a;
   text-align: center;
 }
 
@@ -11484,14 +11465,14 @@ LinkedIn
 }
 
 .card-header {
-  background-color: #aa3935;
+  background-color: #942e2a;
   border: solid 1px #232323;
   color: #fff;
 }
 
 .card-bottom__button {
-  background-color: #aa3935;
-  border: #aa3935;
+  background-color: #942e2a;
+  border: #942e2a;
 }
 
 .card-bottom__button:hover {
@@ -11500,7 +11481,7 @@ LinkedIn
 }
 
 .card-bottom__link {
-  color: #aa3935;
+  color: #942e2a;
 }
 
 .card-bottom__link:hover {
@@ -11527,7 +11508,7 @@ LinkedIn
 }
 
 .about__img img {
-  width: 60%;
+  width: 10px;
   height: auto;
 }
 

@@ -2,28 +2,14 @@
 @import './typography.scss';
 
 body {
-    max-width: 100%;
     margin: 0;
     padding: 0;
     font-family: 'Inter', 'Open Sans';
-    text-align: center;
-    scroll-behavior: smooth;
-    background-color: $color--dark-grey;
-    overflow-x: hidden;
-
-    ::-moz-selection { /* Code for Firefox */
-      color: $color--dark-grey;
-      background: $color--primary;
-    }
-      
-    ::selection {
-      color: $color--dark-grey;
-      background: $color--primary;
-    }
 }
 
 nav {
     width: 100%;
+    background-color: $color--primary;
     color: $color--secondary;
 }
 
@@ -33,17 +19,4 @@ footer {
     bottom: 0;
     background-color: $color--davy-grey;
     color: $color--secondary;
-}
-
-h1 {
-  text-shadow: 0 4px 0 rgba(0,0,0,0.3);
-}
-
-.active {
-  background-image: radial-gradient(at 50% 0, $color--alizarin-crimson, $color--primary);
-  text-shadow: 0 4px 0 rgba(0,0,0,0.3);
-
-  &:hover {
-    background-image: radial-gradient(at 50% 0, $color--alizarin-crimson-dark, $color--auburn-dark);
-  }
 }
