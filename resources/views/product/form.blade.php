@@ -13,31 +13,31 @@
   <div class="product-form__content">
     <div class="product-form__item">
       <label for="title">Titel:</label> <br />
-      <input type="text" name="title">
+      <input class="input" type="text" name="title">
   </div>
   <div class="product-form__item">
     <label for="image">Afbeelding</label> <br />
-    <input style="color:white;" type="file" name="image">
+    <input class="afbeelding-button"  type="file" name="image">
   </div>
   <div class="product-form__item">
     <label for="description">Beschrijving:</label> <br />
-    <input type="text" name="description">
+    <input class="input" type="text" name="description">
   </div>
   <div class="product-form__item">
     <label for="description">Calorieën:</label> <br />
-    <input type="text" name="calories">
+    <input class="input" type="text" name="calories">
   </div>
   <div class="product-form__item">
     <label for="carbs">Koolhydraten:</label> <br />
-    <input type="text" name="carbs">
+    <input class="input" type="text" name="carbs">
   </div>
   <div class="product-form__item">
     <label for="carbs">Sodium:</label> <br />
-    <input type="text" name="sodium">
+    <input class="input" type="text" name="sodium">
   </div>
   <div class="product-form__item">
     <label for="carbs">Suiker:</label> <br />
-    <input type="text" name="sugars">
+    <input class="input" type="text" name="sugars">
   </div>
   <div>
     <button class="product-form__button" type="submit">Product opslaan</button>

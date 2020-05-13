@@ -11434,6 +11434,7 @@ body {
   padding: 2em 1em;
   background-color: #942e2a;
   text-align: center;
+  border-radius: 20px;
 }
 
 @media screen and (min-width: 992px) {
@@ -11458,6 +11459,26 @@ body {
 .product-form__button {
   margin-top: 1em;
   padding: 5px 10px;
+  border: none;
+  border-radius: 5px;
+  box-shadow: 0 5px 35px rgba(0, 0, 0, 0.65);
+}
+
+.product-form__button:hover {
+  background-color: #170404;
+  color: white;
+}
+
+.product-form .input {
+  border: none;
+  border-radius: 5px;
+  color: black;
+  box-shadow: 0 5px 35px rgba(0, 0, 0, 0.65);
+}
+
+.product-form .afbeelding-button {
+  border: none;
+  border-radius: 5px;
 }
 
 .card {
