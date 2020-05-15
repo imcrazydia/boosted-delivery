@@ -1,264 +1,292 @@
 .home {
-  width: 100vw;
-  color: $color--secondary;
-  text-align: center;
+    width: 100vw;
+    color: $color--secondary;
+    text-align: center;
 
-  &__section__header {
-    text-shadow: 0 4px 0 rgba(0,0,0,0.3);
-    text-transform: uppercase;
-    margin-bottom: 1em;
-
-    @media #{$normal} {
-      margin-bottom: 4em;
-     }
-
-    &__hero {
-     display: none;
-
-     @media #{$normal} {
-      display: block;
-      position: absolute;
-      z-index: -1;
-      left: 0;
-      width: 100vw;
-      height: 100vh;
-      background-repeat: no-repeat;
-      opacity: .3;
-     }
-    }
-
-    &__wrapper {
-      padding: 4em 0;
-      margin: 0;
-    }
-
-    &__image {
-      &--mobile {
-        display: block;
-        width: 90vw;
-        height: auto;
-        margin: 2em 0;
-        opacity: .7;
+    &__section__header {
+        text-shadow: 0 4px 0 rgba(0, 0, 0, 0.3);
+        text-transform: uppercase;
+        margin-bottom: 1em;
 
         @media #{$normal} {
-          display: none;
-        }
-      }
-
-      &--desktop {
-        display: none;
-
-        @media #{$normal} {
-          display: block;
-          width: 40vw;
-          margin: 1em 0;
-          opacity: .7;
-          border-radius: 4px;
-          box-shadow: 10px 10px 5px rgba(0,0,0,0.3);
-        }
-      }
-    }
-
-    &__title {
-      font-family: 'Merienda', cursive;
-      font-size: 3em;
-  
-      &--second {
-        color: $color--primary;
-      }
-    }
-
-    &__content {
-      text-align: left;
-
-      @media #{$normal} {
-        margin-left: 7.5em;
-      }
-
-      &__intro-text {
-        margin-top: 25px;
-        font-size: 1.5em;
-        font-weight: bold;
-        line-height: 1.37;
-      }
-
-      &__intro-points {
-        margin-top: 25px;
-        font-weight: bold;
-
-        ul {
-          padding-left: 1.5em;
-
-          li {
-            font-size: 1.25em;
-            padding: 0.5em 0;
-          }
-        }
-      }
-
-      &__button-wrapper {
-        text-align: center;
-        cursor: pointer;
-        background-image: radial-gradient(at 50% 0, $color--alizarin-crimson, $color--primary);
-        margin-top: 2.5em;
-        padding: 1.5em .5em;
-        border-radius: 4px;
-
-        @media #{$normal} {
-          padding: 2em 1em;
-          margin-left: 1em;
+            margin-bottom: 4em;
         }
 
-        &:hover {
-          background-image: radial-gradient(at 50% 0, $color--alizarin-crimson-dark, $color--auburn-dark);
-        }
+        &__hero {
+            display: none;
 
-        a {
-          text-decoration: none;
-          font-size: 1.25em;
-          font-weight: bold;
-          color: $color--secondary;
-        }
-      }
-    }
-  }
-
-  &__section__service {
-    border-top: solid 2px #272729;
-    padding-top: 1em;
-
-    @media #{$normal} {
-      border-top: none;
-      padding-top: 0;
-    }
-
-    &__wrapper {
-      padding: 2em 0;
-      margin: 0;
-
-      @media #{$normal} {
-        padding: 6em 0;
-      }
-    }
-
-    &__title {
-      font-weight: bold;
-      font-size: 2.25em
-    }
-
-    &__explanation {
-      background-color: #443c3c;
-      margin: 2em 1em;
-      padding: 3em 0;
-      border-radius: 4px;
-
-      @media #{$normal} {
-        background-image: linear-gradient(to bottom, #443c3c, #443c3c 60%, #383535 60%, #363131 85%, #363131 85%);
-        margin: 2em 4em;
-      }
-
-      &__card {
-        &:not(:last-child) {
-          margin-bottom: 4em;
-
-          @media #{$normal} {
-            margin-bottom: 0;
-          }
-        }
-
-        &__icon {
-          width: 100px;
-        }
-
-        &__text {
-          margin-top: 1em;
-        }
-      }
-    }
-  }
-
-  &__section__subscription {
-    &__wrapper {
-      padding: 2em 0;
-      margin: 0;
-    }
-
-    &__title {
-      font-weight: bold;
-      font-size: 2.25em
-    }
-
-    &__container {
-      &__selection {
-        text-align: center;
-        margin: 2em 0;
-
-        &__link {
-          cursor: pointer;
-          background-color: #443c3c;
-          color: $color--secondary;
-          font-size: 1.25em;
-          font-weight: bold;
-          line-height: 3.75em;
-          text-align: center;
-          text-transform: uppercase;
-          padding: 1em 1.5em;
-          &:nth-of-type(1) {
-            border-radius: 10px 0 0 10px;
-            margin-right: -2.5px;
-          }
-          &:nth-of-type(2) {
-            border-radius: 0 10px 10px 0;
-            margin-left: -2.5px;
-          }
-
-          &:hover {
-            background-color: #363131;
-          }
-
-          @media #{$normal} {
-            padding: 1em 2em;
-          }
-        }
-      }
-
-      &__overview {
-        &__card {
-
-          &:not(:last-child) {
-            margin-bottom: 2em;
-          }
-
-          &__icon {
-            position: absolute;
-            right: 5%;
-            top: 10%;
-          }
-
-          &__title {
-            background-color: #363131;
-            text-transform: uppercase;
-            font-weight: bold;
-            font-size: 1.8em;
-            padding: 1em;
-          }
-
-          &__price{
-            background-color: #443c3c;
-            font-weight: bold;
-            padding: 4em 1em;
-
-            .front-price {
-              font-size: 3.5em;
+            @media #{$normal} {
+                display: block;
+                position: absolute;
+                z-index: -1;
+                left: 0;
+                width: 100vw;
+                height: 100vh;
+                background-repeat: no-repeat;
+                opacity: .3;
             }
-          }
-
-          &__benefits{
-            background-color: #363131;
-            padding: 1.5em;
-          }
         }
-      }
+
+        &__wrapper {
+            padding: 4em 0;
+            margin: 0;
+        }
+
+        &__image {
+            &--mobile {
+                display: block;
+                width: 90vw;
+                height: auto;
+                margin: 2em 0;
+                opacity: .7;
+
+                @media #{$normal} {
+                    display: none;
+                }
+            }
+
+            &--desktop {
+                display: none;
+
+                @media #{$normal} {
+                    display: block;
+                    width: 40vw;
+                    margin: 1em 0;
+                    opacity: .7;
+                    border-radius: 4px;
+                    box-shadow: 10px 10px 5px rgba(0, 0, 0, 0.3);
+                }
+            }
+        }
+
+        &__title {
+            font-family: 'Merienda', cursive;
+            font-size: 3em;
+
+            &--second {
+                color: $color--primary;
+            }
+        }
+
+        &__content {
+            text-align: left;
+
+            @media #{$normal} {
+                margin-left: 7.5em;
+            }
+
+            &__intro-text {
+                margin-top: 25px;
+                font-size: 1.5em;
+                font-weight: bold;
+                line-height: 1.37;
+            }
+
+            &__intro-points {
+                margin-top: 25px;
+                font-weight: bold;
+
+                ul {
+                    padding-left: 1.5em;
+
+                    li {
+                        font-size: 1.25em;
+                        padding: 0.5em 0;
+                    }
+                }
+            }
+
+            &__button-wrapper {
+                text-align: center;
+                cursor: pointer;
+                background-image: radial-gradient(at 50% 0, $color--alizarin-crimson, $color--primary);
+                margin-top: 2.5em;
+                padding: 1.5em .5em;
+                border-radius: 4px;
+                box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.3);
+
+                @media #{$normal} {
+                    padding: 2em 1em;
+                    margin-left: 1em;
+                }
+
+                &:hover {
+                    background-image: radial-gradient(at 50% 0, $color--alizarin-crimson-dark, $color--auburn-dark);
+                }
+
+                a {
+                    text-decoration: none;
+                    font-size: 1.25em;
+                    font-weight: bold;
+                    color: $color--secondary;
+                }
+            }
+        }
     }
-  }
+
+    &__section__service {
+        border-top: solid 2px #272729;
+        padding-top: 1em;
+
+        @media #{$normal} {
+            border-top: none;
+            padding-top: 0;
+        }
+
+        &__wrapper {
+            padding: 2em 0;
+            margin: 0;
+
+            @media #{$normal} {
+                padding: 6em 0;
+            }
+        }
+
+        &__title {
+            font-weight: bold;
+            font-size: 2.25em
+        }
+
+        &__explanation {
+            background-color: #443c3c;
+            margin: 2em 1em;
+            padding: 3em 0;
+            border-radius: 4px;
+
+            @media #{$normal} {
+                background-image: linear-gradient(to bottom, #443c3c, #443c3c 60%, #383535 60%, #363131 85%, #363131 85%);
+                margin: 2em 4em;
+            }
+
+            &__card {
+                &:not(:last-child) {
+                    margin-bottom: 4em;
+
+                    @media #{$normal} {
+                        margin-bottom: 0;
+                    }
+                }
+
+                &__icon {
+                    width: 100px;
+                }
+
+                &__text {
+                    margin-top: 1em;
+                }
+            }
+        }
+    }
+
+    &__section__subscription {
+        &__wrapper {
+            padding: 2em 0;
+            margin: 0;
+        }
+
+        &__title {
+            font-weight: bold;
+            font-size: 2.25em
+        }
+
+        &__container {
+            &__selection {
+                text-align: center;
+                margin: 2em 0;
+
+                &__link {
+                    cursor: pointer;
+                    background-color: #443c3c;
+                    color: $color--secondary;
+                    font-size: 1.25em;
+                    font-weight: bold;
+                    line-height: 3.75em;
+                    text-align: center;
+                    text-transform: uppercase;
+                    padding: 1em 1.5em;
+
+                    &:nth-of-type(1) {
+                        border-radius: 10px 0 0 10px;
+                        margin-right: -2.5px;
+                    }
+
+                    &:nth-of-type(2) {
+                        border-radius: 0 10px 10px 0;
+                        margin-left: -2.5px;
+                    }
+
+                    &:hover {
+                        background-color: #363131;
+                    }
+
+                    @media #{$normal} {
+                        padding: 1em 2em;
+                    }
+                }
+            }
+
+            &__overview {
+                &__card {
+                    &:not(:last-child) {
+                        margin-bottom: 2em;
+                    }
+
+                    &__icon {
+                        position: absolute;
+                        right: 5%;
+                        top: 10%;
+                    }
+
+                    &__title {
+                        background-color: #363131;
+                        text-transform: uppercase;
+                        font-weight: bold;
+                        font-size: 1.8em;
+                        padding: 1em;
+                    }
+
+                    &__price {
+                        background-color: #443c3c;
+                        font-weight: bold;
+                        padding: 4em 1em;
+
+                        .front-price {
+                            font-size: 3.5em;
+                        }
+                    }
+
+                    &__benefits {
+                        background-color: #363131;
+                        padding: 1.5em;
+                    }
+
+                    &__button-wrapper {
+                        text-align: center;
+                        cursor: pointer;
+                        background-image: radial-gradient(at 50% 0, $color--alizarin-crimson, $color--primary);
+                        margin-top: 2.5em;
+                        padding: 1.5em .5em;
+                        border-radius: 4px;
+                        box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.3);
+
+                        @media #{$normal} {
+                            padding: 2em 1em;
+                            margin-left: 5em;
+                        }
+
+                        &:hover {
+                            background-image: radial-gradient(at 50% 0, $color--alizarin-crimson-dark, $color--auburn-dark);
+                        }
+
+                        a {
+                            text-decoration: none;
+                            font-size: 1.25em;
+                            font-weight: bold;
+                            color: $color--secondary;
+                        }
+                    }
+                }
+            }
+        }
+    }
 }

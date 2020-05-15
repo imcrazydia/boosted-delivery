@@ -9,17 +9,17 @@
     }
 
     &__card {
-        padding: 20px;
-        background-color: $color--secondary;
-        margin: 0 1em 1em 1em;
+        width: 25vw;
+        padding-bottom: 2.5em;
+        margin-left: 10em;
 
         @media #{$normal} {
-            padding: 20px 80px 20px 80px;
+            margin-left: 0;
           }
 
         &__title {
             text-decoration: none;
-            color: $color--black;
+            color: $color--secondary;
 
             &:hover {
                 color: $color--primary;

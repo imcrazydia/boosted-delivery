@@ -1,30 +1,74 @@
-.card {
+.cms {
+  width: 100vw;
+  text-shadow: 0 4px 0 rgba(0, 0, 0, 0.3);
+
+  .card {
+    background-color: $color--dark-grey;
     border: none;
 
     &-header {
-        background-color: $color--primary;
-        border: solid 1px $color--davy-grey;
-        color: $color--white;
+      font-family: 'Merienda', cursive;
+      font-size: 3em;
+      color: $color--secondary;
+      text-transform: uppercase;
+      border: none;
+      background-color: $color--dark-grey;
     }
 
-    &-bottom {
+    &-body {
+      margin: 5em 0;
+      background-color: $color--dark-grey;
+    }
 
+      &-bottom {
         &__button {
-            background-color: $color--primary;
-            border: $color--primary;
+          text-align: center;
+          cursor: pointer;
+          background-image: radial-gradient(at 50% 0, $color--alizarin-crimson, $color--primary);
+          margin-top: .5em;
+          padding: 1em 2.5em;
+          border-radius: 4px;
+          font-size: 1.25em;
+          font-weight: bold;
+          border: $color--primary;
 
-            &:hover {
-                background-color: $color--davy-grey;
-                color: $color--white;
-            }
+          @media #{$tablet} {
+            margin-right: 4.5em;
+          }
+
+          @media #{$normal} {
+            margin-right: 2.5em;
+          }
+
+          @media #{$wide} {
+            margin-right: 1em;
+          }
+
+          &:hover {
+            background-image: radial-gradient(at 50% 0, $color--alizarin-crimson-dark, $color--auburn-dark);
+          }
         }
 
         &__link {
-            color: $color--primary;
-
-            &:hover {
-                color: $color--davy-grey;
-            }
+          color: $color--primary;
+          font-size: 1.5em;
         }
+      }
+
+    label {
+      text-align: left;
+      color: $color--secondary;
+      font-size: 1.5em;
     }
+
+    input {
+      font-size: 2em;
+    }
+  }
+}
+
+.login .card-bottom__button {
+  @media #{$tablet} {
+    margin-right: 0;  
+  }
 }

@@ -94,6 +94,9 @@
                   <ul>
                     <li>Keuze uit 7 drankjes</li>
                   </ul>
+                  <div class="home__section__subscription__container__overview__card__button-wrapper col col-12 col-md-8">
+                    <a href="#subscription">Abonneer</a>
+                  </div>
                 </div>
               </div>
               <div class="home__section__subscription__container__overview__card col col-12 col-md-4">
@@ -104,6 +107,9 @@
                   <ul>
                     <li>Keuze uit 14 drankjes</li>
                   </ul>
+                  <div class="home__section__subscription__container__overview__card__button-wrapper col col-12 col-md-8">
+                    <a href="#subscription">Abonneer</a>
+                  </div>
                 </div>
               </div>
               <div class="home__section__subscription__container__overview__card col col-12 col-md-4">
@@ -114,6 +120,9 @@
                   <ul>
                     <li>Keuze uit 21 drankjes</li>
                   </ul>
+                  <div class="home__section__subscription__container__overview__card__button-wrapper col col-12 col-md-8">
+                    <a href="#subscription">Abonneer</a>
+                  </div>
                 </div>
               </div>
             </div>
