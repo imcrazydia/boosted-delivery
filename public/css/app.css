@@ -11483,6 +11483,7 @@ LinkedIn
 
 .home__section__service__explanation__card__text {
   margin-top: 1em;
+  text-align: left;
 }
 
 .home__section__subscription__wrapper {
@@ -11539,7 +11540,15 @@ LinkedIn
 .home__section__subscription__container__overview__card__icon {
   position: absolute;
   right: 5%;
-  top: 10%;
+  top: 2%;
+  max-width: 100px;
+}
+
+@media screen and (min-width: 992px) {
+  .home__section__subscription__container__overview__card__icon {
+    right: 10%;
+    top: 1%;
+  }
 }
 
 .home__section__subscription__container__overview__card__title {
@@ -11577,7 +11586,7 @@ LinkedIn
 
 @media screen and (min-width: 992px) {
   .home__section__subscription__container__overview__card__button-wrapper {
-    padding: 2em 1em;
+    padding: 1em 0.5em;
     margin-left: 5em;
   }
 }

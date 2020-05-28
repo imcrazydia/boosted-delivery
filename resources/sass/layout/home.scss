@@ -173,6 +173,7 @@
 
                 &__text {
                     margin-top: 1em;
+                    text-align: left;
                 }
             }
         }
@@ -234,7 +235,13 @@
                     &__icon {
                         position: absolute;
                         right: 5%;
-                        top: 10%;
+                        top: 2%;
+                        max-width: 100px;
+
+                        @media #{$normal} {
+                          right: 10%;
+                          top: 1%;
+                        }
                     }
 
                     &__title {
@@ -270,7 +277,7 @@
                         box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.3);
 
                         @media #{$normal} {
-                            padding: 2em 1em;
+                            padding: 1em .5em;
                             margin-left: 5em;
                         }
 

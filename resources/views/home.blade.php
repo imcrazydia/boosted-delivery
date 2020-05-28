@@ -131,20 +131,41 @@
               <div class="home__section__subscription__container__overview__card col col-12 col-md-4">
                 <img class="home__section__subscription__container__overview__card__icon" src="{{URL::to('/')}}/img/icons/basic_icon.png" alt="subscription icon">
                 <div class="home__section__subscription__container__overview__card__title">Basic</div>
-                <div class="home__section__subscription__container__overview__card__price"><span class="front-price">€8.49</span>/ mo</div>
-                <div class="home__section__subscription__container__overview__card__benefits">yes</div>
+                <div class="home__section__subscription__container__overview__card__price"><span class="front-price">€8.49</span>/ ma</div>
+                <div class="home__section__subscription__container__overview__card__benefits">
+                  <ul>
+                    <li>Keuze uit 15 drankjes</li>
+                  </ul>
+                  <div class="home__section__subscription__container__overview__card__button-wrapper col col-12 col-md-8">
+                    <a href="#subscription">Abonneer</a>
+                  </div>
+                </div>
               </div>
               <div class="home__section__subscription__container__overview__card col col-12 col-md-4">
                 <img class="home__section__subscription__container__overview__card__icon" src="{{URL::to('/')}}/img/icons/boosted_icon.png" alt="subscription icon">
                 <div class="home__section__subscription__container__overview__card__title">Boosted</div>
-                <div class="home__section__subscription__container__overview__card__price"><span class="front-price">€19.99</span>/ mo</div>
-                <div class="home__section__subscription__container__overview__card__benefits">yes</div>
+                <div class="home__section__subscription__container__overview__card__price"><span class="front-price">€19.99</span>/ ma</div>
+                <div class="home__section__subscription__container__overview__card__benefits">
+                  <ul>
+                    <li>Keuze uit 30 drankjes</li>
+                  </ul>
+                  <div class="home__section__subscription__container__overview__card__button-wrapper col col-12 col-md-8">
+                    <a href="#subscription">Abonneer</a>
+                  </div>
+                </div>
               </div>
               <div class="home__section__subscription__container__overview__card col col-12 col-md-4">
                 <img class="home__section__subscription__container__overview__card__icon" src="{{URL::to('/')}}/img/icons/extreme_icon.png" alt="subscription icon">
                 <div class="home__section__subscription__container__overview__card__title">Extreme</div>
-                <div class="home__section__subscription__container__overview__card__price"><span class="front-price">€24.99</span>/ mo</div>
-                <div class="home__section__subscription__container__overview__card__benefits">yes</div>
+                <div class="home__section__subscription__container__overview__card__price"><span class="front-price">€24.99</span>/ ma</div>
+                <div class="home__section__subscription__container__overview__card__benefits">
+                  <ul>
+                    <li>Keuze uit 60 drankjes</li>
+                  </ul>
+                  <div class="home__section__subscription__container__overview__card__button-wrapper col col-12 col-md-8">
+                    <a href="#subscription">Abonneer</a>
+                  </div>
+                </div>
               </div>
             </div>
           </div>
