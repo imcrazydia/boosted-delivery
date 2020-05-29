@@ -34,9 +34,11 @@
               </ul>
             </div>
             <!-- Header button -->
-            <div class="home__section__header__content__button-wrapper col col-12 col-md-8">
-              <a href="#subscription">Abonneer</a>
-            </div>
+            <a href="#subscription">
+              <div class="home__section__header__content__button-wrapper col col-12 col-md-8">
+                Abonneer
+              </div>
+            </a>
           </div>
         </div>
         <!-- Desktop header image -->
@@ -99,16 +101,19 @@
                   </div>
                 </div>
               </div>
-              <div class="home__section__subscription__container__overview__card col col-12 col-md-4">
+              <div class="home__section__subscription__container__overview__card recommended col col-12 col-md-4">
                 <img class="home__section__subscription__container__overview__card__icon" src="{{URL::to('/')}}/img/icons/boosted_icon.png" alt="subscription icon">
-                <div class="home__section__subscription__container__overview__card__title">Boosted</div>
-                <div class="home__section__subscription__container__overview__card__price"><span class="front-price">€13.99</span>/ we</div>
-                <div class="home__section__subscription__container__overview__card__benefits">
+                <div class="home__section__subscription__container__overview__card__title recommended__title weekly_second_card_title">
+                  <span class="home__section__subscription__container__overview__card__title__text">Boosted</span> <br>
+                  <span class="home__section__subscription__container__overview__card__title__recommended">Aanbevolen</span>
+                </div>
+                <div class="home__section__subscription__container__overview__card__price recommended__price"><span class="front-price">€13.99</span>/ we</div>
+                <div class="home__section__subscription__container__overview__card__benefits recommended__benefits">
                   <ul>
                     <li>Keuze uit 14 drankjes</li>
                   </ul>
                   <div class="home__section__subscription__container__overview__card__button-wrapper col col-12 col-md-8">
-                    <a href="#subscription">Abonneer</a>
+                    <a href="{{ route('abonnementen.overzicht') }}">Abonneer</a>
                   </div>
                 </div>
               </div>

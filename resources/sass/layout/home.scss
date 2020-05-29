@@ -1,3 +1,8 @@
+html {
+    scroll-behavior: smooth;
+    cursor: default;
+}
+
 .home {
     width: 100vw;
     color: $color--secondary;
@@ -96,11 +101,18 @@
                 }
             }
 
+            a {
+                text-decoration: none;
+                font-size: 1.25em;
+                font-weight: bold;
+                color: $color--secondary;
+            }
+
             &__button-wrapper {
                 text-align: center;
                 cursor: pointer;
                 background-image: radial-gradient(at 50% 0, $color--alizarin-crimson, $color--primary);
-                margin-top: 2.5em;
+                margin-top: 1.3em;
                 padding: 1.5em .5em;
                 border-radius: 4px;
                 box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.3);
@@ -112,13 +124,6 @@
 
                 &:hover {
                     background-image: radial-gradient(at 50% 0, $color--alizarin-crimson-dark, $color--auburn-dark);
-                }
-
-                a {
-                    text-decoration: none;
-                    font-size: 1.25em;
-                    font-weight: bold;
-                    color: $color--secondary;
                 }
             }
         }
@@ -148,13 +153,13 @@
         }
 
         &__explanation {
-            background-color: #443c3c;
+            background-color: $color--brown-red;
             margin: 2em 1em;
             padding: 3em 0;
             border-radius: 4px;
 
             @media #{$normal} {
-                background-image: linear-gradient(to bottom, #443c3c, #443c3c 60%, #383535 60%, #363131 85%, #363131 85%);
+                background-image: linear-gradient(to bottom, $color--brown-red, $color--brown-red 60%, #383535 60%, $color--brown-red--dark 85%, $color--brown-red--dark 85%);
                 margin: 2em 4em;
             }
 
@@ -197,7 +202,7 @@
 
                 &__link {
                     cursor: pointer;
-                    background-color: #443c3c;
+                    background-color: $color--brown-red;
                     color: $color--secondary;
                     font-size: 1.25em;
                     font-weight: bold;
@@ -217,7 +222,7 @@
                     }
 
                     &:hover {
-                        background-color: #363131;
+                        background-color: $color--brown-red--dark;
                     }
 
                     @media #{$normal} {
@@ -239,21 +244,29 @@
                         max-width: 100px;
 
                         @media #{$normal} {
-                          right: 10%;
-                          top: 1%;
+                            right: 10%;
+                            top: 1%;
                         }
                     }
 
                     &__title {
-                        background-color: #363131;
+                        background-color: $color--brown-red--dark;
                         text-transform: uppercase;
                         font-weight: bold;
                         font-size: 1.8em;
-                        padding: 1em;
+                        padding: 1.5em 1em;
+
+                        &__recommended {
+                            background-color: $color--recommended;
+                            color: $color--brown-red--dark;
+                            font-size: .6em;
+                            padding: .5em 1.5em;
+                            border-radius: 5%;
+                        }
                     }
 
                     &__price {
-                        background-color: #443c3c;
+                        background-color: $color--brown-red;
                         font-weight: bold;
                         padding: 4em 1em;
 
@@ -263,8 +276,15 @@
                     }
 
                     &__benefits {
-                        background-color: #363131;
+                        background-color: $color--brown-red--dark;
                         padding: 1.5em;
+                    }
+
+                    a {
+                        text-decoration: none;
+                        font-size: 1.25em;
+                        font-weight: bold;
+                        color: $color--secondary;
                     }
 
                     &__button-wrapper {
@@ -284,16 +304,32 @@
                         &:hover {
                             background-image: radial-gradient(at 50% 0, $color--alizarin-crimson-dark, $color--auburn-dark);
                         }
-
-                        a {
-                            text-decoration: none;
-                            font-size: 1.25em;
-                            font-weight: bold;
-                            color: $color--secondary;
-                        }
                     }
                 }
             }
+        }
+    }
+
+    .weekly_second_card_title {
+        padding-top: .5em;
+        padding-bottom: .95em;
+    }
+
+    .recommended {
+        &__title {
+            border: solid 2px $color--recommended;
+            border-bottom: none;
+        }
+
+        &__price {
+            border: solid 2px $color--recommended;
+            border-top: none;
+            border-bottom: none;
+        }
+
+        &__benefits {
+            border: solid 2px $color--recommended;
+            border-top: none;
         }
     }
 }

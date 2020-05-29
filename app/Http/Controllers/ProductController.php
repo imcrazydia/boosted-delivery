@@ -18,11 +18,6 @@ class ProductController extends Controller
 
     }
 
-    public function subscriptions()
-    {
-        return view('abonnementen');
-    }
-
     /**
      * Show the form for creating a new resource.
      *
@@ -81,24 +76,6 @@ class ProductController extends Controller
     {
         $product = Product::find($title);
         return view('product.detail', ['fullproduct'=> $product]);
-    }
-
-    /*
-     * Gets the keuze from the abonnementen page and sends it to the overzicht page to use the switch cases
-     */
-    public function showChoice(Request $request) {
-      $keuze = $request->input('keuze');
-      $products = Product::all();
-
-      return view('abo_overzicht', compact('keuze'), ['products' => $products]);
-    }
-
-    /*
-     * Redirects back to the abonnementen page
-     */
-    public function showOverview()
-    {
-        return redirect()->route('abonnementen');
     }
 
     /**

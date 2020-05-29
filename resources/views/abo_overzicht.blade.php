@@ -1,38 +1,3 @@
-@php
-$pc = "powercrate";
-
-switch ($keuze) {
-  case 'Weekelijkse - Basic':
-    $package = "$keuze $pc";
-    $amount = 7;
-    break;
-  case 'Weekelijkse - Boosted':
-  $package = "$keuze $pc";
-  $amount = 14;
-    break;
-  case 'Weekelijkse - Extreme':
-    $package = "$keuze $pc";
-    $amount = 21;
-    break;
-  case 'Maandelijkse - Basic':
-    $package = "$keuze $pc";
-    $amount = 15;
-    break;
-  case 'Maandelijkse - Boosted':
-    $package = "$keuze $pc";
-    $amount = 30;
-    break;
-  case 'Maandelijkse - Extreme':
-    $package = "$keuze $pc";
-    $amount = 60;
-    break;
-
-  default:
-    echo "ERROR";
-    break;
-}
-@endphp
-
 <!-- This extends the layout to this page so that I don't have to place the header in each page individually -->
 @extends('layouts.general')
 <!-- This section changes the title from the page -->

@@ -10888,7 +10888,6 @@ body {
   padding: 0;
   font-family: "Inter", "Open Sans";
   text-align: center;
-  scroll-behavior: smooth;
   background-color: #1b1b1d;
   overflow-x: hidden;
 }
@@ -11288,6 +11287,11 @@ LinkedIn
   color: #ff5c5c;
 }
 
+html {
+  scroll-behavior: smooth;
+  cursor: default;
+}
+
 .home {
   width: 100vw;
   color: #fff;
@@ -11397,11 +11401,18 @@ LinkedIn
   padding: 0.5em 0;
 }
 
+.home__section__header__content a {
+  text-decoration: none;
+  font-size: 1.25em;
+  font-weight: bold;
+  color: #fff;
+}
+
 .home__section__header__content__button-wrapper {
   text-align: center;
   cursor: pointer;
   background-image: radial-gradient(at 50% 0, #bd221c, #aa3935);
-  margin-top: 2.5em;
+  margin-top: 1.3em;
   padding: 1.5em 0.5em;
   border-radius: 4px;
   box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.3);
@@ -11416,13 +11427,6 @@ LinkedIn
 
 .home__section__header__content__button-wrapper:hover {
   background-image: radial-gradient(at 50% 0, #961d19, #8b2e2b);
-}
-
-.home__section__header__content__button-wrapper a {
-  text-decoration: none;
-  font-size: 1.25em;
-  font-weight: bold;
-  color: #fff;
 }
 
 .home__section__service {
@@ -11556,7 +11560,15 @@ LinkedIn
   text-transform: uppercase;
   font-weight: bold;
   font-size: 1.8em;
-  padding: 1em;
+  padding: 1.5em 1em;
+}
+
+.home__section__subscription__container__overview__card__title__recommended {
+  background-color: #f5a524;
+  color: #363131;
+  font-size: 0.6em;
+  padding: 0.5em 1.5em;
+  border-radius: 5%;
 }
 
 .home__section__subscription__container__overview__card__price {
@@ -11572,6 +11584,13 @@ LinkedIn
 .home__section__subscription__container__overview__card__benefits {
   background-color: #363131;
   padding: 1.5em;
+}
+
+.home__section__subscription__container__overview__card a {
+  text-decoration: none;
+  font-size: 1.25em;
+  font-weight: bold;
+  color: #fff;
 }
 
 .home__section__subscription__container__overview__card__button-wrapper {
@@ -11595,133 +11614,25 @@ LinkedIn
   background-image: radial-gradient(at 50% 0, #961d19, #8b2e2b);
 }
 
-.home__section__subscription__container__overview__card__button-wrapper a {
-  text-decoration: none;
-  font-size: 1.25em;
-  font-weight: bold;
-  color: #fff;
+.home .weekly_second_card_title {
+  padding-top: 0.5em;
+  padding-bottom: 0.95em;
 }
 
-.abonnementen__title {
-  margin-top: 1em;
-  margin-bottom: 0.5em;
-  color: #fff;
+.home .recommended__title {
+  border: solid 2px #f5a524;
+  border-bottom: none;
 }
 
-.abonnementen__cards {
-  display: flex;
-  flex-direction: column;
-  margin: 10px;
+.home .recommended__price {
+  border: solid 2px #f5a524;
+  border-top: none;
+  border-bottom: none;
 }
 
-@media screen and (min-width: 992px) {
-  .abonnementen__cards {
-    flex-direction: row;
-    justify-content: center;
-  }
-}
-
-.abonnementen__cards .abonnementen__cards__content {
-  position: relative;
-  padding-top: 20px;
-  margin-bottom: 10px;
-  padding-bottom: 240px;
-  background-color: #aa3935;
-  color: #fff;
-  border-radius: 20px;
-  box-shadow: #fff 1px 1px 5px;
-}
-
-@media screen and (min-width: 992px) {
-  .abonnementen__cards .abonnementen__cards__content {
-    height: 70vh;
-    width: 25vw;
-    margin-bottom: 0;
-    margin-left: 20px;
-    margin-right: 20px;
-    padding: 20px;
-    box-shadow: #fff 6px 4px 10px;
-  }
-}
-
-.abonnementen__cards .abonnementen__cards__content .abonnementen__cards__content__recommended {
-  position: absolute;
-  width: 100px;
-  right: 0;
-  top: 0;
-}
-
-.abonnementen__cards .abonnementen__cards__content .abonnementen__cards__content__title {
-  font-size: 20px;
-  text-shadow: #000 2px 2px;
-}
-
-.abonnementen__cards .abonnementen__cards__content .abonnementen__cards__content__amount {
-  font-weight: bold;
-}
-
-.abonnementen__cards .abonnementen__cards__content .abonnementen__cards__content__description {
-  text-align: left;
-  padding: 0 25px 0 30px;
-}
-
-.abonnementen__cards .abonnementen__cards__content .abonnementen__cards__content__price {
-  position: absolute;
-  left: 25%;
-  right: 27%;
-  top: 48%;
-  font-size: 50px;
-}
-
-.abonnementen__cards .abonnementen__cards__content .extreme_price {
-  top: 50%;
-}
-
-.abonnementen__cards .abonnementen__cards__content .abonnementen__cards__content__purchase {
-  position: absolute;
-  bottom: 25%;
-  left: 36%;
-  padding: 10px 25px;
-  font-size: 18px;
-  background-color: #232323;
-  color: #fff;
-  text-decoration: none;
-  border: none;
-  border-radius: 10px;
-}
-
-.abonnementen__cards .abonnementen__cards__content .abonnementen__cards__content__purchase:hover {
-  color: #bd221c;
-  cursor: pointer;
-}
-
-@media screen and (min-width: 992px) {
-  .abonnementen__cards .abonnementen__cards__content .abonnementen__cards__content__purchase {
-    bottom: 25%;
-  }
-}
-
-.abonnementen__cards .abonnementen__cards__content .abonnementen__cards__content__icon {
-  position: absolute;
-  bottom: 5%;
-  width: 80px;
-}
-
-.abonnementen__cards .abonnementen__cards__content .icon-basic {
-  width: 40px;
-  left: 44%;
-  right: 44%;
-}
-
-.abonnementen__cards .abonnementen__cards__content .icon-boosted {
-  left: 38%;
-  right: 38%;
-}
-
-.abonnementen__cards .abonnementen__cards__content .icon-extreme {
-  width: 115px;
-  left: 33%;
-  right: 33%;
+.home .recommended__benefits {
+  border: solid 2px #f5a524;
+  border-top: none;
 }
 
 .overzicht__counter--color {
