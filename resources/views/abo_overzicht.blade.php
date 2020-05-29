@@ -8,17 +8,30 @@
 
 <!-- This is where the body starts and since there is a yield in the layout you can just create a section and start adding content -->
 @section('content')
-  <div class="overzicht">
-    <h2 class="overzicht__title">{{ $package }}</h2>
-    <p class="overzicht__counter">Je hebt nog <span class="overzicht__counter--color">{{ $amount }}</span> vrije plekken</p>
-
-    <table>
+  <div class="overview">
+    <h1 class="overview__title">PowerCrate samenstellen</h1>
+    <h3 class="overview__subtitle">Je kan 14 drankjes kiezen</h3>
+    <div class="overview__product">
       @foreach ($products as $product)
-        <tr>
-          <td><a href="{{ route('product.detail', ['id' => $product->id]) }}">{{ $product->title }}</a></td>
-          <td>{{ $product->description }}</td>
-        </tr>        
+        <div class="overview__product__card">
+          <img class="overview__product__card__image" src="{{ asset('storage/' . $product->image) }}" alt="product image">
+          <h2 class="overview__product__card__title">{{ $product->title }}</h2>
+          <form id='myform' method='POST' action='#'>
+            <input type='button' value='-' class='qtyminus' field='quantity' />
+            <input type='text' name='quantity' value='0' class='qty' />
+            <input type='button' value='+' class='qtyplus' field='quantity' />
+        </form>
+        </div>
       @endforeach
-    </table>
+    </div>
+    <a class="button" href="{{ url('/#subscription') }}">
+      <div class="button__back">Terug</div>
+    </a>
+
+    <a class="button" href="{{ url('/') }}">
+      <div class="button__next">Volgende</div>
+    </a>
   </div>
+
+  <script src="{{ asset('js/overzicht.js') }}" defer></script>
 @endsection

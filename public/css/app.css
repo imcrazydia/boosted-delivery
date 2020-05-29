@@ -11635,8 +11635,128 @@ html {
   border-top: none;
 }
 
-.overzicht__counter--color {
-  color: #bd221c;
+.overview__title {
+  font-family: "Merienda", cursive;
+  font-size: 3em;
+  color: #fff;
+  margin-top: 1em;
+}
+
+.overview__subtitle {
+  color: #fff;
+}
+
+.overview__product {
+  display: flex;
+  flex-direction: column;
+  padding-top: 2em;
+}
+
+@media screen and (min-width: 992px) {
+  .overview__product {
+    flex-flow: row wrap;
+    justify-content: center;
+    margin-left: 5em;
+  }
+}
+
+.overview__product__card {
+  width: 200px;
+  margin: 0 6.5em;
+}
+
+@media screen and (min-width: 992px) {
+  .overview__product__card {
+    margin-left: 0;
+  }
+}
+
+.overview__product__card__image {
+  max-width: 100px;
+  max-height: 200px;
+}
+
+.overview__product__card__title {
+  color: #fff;
+}
+
+.overview .button {
+  color: #fff;
+  text-decoration: none;
+}
+
+.overview .button__back {
+  position: absolute;
+  top: 22%;
+  left: 2%;
+  text-align: center;
+  cursor: pointer;
+  background-image: radial-gradient(at 50% 0, #bd221c, #aa3935);
+  margin-top: 1.3em;
+  padding: 1.5em 2em;
+  border-radius: 4px;
+  box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.3);
+}
+
+@media screen and (min-width: 992px) {
+  .overview .button__back {
+    padding: 2em 4em;
+    margin-left: 1em;
+    top: 2%;
+    left: 3%;
+  }
+}
+
+.overview .button__back:hover {
+  background-image: radial-gradient(at 50% 0, #961d19, #8b2e2b);
+}
+
+.overview .button__next {
+  position: absolute;
+  right: 2%;
+  top: 22%;
+  text-align: center;
+  cursor: pointer;
+  background-image: radial-gradient(at 50% 0, #bd221c, #aa3935);
+  margin-top: 1.3em;
+  padding: 1.5em 1em;
+  border-radius: 4px;
+  box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.3);
+}
+
+@media screen and (min-width: 992px) {
+  .overview .button__next {
+    padding: 2em 3em;
+    margin-left: 1em;
+    top: 2%;
+    right: 5%;
+  }
+}
+
+.overview .button__next:hover {
+  background-image: radial-gradient(at 50% 0, #961d19, #8b2e2b);
+}
+
+#myform {
+  text-align: center;
+  padding: 5px;
+  margin: 2%;
+}
+
+.qty {
+  width: 40px;
+  height: 25px;
+  text-align: center;
+}
+
+input.qtyplus {
+  width: 25px;
+  height: 25px;
+}
+
+input.qtyminus {
+  width: 25px;
+  height: 25px;
 }
 
 .product-list {

@@ -66,6 +66,16 @@ class ProductController extends Controller
         return view('product.list', ['products' => $products]);
     }
 
+    /*
+     * Displays all products
+     */
+    public function listSubscription()
+    {
+        $products = Product::all();
+
+        return view('abo_overzicht', ['products' => $products]);
+    }
+
     /**
      * Display the specified resource.
      *

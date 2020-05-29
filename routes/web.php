@@ -19,7 +19,7 @@ Route::get('/over-ons', function () {
 })->name('about');
 
 Route::prefix('/abonnementen')->group(function(){
-  Route::get('/overzicht', 'ProductController@list')->name('abonnementen.overzicht');
+  Route::get('/overzicht', 'ProductController@listSubscription')->name('abonnementen.overzicht');
 });
 
 Route::prefix('/product')->group(function(){

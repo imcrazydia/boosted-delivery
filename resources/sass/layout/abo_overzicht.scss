@@ -1,3 +1,109 @@
-.overzicht__counter--color {
-    color: $color--alizarin-crimson;
+.overview {
+  &__title {
+    font-family: 'Merienda', cursive;
+    font-size: 3em;
+    color: $color--white;
+    margin-top: 1em;
+  }
+
+  &__subtitle {
+    color: $color--white;
+  }
+
+  &__product {
+    display: flex;
+    flex-direction: column;
+    padding-top: 2em;
+  
+   @media #{$normal} {
+      flex-flow: row wrap;
+      justify-content: center;
+      margin-left: 5em;
+    }
+
+
+    &__card {
+        width: 200px;
+        margin: 0 6.5em;
+
+        @media #{$normal} {
+            margin-left: 0;
+          }
+
+      &__image {
+        max-width: 100px;
+        max-height: 200px;
+      }
+    
+      &__title {
+        color: $color--white;   
+      }
+    }
+  }
+
+  .button {
+    color: $color--white;
+    text-decoration: none;
+
+      &__back {
+        position: absolute;
+        top: 22%;
+        left: 2%;
+        text-align: center;
+        cursor: pointer;
+        background-image: radial-gradient(at 50% 0, $color--alizarin-crimson, $color--primary);
+        margin-top: 1.3em;
+        padding: 1.5em 2em;
+        border-radius: 4px;
+        box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.3);
+
+        @media #{$normal} {
+            padding: 2em 4em;
+            margin-left: 1em;
+            top: 2%;
+            left: 3%
+        }
+
+        &:hover {
+            background-image: radial-gradient(at 50% 0, $color--alizarin-crimson-dark, $color--auburn-dark);
+        }
+      }
+
+      &__next {
+        position: absolute;
+        right: 2%;
+        top: 22%;
+        text-align: center;
+        cursor: pointer;
+        background-image: radial-gradient(at 50% 0, $color--alizarin-crimson, $color--primary);
+        margin-top: 1.3em;
+        padding: 1.5em 1em;
+        border-radius: 4px;
+        box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.3);
+
+        @media #{$normal} {
+            padding: 2em 3em;
+            margin-left: 1em;
+            top: 2%;
+            right: 5%;
+        }
+
+        &:hover {
+            background-image: radial-gradient(at 50% 0, $color--alizarin-crimson-dark, $color--auburn-dark);
+        }
+      }
+  }
 }
+
+#myform {
+    text-align: center;
+    padding: 5px;
+    margin: 2%;
+}
+.qty {
+    width: 40px;
+    height: 25px;
+    text-align: center;
+}
+input.qtyplus { width:25px; height:25px;}
+input.qtyminus { width:25px; height:25px;}
