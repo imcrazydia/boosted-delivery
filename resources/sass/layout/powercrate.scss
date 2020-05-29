@@ -1,11 +1,14 @@
 .powercrate {
+  	width: 100vw;
+
     @media #{$normal} {
-      margin-left: 20em;
+      margin-left: 18em;
     }
 
     &__title {
       font-family: 'Merienda', cursive;
       font-size: 3em;
+      text-align: left;
       color: $color--white;
       margin-top: 1em;
       margin-left: .5em;
@@ -17,14 +20,27 @@
 
     &__products {
       text-align: left;
-      margin-top: .5em;
+      margin-top: 1em;
       margin-left: 1em;
       font-size: 1.5em;
       color: $color--white;
+
+      &__total_amount {
+        margin: 1em 0;
+        width: 90%;
+        height: 1px;
+        background-color: $color--auburn;
+
+        @media #{$normal} {
+          width: 65%;
+        }
+      }
       
-      @media #{$normal} {
-        &__amount {
-            padding-left: 6em;
+      &__amount {
+        padding-left: 6em;
+
+        @media #{$normal} {
+          padding-left: 6em;
         }
       }
     }

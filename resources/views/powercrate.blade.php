@@ -27,10 +27,10 @@
           <div class="powercrate__products__name col col-6">Slammers</div>
           <div class="powercrate__products__amount col col-6">4x</div>
         </div>
-        <br>
+        <div class="powercrate__products__total_amount"></div>
         <div class="row">
-          <div class="powercrate__products__name col col-6">Totaal</div>
-          <div class="powercrate__products__amount col col-6">14x</div>
+          <div class="powercrate__products__name col col-6"><b><i>Totaal</i></b></div>
+          <div class="powercrate__products__amount col col-6"><b><i>14x</i></b></div>
         </div>
       </div>
       <a class="button" href="{{ url('/abonnementen/overzicht') }}">
