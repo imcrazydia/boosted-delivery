@@ -20,6 +20,15 @@ Route::get('/over-ons', function () {
 
 Route::prefix('/abonnementen')->group(function(){
   Route::get('/overzicht', 'ProductController@listSubscription')->name('abonnementen.overzicht');
+  Route::get('/jouw-powercrate', function () {
+    return view('powercrate');
+  })->name('powercrate');
+});
+
+Route::prefix('/afrekenen')->middleware('auth')->group(function(){
+  Route::get('/', function () {
+    return view('afrekenen');
+  })->name('afrekenen');
 });
 
 Route::prefix('/product')->group(function(){
