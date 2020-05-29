@@ -1,0 +1,204 @@
+.afrekenen {
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+    padding-bottom: 10em;
+
+    @media #{$normal} {
+        padding-bottom: 0;
+      }
+
+    .wrapper {
+        margin-top: 1em;
+        width: 60%;
+        display: flex;
+        justify-content: center;
+        animation: slideUp 2000ms ease;
+
+        @media #{$normal} {
+            margin-top: 0;
+          }
+    }
+    
+    @keyframes slideUp {
+        0% {
+            -webkit-transform: translateY(100%);
+            transform: translateY(100%);
+            visibility: visible;
+        }
+    
+        100% {
+            -webkit-transform: translateY(0);
+            transform: translateY(0);
+    
+        }
+    }
+    
+    .container {
+        width: 65%;
+        padding: 5% 10%;
+    }
+    
+    h1 {
+        align-self: center;
+        text-shadow: none;
+    }
+    
+    form {
+        width: 100%;
+    
+        >* {
+            margin-top: 20px;
+        }
+    
+        input {
+            width: 100%;
+            min-height: 50px;
+            border: 0;
+            font-size: 1.5rem;
+            letter-spacing: .15rem;
+            margin-top: 5px;
+            color: $color--auburn;
+            border-radius: 4px;
+        }
+    
+        label {
+            text-transform: uppercase;
+            font-size: 12px;
+            letter-spacing: 2px;
+            color: $color--white;
+        }
+    
+        h1 {
+            font-size: 24px;
+            line-height: 10px;
+            color: $color--auburn;
+            letter-spacing: 1px;
+        }
+    
+        h1:nth-of-type(2) {
+            margin-top: 10%;
+        }
+    }
+    
+    .name {
+        justify-content: space-between;
+        display: flex;
+        width: 100%;
+    
+        div {
+            width: 45%;
+        }
+    }
+    
+    .address-info {
+        display: flex;
+        justify-content: space-between;
+    
+        div {
+            width: 30%;
+        }
+    }
+    
+    .cc-info {
+        display: flex;
+        justify-content: space-between;
+    
+        div {
+            width: 45%;
+        }
+    }
+    
+    @media (max-width: 736px) {
+        .wrapper {
+            width: 100%;
+        }
+    
+        .container {
+            width: 100%;
+        }
+    
+        form h1 {
+            text-align: center;
+        }
+    
+        .name,
+        .address-info,
+        .cc-info {
+            flex-direction: column;
+            width: 100%;
+            justify-content: space-between;
+    
+            div {
+                align-items: center;
+                flex-direction: column;
+                width: 100%;
+                display: flex;
+            }
+        }
+    
+        .street,
+        .cc-num {
+            text-align: center;
+        }
+    
+        input {
+            margin: 5px 0;
+            min-height: 30px;
+        }
+    }
+
+    .button {
+        &__back {
+            color: $color--white;
+            text-decoration: none;
+            position: absolute;
+            top: 100%;
+            left: 2%;
+            text-align: center;
+            cursor: pointer;
+            background-image: radial-gradient(at 50% 0, $color--alizarin-crimson, $color--primary);
+            margin-top: 1.3em;
+            padding: 1.5em 2.5em;
+            border-radius: 4px;
+            box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.3);
+
+            @media #{$normal} {
+                padding: 2em 4em;
+                margin-left: 1em;
+                top: 2%;
+                left: 3%
+            }
+
+            &:hover {
+                background-image: radial-gradient(at 50% 0, $color--alizarin-crimson-dark, $color--auburn-dark);
+            }
+        }
+
+        &__next {
+            color: $color--white;
+            text-decoration: none;
+            position: absolute;
+            right: 2%;
+            top: 100%;
+            text-align: center;
+            cursor: pointer;
+            background-image: radial-gradient(at 50% 0, $color--alizarin-crimson, $color--primary);
+            margin-top: 1.3em;
+            padding: 1.5em 2em;
+            border-radius: 4px;
+            box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.3);
+
+            @media #{$normal} {
+                padding: 2em 3.5em;
+                margin-left: 1em;
+                top: 2%;
+                right: 5%;
+            }
+
+            &:hover {
+                background-image: radial-gradient(at 50% 0, $color--alizarin-crimson-dark, $color--auburn-dark);
+            }
+        }
+    }
+}
