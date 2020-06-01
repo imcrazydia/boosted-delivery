@@ -11844,27 +11844,74 @@ input.qtyminus {
   color: #aa3935;
 }
 
+.upload-button {
+  margin-right: -116px;
+}
+
+.row2rijen {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+
+.row1 {
+  display: flex;
+  flex-direction: column;
+}
+
+.row2 {
+  display: flex;
+  flex-direction: column;
+  margin-left: 177px;
+}
+
+.form-button-upload {
+  display: flex;
+  justify-content: flex-end;
+}
+
+.colum1 {
+  padding-right: 1em;
+}
+
 .product-form {
   margin: 2em 0.5em;
   padding: 2em 1em;
-  background-color: #aa3935;
+  width: 100vw;
   text-align: center;
   border-radius: 20px;
 }
 
-@media screen and (min-width: 992px) {
-  .product-form {
-    margin: 3em 20em;
-  }
+.product-form__header {
+  width: 100vw;
+  color: #fff;
+  font-size: 3em;
+  font-family: "Merienda", cursive;
+  text-transform: uppercase;
+  border: none;
+  margin: 1em;
+  float: left;
 }
 
 .product-form__content {
-  display: inline-block;
   text-align: left;
+  font-size: 1.5em;
+  display: flex;
+  justify-content: center;
+  width: 100vw;
+}
+
+@media screen and (min-width: 992px) {
+  .product-form__content {
+    margin-right: 0;
+  }
 }
 
 .product-form__item {
   margin-bottom: 1em;
+  width: 400px;
+  display: flex;
+  justify-content: flex-end;
 }
 
 .product-form label {
@@ -11877,18 +11924,41 @@ input.qtyminus {
   border: none;
   border-radius: 5px;
   box-shadow: 0 5px 35px rgba(0, 0, 0, 0.65);
+  height: 64px;
 }
 
 .product-form__button:hover {
   background-color: #170404;
-  color: white;
+  color: #fff;
+}
+
+.product-form__input {
+  border-radius: 0.25rem;
+  width: 100%;
+  border: none;
+  padding: 0.375rem 0.75rem;
+  box-shadow: 0 5px 35px rgba(0, 0, 0, 0.65);
+}
+
+.product-form__opslaan-button {
+  color: #fff;
+  background-color: #B2302B;
+  border: none;
+  width: 100%;
+  border-radius: 0.25rem;
+  height: 64px;
+}
+
+.product-form__opslaan-button:hover {
+  background-color: #170404;
+  color: #fff;
+  transition: 0.3s ease-in-out;
 }
 
 .product-form .input {
   border: none;
   border-radius: 5px;
   color: black;
-  box-shadow: 0 5px 35px rgba(0, 0, 0, 0.65);
 }
 
 .product-form .afbeelding-button {
