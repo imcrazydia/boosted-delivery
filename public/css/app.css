@@ -11686,6 +11686,13 @@ html {
   border-top: none;
 }
 
+.dash-menu {
+  display: flex;
+  flex-direction: column;
+  justify-content: end;
+  color: white;
+}
+
 .overview__title {
   font-family: "Merienda", cursive;
   font-size: 3em;
@@ -12455,5 +12462,115 @@ input.qtyminus {
 .about__rij {
   display: flex;
   flex-direction: column;
+}
+
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.dash {
+  display: flex;
+  align-items: center;
+  transform: translate(5%, -5%);
+}
+
+.dash-menu {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  color: white;
+  margin: 30px;
+  margin-left: 45px;
+}
+
+@media screen and (min-width: 992px) {
+  .dash-menu {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-end;
+  }
+}
+
+.dash-info {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  color: white;
+  margin: 30px;
+}
+
+.vertical-line {
+  border: 1px solid #AA3935;
+  margin: 4px;
+  height: 500px;
+}
+
+.drinks {
+  margin-left: 15px;
+}
+
+h3 {
+  margin-top: 10px;
+  font-size: 2.7rem;
+}
+
+.dash-menu-text {
+  -webkit-text-decoration: underline white;
+          text-decoration: underline white;
+  cursor: pointer;
+}
+
+.hr2 {
+  width: 305px;
+  border: 1px solid white;
+  float: left;
+  margin: 4px;
+  margin-left: 0px;
+}
+
+span {
+  color: #AA3935;
+}
+
+@media only screen and (max-width: 600px) {
+  .vertical-line-mobile {
+    border: 1px solid #AA3935;
+    width: 244px;
+    margin-left: 33px;
+  }
+
+  .vertical-line {
+    display: none;
+  }
+
+  .dash-info {
+    margin-left: 43px;
+  }
+
+  .hr2 {
+    width: 244px;
+    border: 1px solid white;
+    float: left;
+    margin: 4px;
+    margin-left: 0px;
+  }
+
+  .h4-4 {
+    display: flex;
+    justify-content: flex-start;
+  }
+
+  h3 {
+    font-size: 2rem;
+  }
+
+  .dash {
+    transform: none;
+  }
 }
 
