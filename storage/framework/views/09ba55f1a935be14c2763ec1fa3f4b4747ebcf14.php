@@ -6,7 +6,7 @@
         <div class="dash-menu">
             <a class="r-link menu__link" href="<?php echo e(route('abonnementen.overzicht')); ?>"><h3 class="dash-menu-text">Abonnement aanpassen</h3></a>
             <a class="r-link menu__link" href="<?php echo e(route('product.add')); ?>"><h3 class="dash-menu-text">Product toevoegen</h3></a>
-            <a class="r-link menu__link" href="<?php echo e(route('product.add')); ?>"><h3 class="dash-menu-text">Wachtwoord resetten</h3></a>
+            <a class="r-link menu__link" href="<?php echo e(route('password.request')); ?>"><h3 class="dash-menu-text">Wachtwoord resetten</h3></a>
             <a class="r-link menu__link" href="<?php echo e(route('logout')); ?>" onclick="event.preventDefault();
                       document.getElementById('logout-form').submit();">
                       <h3 class="dash-menu-text">Uitloggen</h3>
@@ -19,7 +19,7 @@
         <div class="vertical-line"></div>
         <div class="vertical-line-mobile"></div>
         <div class="dash-info">
-            <h1>Welkom, [Gebruikersnaam]</h1>
+            <h1>Welkom, <?php echo e(Auth::user()->name); ?></h1>
             <hr class="hr2">
             <h3><span>-</span> Abonnement: Boosted PowerCrate (<span>€4.49</span>)</h3>
             <h3><span>-</span> Dit is uw eerste week </h3>

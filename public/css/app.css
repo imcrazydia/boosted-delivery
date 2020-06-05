@@ -12465,7 +12465,7 @@ input.qtyminus {
 }
 
 .dashboard .vertical-line {
-  border: 1px solid #AA3935;
+  border: 1px solid #aa3935;
   margin: 4px;
   height: 500px;
 }
@@ -12480,9 +12480,16 @@ input.qtyminus {
 }
 
 .dashboard .dash-menu-text {
+  color: #fff;
   -webkit-text-decoration: underline white;
           text-decoration: underline white;
   cursor: pointer;
+}
+
+.dashboard .dash-menu-text:hover {
+  color: #aa3935;
+  -webkit-text-decoration: #aa3935;
+          text-decoration: #aa3935;
 }
 
 .dashboard .hr2 {
@@ -12494,12 +12501,12 @@ input.qtyminus {
 }
 
 .dashboard span {
-  color: #AA3935;
+  color: #aa3935;
 }
 
 @media only screen and (max-width: 600px) {
   .dashboard .vertical-line-mobile {
-    border: 1px solid #AA3935;
+    border: 1px solid #aa3935;
     width: 244px;
     margin-left: 33px;
   }

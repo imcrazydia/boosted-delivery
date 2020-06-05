@@ -29,6 +29,9 @@
         <nav class="menu__nav">
             <ul class="r-list menu__list">
                 <li class="menu__group">
+                    <img class="nav_logo" src="<?php echo e(URL::to('/')); ?>/img/logo/logo_wit.png" alt="navigation logo">
+                </li>
+                <li class="menu__group">
                     <a class="r-link menu__link" href="<?php echo e(url('/')); ?>"><?php echo e(__('Home')); ?></a>
                 </li>
                 <li class="menu__group">
