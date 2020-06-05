@@ -74,3 +74,13 @@
     margin-right: 0;  
   }
 }
+
+.register {
+  @media #{$normal} {
+    margin-right: 55px;  
+  }
+  
+  &__login_link {
+    margin-right: 25px;
+  }
+}

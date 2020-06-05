@@ -62,8 +62,9 @@
                                 </div>
                             </div>
     
-                            <div class="form-group row mb-0">
-                                <div class="col-md-6 offset-md-6">
+                            <div class="form-group row mb-0 register">
+                                <div class="col-12 col-md-6 offset-md-6">
+                                    <a class="register__login_link btn btn-link card-bottom__link" href="{{ route('login') }}">{{ __('Login') }}</a>
                                     <button type="submit" class="btn btn-primary card-bottom__button">
                                         {{ __('Register') }}
                                     </button>

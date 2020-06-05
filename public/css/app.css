@@ -12061,6 +12061,16 @@ input.qtyminus {
   }
 }
 
+@media screen and (min-width: 992px) {
+  .register {
+    margin-right: 55px;
+  }
+}
+
+.register__login_link {
+  margin-right: 25px;
+}
+
 .powercrate {
   width: 100vw;
 }
