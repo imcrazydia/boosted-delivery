@@ -1,10 +1,3 @@
-.dash-menu {
-    display: flex;
-    flex-direction: column;
-    justify-content: end;
-    color: white;
-}
-
 .overview {
     &__title {
         font-family: 'Merienda', cursive;
@@ -20,7 +13,7 @@
     &__product {
         display: flex;
         flex-direction: column;
-        padding-top: 2em;
+        padding: 5em 0;
 
         @media #{$normal} {
             flex-flow: row wrap;
@@ -31,14 +24,15 @@
         &__card {
             width: 200px;
             margin: 0 6.5em;
+            padding-bottom: 2em;
 
             @media #{$normal} {
                 margin-left: 0;
             }
 
             &__image {
-                max-width: 100px;
-                max-height: 200px;
+                max-width: 60px;
+                max-height: 160px;
             }
 
             &__title {
@@ -108,17 +102,34 @@
 }
 
 .qty {
-    width: 40px;
-    height: 25px;
+    background-color: $color--primary;
+    color: $color--white;
+    border: none;
+    width: 50px;
+    height: 30px;
     text-align: center;
 }
 
 input.qtyplus {
-    width: 25px;
-    height: 25px;
+    background-color: $color--primary;
+    color: $color--white;
+    border: none;
+    width: 30px;
+    height: 30px;
+    
+    &:hover {
+        background-color: $color--auburn-dark;
+    }
 }
 
 input.qtyminus {
-    width: 25px;
-    height: 25px;
+    background-color: $color--primary;
+    color: $color--white;
+    border: none;
+    width: 30px;
+    height: 30px;
+
+    &:hover {
+        background-color: $color--auburn-dark;
+    }
 }

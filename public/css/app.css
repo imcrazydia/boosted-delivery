@@ -11647,13 +11647,6 @@ html {
   border-top: none;
 }
 
-.dash-menu {
-  display: flex;
-  flex-direction: column;
-  justify-content: end;
-  color: white;
-}
-
 .overview__title {
   font-family: "Merienda", cursive;
   font-size: 3em;
@@ -11668,7 +11661,7 @@ html {
 .overview__product {
   display: flex;
   flex-direction: column;
-  padding-top: 2em;
+  padding: 5em 0;
 }
 
 @media screen and (min-width: 992px) {
@@ -11682,6 +11675,7 @@ html {
 .overview__product__card {
   width: 200px;
   margin: 0 6.5em;
+  padding-bottom: 2em;
 }
 
 @media screen and (min-width: 992px) {
@@ -11691,8 +11685,8 @@ html {
 }
 
 .overview__product__card__image {
-  max-width: 100px;
-  max-height: 200px;
+  max-width: 60px;
+  max-height: 160px;
 }
 
 .overview__product__card__title {
@@ -11763,19 +11757,36 @@ html {
 }
 
 .qty {
-  width: 40px;
-  height: 25px;
+  background-color: #aa3935;
+  color: #fff;
+  border: none;
+  width: 50px;
+  height: 30px;
   text-align: center;
 }
 
 input.qtyplus {
-  width: 25px;
-  height: 25px;
+  background-color: #aa3935;
+  color: #fff;
+  border: none;
+  width: 30px;
+  height: 30px;
+}
+
+input.qtyplus:hover {
+  background-color: #8b2e2b;
 }
 
 input.qtyminus {
-  width: 25px;
-  height: 25px;
+  background-color: #aa3935;
+  color: #fff;
+  border: none;
+  width: 30px;
+  height: 30px;
+}
+
+input.qtyminus:hover {
+  background-color: #8b2e2b;
 }
 
 .product-list {
