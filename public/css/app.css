@@ -11702,52 +11702,42 @@ html {
   position: absolute;
   top: 22%;
   left: 2%;
-  text-align: center;
   cursor: pointer;
-  background-image: radial-gradient(at 50% 0, #bd221c, #aa3935);
-  margin-top: 1.3em;
-  padding: 1.5em 2em;
-  border-radius: 4px;
-  box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.3);
+  color: #aa3935;
+  font-size: 1.6em;
 }
 
 @media screen and (min-width: 992px) {
   .overview .button__back {
-    padding: 2em 4em;
-    margin-left: 1em;
     top: 2%;
     left: 3%;
+    font-size: 2em;
   }
 }
 
 .overview .button__back:hover {
-  background-image: radial-gradient(at 50% 0, #961d19, #8b2e2b);
+  color: #8b2e2b;
 }
 
 .overview .button__next {
   position: absolute;
   right: 2%;
   top: 22%;
-  text-align: center;
   cursor: pointer;
-  background-image: radial-gradient(at 50% 0, #bd221c, #aa3935);
-  margin-top: 1.3em;
-  padding: 1.5em 1em;
-  border-radius: 4px;
-  box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.3);
+  color: #aa3935;
+  font-size: 1.6em;
 }
 
 @media screen and (min-width: 992px) {
   .overview .button__next {
-    padding: 2em 3em;
-    margin-left: 1em;
     top: 2%;
     right: 5%;
+    font-size: 2em;
   }
 }
 
 .overview .button__next:hover {
-  background-image: radial-gradient(at 50% 0, #961d19, #8b2e2b);
+  color: #8b2e2b;
 }
 
 #myform {
@@ -12154,54 +12144,44 @@ input.qtyminus:hover {
 
 .powercrate .button__back {
   position: absolute;
-  top: 65%;
+  top: 22%;
   left: 2%;
-  text-align: center;
   cursor: pointer;
-  background-image: radial-gradient(at 50% 0, #bd221c, #aa3935);
-  margin-top: 1.3em;
-  padding: 1.5em 2em;
-  border-radius: 4px;
-  box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.3);
+  color: #aa3935;
+  font-size: 1.6em;
 }
 
 @media screen and (min-width: 992px) {
   .powercrate .button__back {
-    padding: 2em 4em;
-    margin-left: 1em;
     top: 2%;
     left: 3%;
+    font-size: 2em;
   }
 }
 
 .powercrate .button__back:hover {
-  background-image: radial-gradient(at 50% 0, #961d19, #8b2e2b);
+  color: #8b2e2b;
 }
 
 .powercrate .button__next {
   position: absolute;
   right: 2%;
-  top: 65%;
-  text-align: center;
+  top: 22%;
   cursor: pointer;
-  background-image: radial-gradient(at 50% 0, #bd221c, #aa3935);
-  margin-top: 1.3em;
-  padding: 1.5em 1em;
-  border-radius: 4px;
-  box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.3);
+  color: #aa3935;
+  font-size: 1.6em;
 }
 
 @media screen and (min-width: 992px) {
   .powercrate .button__next {
-    padding: 2em 3em;
-    margin-left: 1em;
     top: 2%;
     right: 5%;
+    font-size: 2em;
   }
 }
 
 .powercrate .button__next:hover {
-  background-image: radial-gradient(at 50% 0, #961d19, #8b2e2b);
+  color: #8b2e2b;
 }
 
 .afrekenen {

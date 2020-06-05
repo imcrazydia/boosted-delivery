@@ -40,11 +40,11 @@
         </div>
       </div>
       <a class="button" href="{{ url('/abonnementen/overzicht') }}">
-        <div class="button__back">Terug</div>
+        <div class="button__back">< Terug</div>
     </a>
 
     <a class="button" href="{{ url('/afrekenen') }}">
-        <div class="button__next">Afrekenen</div>
+        <div class="button__next">Afrekenen ></div>
     </a>
   </div>
 @endsection

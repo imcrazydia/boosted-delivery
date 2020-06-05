@@ -26,11 +26,11 @@ Boosted Delivery | Overzicht
         @endforeach
     </div>
     <a class="button" href="{{ url('/#subscription') }}">
-        <div class="button__back">Terug</div>
+        <div class="button__back">< Terug</div>
     </a>
 
     <a class="button" href="{{ url('/abonnementen/jouw-powercrate') }}">
-        <div class="button__next">Volgende</div>
+        <div class="button__next">Volgende ></div>
     </a>
 </div>
 
