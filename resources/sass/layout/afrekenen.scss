@@ -149,55 +149,44 @@
     }
 
     .button {
+        color: $color--white;
+        text-decoration: none;
+
         &__back {
-            color: $color--white;
-            text-decoration: none;
             position: absolute;
-            top: 100%;
+            top: 22%;
             left: 2%;
-            text-align: center;
             cursor: pointer;
-            background-image: radial-gradient(at 50% 0, $color--alizarin-crimson, $color--primary);
-            margin-top: 1.3em;
-            padding: 1.5em 2.5em;
-            border-radius: 4px;
-            box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.3);
+            color: $color--primary;
+            font-size: 1.6em;
 
             @media #{$normal} {
-                padding: 2em 4em;
-                margin-left: 1em;
                 top: 2%;
-                left: 3%
+                left: 3%;
+                font-size: 2em;
             }
 
             &:hover {
-                background-image: radial-gradient(at 50% 0, $color--alizarin-crimson-dark, $color--auburn-dark);
+                color: $color--auburn-dark;
             }
         }
 
         &__next {
-            color: $color--white;
-            text-decoration: none;
             position: absolute;
             right: 2%;
-            top: 100%;
-            text-align: center;
+            top: 22%;
             cursor: pointer;
-            background-image: radial-gradient(at 50% 0, $color--alizarin-crimson, $color--primary);
-            margin-top: 1.3em;
-            padding: 1.5em 2em;
-            border-radius: 4px;
-            box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.3);
+            color: $color--primary;
+            font-size: 1.6em;
 
             @media #{$normal} {
-                padding: 2em 3.5em;
-                margin-left: 1em;
                 top: 2%;
                 right: 5%;
+                font-size: 2em;
             }
 
             &:hover {
-                background-image: radial-gradient(at 50% 0, $color--alizarin-crimson-dark, $color--auburn-dark);
+                color: $color--auburn-dark;
             }
         }
     }
