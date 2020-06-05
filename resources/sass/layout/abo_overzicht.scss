@@ -1,3 +1,10 @@
+.dash-menu {
+    display: flex;
+    flex-direction: column;
+    justify-content: end;
+    color: white;
+}
+
 .overview {
     &__title {
         font-family: 'Merienda', cursive;
@@ -20,7 +27,6 @@
             justify-content: center;
             margin-left: 5em;
         }
-
 
         &__card {
             width: 200px;

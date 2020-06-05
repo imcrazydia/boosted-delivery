@@ -11635,6 +11635,13 @@ html {
   border-top: none;
 }
 
+.dash-menu {
+  display: flex;
+  flex-direction: column;
+  justify-content: end;
+  color: white;
+}
+
 .overview__title {
   font-family: "Merienda", cursive;
   font-size: 3em;
@@ -11793,27 +11800,93 @@ input.qtyminus {
   color: #aa3935;
 }
 
+.upload-button {
+  margin-right: -116px;
+}
+
+.row2rijen {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+@media screen and (min-width: 992px) {
+  .row2rijen {
+    flex-direction: row;
+  }
+}
+
+.row1 {
+  display: flex;
+  flex-direction: column;
+}
+
+.row2 {
+  display: flex;
+  flex-direction: column;
+}
+
+@media screen and (min-width: 992px) {
+  .row2 {
+    margin-left: 177px;
+  }
+}
+
+.form-button-upload {
+  display: flex;
+  justify-content: flex-end;
+}
+
+.colum1 {
+  padding-right: 1em;
+}
+
 .product-form {
   margin: 2em 0.5em;
   padding: 2em 1em;
-  background-color: #aa3935;
+  width: 100vw;
   text-align: center;
   border-radius: 20px;
 }
 
+.product-form__header {
+  width: 100vw;
+  color: #fff;
+  font-size: 1.5em;
+  font-family: "Merienda", cursive;
+  text-transform: uppercase;
+  border: none;
+  margin: 1em;
+  float: left;
+}
+
 @media screen and (min-width: 992px) {
-  .product-form {
-    margin: 3em 20em;
+  .product-form__header {
+    font-size: 3em;
   }
 }
 
 .product-form__content {
-  display: inline-block;
   text-align: left;
+  margin-left: -80px;
+  font-size: 1.2em;
+  display: flex;
+  justify-content: center;
+  width: 100vw;
+}
+
+@media screen and (min-width: 992px) {
+  .product-form__content {
+    margin-right: 0;
+    font-size: 1.5em;
+  }
 }
 
 .product-form__item {
   margin-bottom: 1em;
+  width: 400px;
+  display: flex;
+  justify-content: flex-end;
 }
 
 .product-form label {
@@ -11826,24 +11899,71 @@ input.qtyminus {
   border: none;
   border-radius: 5px;
   box-shadow: 0 5px 35px rgba(0, 0, 0, 0.65);
+  height: 64px;
 }
 
 .product-form__button:hover {
   background-color: #170404;
-  color: white;
+  color: #fff;
+}
+
+.product-form__input {
+  border-radius: 0.25rem;
+  width: 50%;
+  border: none;
+  padding: 0.375rem 0.75rem;
+  box-shadow: 0 5px 35px rgba(0, 0, 0, 0.65);
+}
+
+@media screen and (min-width: 992px) {
+  .product-form__input {
+    width: 100%;
+  }
+}
+
+.product-form__opslaan-button {
+  color: #fff;
+  background-color: #B2302B;
+  border: none;
+  width: 50%;
+  border-radius: 0.25rem;
+  height: 50px;
+}
+
+.product-form__opslaan-button:hover {
+  background-color: #170404;
+  color: #fff;
+  transition: 0.3s ease-in-out;
+}
+
+@media screen and (min-width: 992px) {
+  .product-form__opslaan-button {
+    width: 100%;
+    height: 64px;
+  }
 }
 
 .product-form .input {
   border: none;
   border-radius: 5px;
   color: black;
-  box-shadow: 0 5px 35px rgba(0, 0, 0, 0.65);
 }
 
 .product-form .afbeelding-button {
   border: none;
   border-radius: 5px;
   background-color: 163;
+}
+
+.upload-button {
+  margin-right: -20px;
+  font-size: 12px;
+}
+
+@media screen and (min-width: 992px) {
+  .upload-button {
+    margin-right: -116px;
+  }
 }
 
 .cms {
@@ -12291,5 +12411,115 @@ input.qtyminus {
 .about__rij {
   display: flex;
   flex-direction: column;
+}
+
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.dash {
+  display: flex;
+  align-items: center;
+  transform: translate(5%, -5%);
+}
+
+.dash-menu {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  color: white;
+  margin: 30px;
+  margin-left: 45px;
+}
+
+@media screen and (min-width: 992px) {
+  .dash-menu {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-end;
+  }
+}
+
+.dash-info {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  color: white;
+  margin: 30px;
+}
+
+.vertical-line {
+  border: 1px solid #AA3935;
+  margin: 4px;
+  height: 500px;
+}
+
+.drinks {
+  margin-left: 15px;
+}
+
+h3 {
+  margin-top: 10px;
+  font-size: 2.7rem;
+}
+
+.dash-menu-text {
+  -webkit-text-decoration: underline white;
+          text-decoration: underline white;
+  cursor: pointer;
+}
+
+.hr2 {
+  width: 305px;
+  border: 1px solid white;
+  float: left;
+  margin: 4px;
+  margin-left: 0px;
+}
+
+span {
+  color: #AA3935;
+}
+
+@media only screen and (max-width: 600px) {
+  .vertical-line-mobile {
+    border: 1px solid #AA3935;
+    width: 244px;
+    margin-left: 33px;
+  }
+
+  .vertical-line {
+    display: none;
+  }
+
+  .dash-info {
+    margin-left: 43px;
+  }
+
+  .hr2 {
+    width: 244px;
+    border: 1px solid white;
+    float: left;
+    margin: 4px;
+    margin-left: 0px;
+  }
+
+  .h4-4 {
+    display: flex;
+    justify-content: flex-start;
+  }
+
+  h3 {
+    font-size: 2rem;
+  }
+
+  .dash {
+    transform: none;
+  }
 }
 
