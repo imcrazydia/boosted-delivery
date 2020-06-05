@@ -48,6 +48,10 @@
           padding-left: 6em;
         }
       }
+
+      &__notice {
+        font-size: 0.6em;
+      }
     }
 
     .button {
@@ -56,7 +60,7 @@
 
         &__back {
             position: absolute;
-            top: 45%;
+            top: 65%;
             left: 2%;
             text-align: center;
             cursor: pointer;
@@ -81,7 +85,7 @@
         &__next {
             position: absolute;
             right: 2%;
-            top: 45%;
+            top: 65%;
             text-align: center;
             cursor: pointer;
             background-image: radial-gradient(at 50% 0, $color--alizarin-crimson, $color--primary);

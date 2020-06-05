@@ -12122,6 +12122,10 @@ input.qtyminus {
   }
 }
 
+.powercrate__products__notice {
+  font-size: 0.6em;
+}
+
 .powercrate .button {
   color: #fff;
   text-decoration: none;
@@ -12129,7 +12133,7 @@ input.qtyminus {
 
 .powercrate .button__back {
   position: absolute;
-  top: 45%;
+  top: 65%;
   left: 2%;
   text-align: center;
   cursor: pointer;
@@ -12156,7 +12160,7 @@ input.qtyminus {
 .powercrate .button__next {
   position: absolute;
   right: 2%;
-  top: 45%;
+  top: 65%;
   text-align: center;
   cursor: pointer;
   background-image: radial-gradient(at 50% 0, #bd221c, #aa3935);

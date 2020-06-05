@@ -31,8 +31,12 @@
         </div>
         <div class="powercrate__products__total_amount"></div>
         <div class="row">
-          <div class="powercrate__products__name col col-6"><b><br><i>Totaal</i></b></div>
-          <div class="powercrate__products__amount col col-6"><b><i>14x <br> Free (€13.99)</i></b></div>
+          <div class="powercrate__products__name col col-5 col-md-6"><b><br><i>Totaal</i></b></div>
+          <div class="powercrate__products__amount col col-7 col-md-6"><b><i>14x <br> Free (€13.99)</i></b></div>
+        </div>
+        <div class="row">
+          <div class="powercrate__products__notice col-12 col-md-6"><b><br>* de eerste week is een proef week, zodat u onze service kunt testen.
+          Mocht u dit abonnement aanhouden dan wordt er na de eerste week geld afgeschreven!</b></div>
         </div>
       </div>
       <a class="button" href="{{ url('/abonnementen/overzicht') }}">
