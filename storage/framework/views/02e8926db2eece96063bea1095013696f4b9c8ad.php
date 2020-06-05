@@ -75,12 +75,15 @@ unset($__errorArgs, $__bag); ?>
           </div>
 
           <div class="form-group row mb-0 login">
-            <div class="col-md-8 offset-md-3 card-bottom">
+            <div class="col-md-9 offset-md-1 card-bottom">
               <button type="submit" class="btn btn-primary card-bottom__button">
                 <?php echo e(__('Login')); ?>
 
               </button>
-
+              <?php if(Route::has('register')): ?>
+                <a class="btn btn-link card-bottom__link" href="<?php echo e(route('register')); ?>"><?php echo e(__('Register')); ?></a>
+              <?php endif; ?>
+              <br>
               <?php if(Route::has('password.request')): ?>
                 <a class="btn btn-link card-bottom__link" href="<?php echo e(route('password.request')); ?>">
                   <?php echo e(__('Forgot Your Password?')); ?>

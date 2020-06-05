@@ -47,11 +47,14 @@
           </div>
 
           <div class="form-group row mb-0 login">
-            <div class="col-md-8 offset-md-3 card-bottom">
+            <div class="col-md-9 offset-md-1 card-bottom">
               <button type="submit" class="btn btn-primary card-bottom__button">
                 {{ __('Login') }}
               </button>
-
+              @if (Route::has('register'))
+                <a class="btn btn-link card-bottom__link" href="{{ route('register') }}">{{ __('Register') }}</a>
+              @endif
+              <br>
               @if (Route::has('password.request'))
                 <a class="btn btn-link card-bottom__link" href="{{ route('password.request') }}">
                   {{ __('Forgot Your Password?') }}

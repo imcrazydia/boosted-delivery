@@ -11295,6 +11295,7 @@ LinkedIn
 @media screen and (min-width: 992px) {
   .nav_logo {
     width: 40%;
+    margin-bottom: 3em;
   }
 }
 
@@ -11999,6 +12000,10 @@ input.qtyminus {
 .cms .card-body {
   margin: 5em 0;
   background-color: #1b1b1d;
+}
+
+.cms .card-bottom {
+  padding-left: 25px;
 }
 
 .cms .card-bottom__button {
