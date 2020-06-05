@@ -11287,6 +11287,17 @@ LinkedIn
   color: #ff5c5c;
 }
 
+.nav_logo {
+  width: 60%;
+  margin-bottom: 5em;
+}
+
+@media screen and (min-width: 992px) {
+  .nav_logo {
+    width: 40%;
+  }
+}
+
 html {
   scroll-behavior: smooth;
   cursor: default;
@@ -12413,19 +12424,19 @@ input.qtyminus {
   flex-direction: column;
 }
 
-body {
+.dashboard {
   display: flex;
   justify-content: center;
   align-items: center;
 }
 
-.dash {
+.dashboard .dash {
   display: flex;
   align-items: center;
   transform: translate(5%, -5%);
 }
 
-.dash-menu {
+.dashboard .dash-menu {
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -12436,7 +12447,7 @@ body {
 }
 
 @media screen and (min-width: 992px) {
-  .dash-menu {
+  .dashboard .dash-menu {
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -12444,7 +12455,7 @@ body {
   }
 }
 
-.dash-info {
+.dashboard .dash-info {
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -12453,28 +12464,28 @@ body {
   margin: 30px;
 }
 
-.vertical-line {
+.dashboard .vertical-line {
   border: 1px solid #AA3935;
   margin: 4px;
   height: 500px;
 }
 
-.drinks {
+.dashboard .drinks {
   margin-left: 15px;
 }
 
-h3 {
+.dashboard h3 {
   margin-top: 10px;
   font-size: 2.7rem;
 }
 
-.dash-menu-text {
+.dashboard .dash-menu-text {
   -webkit-text-decoration: underline white;
           text-decoration: underline white;
   cursor: pointer;
 }
 
-.hr2 {
+.dashboard .hr2 {
   width: 305px;
   border: 1px solid white;
   float: left;
@@ -12482,26 +12493,26 @@ h3 {
   margin-left: 0px;
 }
 
-span {
+.dashboard span {
   color: #AA3935;
 }
 
 @media only screen and (max-width: 600px) {
-  .vertical-line-mobile {
+  .dashboard .vertical-line-mobile {
     border: 1px solid #AA3935;
     width: 244px;
     margin-left: 33px;
   }
 
-  .vertical-line {
+  .dashboard .vertical-line {
     display: none;
   }
 
-  .dash-info {
+  .dashboard .dash-info {
     margin-left: 43px;
   }
 
-  .hr2 {
+  .dashboard .hr2 {
     width: 244px;
     border: 1px solid white;
     float: left;
@@ -12509,16 +12520,16 @@ span {
     margin-left: 0px;
   }
 
-  .h4-4 {
+  .dashboard .h4-4 {
     display: flex;
     justify-content: flex-start;
   }
 
-  h3 {
+  .dashboard h3 {
     font-size: 2rem;
   }
 
-  .dash {
+  .dashboard .dash {
     transform: none;
   }
 }

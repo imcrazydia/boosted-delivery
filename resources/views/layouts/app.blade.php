@@ -27,6 +27,9 @@
             <nav class="menu__nav">
                 <ul class="r-list menu__list">
                     <li class="menu__group">
+                        <img class="nav_logo" src="{{URL::to('/')}}/img/logo/logo_wit.png" alt="navigation logo">
+                    </li>
+                    <li class="menu__group">
                         <a class="r-link menu__link" href="{{ url('/') }}">{{ __('Home') }}</a>
                     </li>
                     <li class="menu__group">
@@ -47,18 +50,6 @@
                     @else
                     <li class="menu__group">
                         <a class="r-link menu__link" href="{{ route('profiel') }}">{{ __('Dashboard') }}</a>    
-                    </li>
-                    <li class="menu__group">
-                        <a class="r-link menu__link" href="{{ route('product.add') }}">{{ __('Add') }}</a>
-                    </li>
-                    <li class="menu__group">
-                        <a class="r-link menu__link" href="{{ route('logout') }}" onclick="event.preventDefault();
-                          document.getElementById('logout-form').submit();">
-                          {{ __('Logout') }}
-                        </a>
-                        <form id="logout-form" action="{{ route('logout') }}" method="POST" style="display: none;">
-                          @csrf
-                        </form>
                     </li>
                     @endguest
                 </ul>

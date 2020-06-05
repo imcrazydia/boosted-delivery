@@ -386,3 +386,12 @@ DEPENDENCES
   .linkedin__link{
     color: #ff5c5c;
   }
+
+  .nav_logo {
+    width: 60%;
+    margin-bottom: 5em;
+
+    @media #{$normal} {
+      width: 40%;
+  }
+  }

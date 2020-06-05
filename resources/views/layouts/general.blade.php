@@ -50,18 +50,6 @@
                 <li class="menu__group">
                     <a class="r-link menu__link" href="{{ route('profiel') }}">{{ __('Dashboard') }}</a>    
                 </li>
-                <li class="menu__group">
-                    <a class="r-link menu__link" href="{{ route('product.add') }}">{{ __('Add') }}</a>
-                </li>
-                <li class="menu__group">
-                    <a class="r-link menu__link" href="{{ route('logout') }}" onclick="event.preventDefault();
-                      document.getElementById('logout-form').submit();">
-                      {{ __('Logout') }}
-                    </a>
-                    <form id="logout-form" action="{{ route('logout') }}" method="POST" style="display: none;">
-                      @csrf
-                    </form>
-                </li>
                 @endguest
             </ul>
         </nav>
