@@ -9,7 +9,9 @@
 <!-- This is where the body starts and since there is a yield in the layout you can just create a section and start adding content -->
 @section('content')
   <div class="powercrate">
-    <h1 class="powercrate__title">Jouw PowerCrate</h1>
+    <h1 class="powercrate__title">Jouw PowerCrate <br>
+      <span class="powercrate__subtitle">Wekelijks abonnement - Boosted</span>
+    </h1>
       <div class="powercrate__products">
         <div class="row">
           <div class="powercrate__products__name col col-6">RedBull</div>
@@ -29,8 +31,8 @@
         </div>
         <div class="powercrate__products__total_amount"></div>
         <div class="row">
-          <div class="powercrate__products__name col col-6"><b><i>Totaal</i></b></div>
-          <div class="powercrate__products__amount col col-6"><b><i>14x</i></b></div>
+          <div class="powercrate__products__name col col-6"><b><br><i>Totaal</i></b></div>
+          <div class="powercrate__products__amount col col-6"><b><i>14x <br> Free (€13.99)</i></b></div>
         </div>
       </div>
       <a class="button" href="{{ url('/abonnementen/overzicht') }}">
