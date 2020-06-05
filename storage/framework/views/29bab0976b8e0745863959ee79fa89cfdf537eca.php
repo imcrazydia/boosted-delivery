@@ -50,19 +50,6 @@
                 <li class="menu__group">
                     <a class="r-link menu__link" href="<?php echo e(route('profiel')); ?>"><?php echo e(__('Dashboard')); ?></a>    
                 </li>
-                <li class="menu__group">
-                    <a class="r-link menu__link" href="<?php echo e(route('product.add')); ?>"><?php echo e(__('Add')); ?></a>
-                </li>
-                <li class="menu__group">
-                    <a class="r-link menu__link" href="<?php echo e(route('logout')); ?>" onclick="event.preventDefault();
-                      document.getElementById('logout-form').submit();">
-                      <?php echo e(__('Logout')); ?>
-
-                    </a>
-                    <form id="logout-form" action="<?php echo e(route('logout')); ?>" method="POST" style="display: none;">
-                      <?php echo csrf_field(); ?>
-                    </form>
-                </li>
                 <?php endif; ?>
             </ul>
         </nav>
