@@ -12425,6 +12425,8 @@ input.qtyminus {
 }
 
 .dashboard {
+  width: 100vw;
+  height: 100vh;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -12462,6 +12464,7 @@ input.qtyminus {
   align-items: flex-start;
   color: white;
   margin: 30px;
+  text-align: left;
 }
 
 .dashboard .vertical-line {

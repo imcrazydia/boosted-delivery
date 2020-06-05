@@ -24,9 +24,7 @@
             <h3><span>-</span> Abonnement: Boosted PowerCrate (<span>€4.49</span>)</h3>
             <h3><span>-</span> Dit is uw eerste week </h3>
             <h3><span>-</span> Dit is een wekelijks abonnement </h3>
-            <div class="h4-4">
-                <h3><span>-</span> U heeft de volgende energie drankjes gekozen in uw Crate:</h3>
-            </div>
+            <h3><span>-</span> U heeft de volgende energie drankjes gekozen in uw Crate:</h3>
 
             <h3 class="drinks"><span>></span> x1 Redbull</h3>
             <h3 class="drinks"><span>></span> x2 Monster</h3>
