@@ -11,9 +11,9 @@
   <div class="product-list">
     <?php $__currentLoopData = $products; $__env->addLoop($__currentLoopData); foreach($__currentLoopData as $product): $__env->incrementLoopIndices(); $loop = $__env->getLastLoop(); ?>
       <div class="product-list__card">
-        <a class="product-list__card__title" href="<?php echo e(route('product.detail', ['title' => $product->title])); ?>">
+        <a class="product-list__card__content" href="<?php echo e(route('product.detail', ['title' => $product->title])); ?>">
           <img class="product-list__card__image" src="<?php echo e(asset('storage/' . $product->image)); ?>" alt="product image" width="100">
-          <h2><?php echo e($product->title); ?></h2>
+          <h2 class="product-list__card__title"><?php echo e($product->title); ?></h2>
         </a>
       </div>
     <?php endforeach; $__env->popLoop(); $loop = $__env->getLastLoop(); ?>

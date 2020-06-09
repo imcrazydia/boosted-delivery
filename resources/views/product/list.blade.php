@@ -11,9 +11,9 @@
   <div class="product-list">
     @foreach ($products as $product)
       <div class="product-list__card">
-        <a class="product-list__card__title" href="{{ route('product.detail', ['title' => $product->title]) }}">
+        <a class="product-list__card__content" href="{{ route('product.detail', ['title' => $product->title]) }}">
           <img class="product-list__card__image" src="{{ asset('storage/' . $product->image) }}" alt="product image" width="100">
-          <h2>{{ $product->title }}</h2>
+          <h2 class="product-list__card__title">{{ $product->title }}</h2>
         </a>
       </div>
     @endforeach

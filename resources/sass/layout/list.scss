@@ -12,6 +12,7 @@
      }
   
    @media #{$normal} {
+       padding-top: 4em;
        grid-template-columns: 1fr 1fr 1fr 1fr;
     }
 
@@ -28,13 +29,22 @@
             margin-left: 0;
           }
 
-        &__title {
+        &__content {
             text-decoration: none;
             color: $color--secondary;
 
             &:hover {
                 color: $color--primary;
             }
+        }
+
+        &__image {
+            max-width: 100px;
+            max-height: 220px;
+        }
+
+        &__title {
+            padding-top: 10px;
         }
     }
 }
