@@ -1,17 +1,28 @@
 .product-list {
-    display: flex;
-    flex-direction: column;
+    display: grid;
+    grid-template-columns: 1fr;
     padding-top: 2em;
+
+    @media #{$mobile} {
+        grid-template-columns: 1fr 1fr;
+     }
+
+     @media #{$tablet} {
+        grid-template-columns: 1fr 1fr;
+     }
   
    @media #{$normal} {
-      flex-flow: row wrap;
-      justify-content: center;
+       grid-template-columns: 1fr 1fr 1fr 1fr;
     }
 
     &__card {
         width: 25vw;
         padding-bottom: 2.5em;
         margin-left: 10em;
+
+        @media #{$tablet} {
+            margin-left: 8em;
+          }
 
         @media #{$normal} {
             margin-left: 0;

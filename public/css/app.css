@@ -11780,15 +11780,26 @@ input.qtyminus:hover {
 }
 
 .product-list {
-  display: flex;
-  flex-direction: column;
+  display: grid;
+  grid-template-columns: 1fr;
   padding-top: 2em;
+}
+
+@media screen and (min-width: 576px) {
+  .product-list {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .product-list {
+    grid-template-columns: 1fr 1fr;
+  }
 }
 
 @media screen and (min-width: 992px) {
   .product-list {
-    flex-flow: row wrap;
-    justify-content: center;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
   }
 }
 
@@ -11796,6 +11807,12 @@ input.qtyminus:hover {
   width: 25vw;
   padding-bottom: 2.5em;
   margin-left: 10em;
+}
+
+@media screen and (min-width: 768px) {
+  .product-list__card {
+    margin-left: 8em;
+  }
 }
 
 @media screen and (min-width: 992px) {
