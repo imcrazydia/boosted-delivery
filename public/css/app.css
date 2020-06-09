@@ -11829,6 +11829,7 @@ input.qtyminus:hover {
 
 .product-list__card__content:hover {
   color: #aa3935;
+  text-decoration: none;
 }
 
 .product-list__card__image {
@@ -11838,6 +11839,8 @@ input.qtyminus:hover {
 
 .product-list__card__title {
   padding-top: 10px;
+  font-size: 1.5em;
+  font-weight: bold;
 }
 
 .upload-button {
