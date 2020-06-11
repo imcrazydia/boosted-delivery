@@ -11659,13 +11659,29 @@ html {
 }
 
 .overview__product {
-  display: flex;
-  flex-direction: column;
+  display: grid;
+  grid-template-columns: 1fr;
   padding: 5em 0;
+}
+
+@media screen and (min-width: 576px) {
+  .overview__product {
+    grid-template-columns: 1fr 1fr;
+    margin-left: 2em;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .overview__product {
+    grid-template-columns: 1fr 1fr;
+    margin-left: 0;
+  }
 }
 
 @media screen and (min-width: 992px) {
   .overview__product {
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    display: flex;
     flex-flow: row wrap;
     justify-content: center;
     margin-left: 5em;
@@ -11674,7 +11690,7 @@ html {
 
 .overview__product__card {
   width: 200px;
-  margin: 0 6.5em;
+  margin: 0 5.5em;
   padding-bottom: 2em;
 }
 
@@ -11686,7 +11702,7 @@ html {
 
 .overview__product__card__image {
   max-width: 60px;
-  max-height: 160px;
+  max-height: 110px;
 }
 
 .overview__product__card__title {
