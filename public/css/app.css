@@ -11767,7 +11767,8 @@ html {
   color: #fff;
   border: none;
   width: 50px;
-  height: 30px;
+  padding-top: 1px;
+  padding-bottom: 4px;
   text-align: center;
 }
 
@@ -11776,7 +11777,8 @@ input.qtyplus {
   color: #fff;
   border: none;
   width: 30px;
-  height: 30px;
+  padding-top: 1px;
+  padding-bottom: 4px;
 }
 
 input.qtyplus:hover {
@@ -11788,7 +11790,8 @@ input.qtyminus {
   color: #fff;
   border: none;
   width: 30px;
-  height: 30px;
+  padding-top: 1px;
+  padding-bottom: 4px;
 }
 
 input.qtyminus:hover {
