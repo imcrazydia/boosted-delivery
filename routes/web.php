@@ -29,6 +29,10 @@ Route::prefix('/afrekenen')->middleware('auth')->group(function(){
   Route::get('/', function () {
     return view('afrekenen');
   })->name('afrekenen');
+
+  Route::get('/besteld', function () {
+    return view('besteld');
+  })->name('besteld');
 });
 
 Route::prefix('/product')->group(function(){
