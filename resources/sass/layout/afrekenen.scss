@@ -35,7 +35,7 @@
     }
     
     .container {
-        width: 65%;
+        width: 100%;
         padding: 5% 10%;
     }
     
@@ -154,7 +154,7 @@
 
         &__back {
             position: absolute;
-            top: 22%;
+            top: 110%;
             left: 2%;
             cursor: pointer;
             color: $color--primary;
@@ -174,7 +174,7 @@
         &__next {
             position: absolute;
             right: 2%;
-            top: 22%;
+            top: 110%;
             cursor: pointer;
             color: $color--primary;
             font-size: 1.6em;

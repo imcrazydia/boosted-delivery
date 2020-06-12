@@ -12284,7 +12284,7 @@ input.qtyminus:hover {
 }
 
 .afrekenen .container {
-  width: 65%;
+  width: 100%;
   padding: 5% 10%;
 }
 
@@ -12406,7 +12406,7 @@ input.qtyminus:hover {
 
 .afrekenen .button__back {
   position: absolute;
-  top: 22%;
+  top: 110%;
   left: 2%;
   cursor: pointer;
   color: #aa3935;
@@ -12428,7 +12428,7 @@ input.qtyminus:hover {
 .afrekenen .button__next {
   position: absolute;
   right: 2%;
-  top: 22%;
+  top: 110%;
   cursor: pointer;
   color: #aa3935;
   font-size: 1.6em;

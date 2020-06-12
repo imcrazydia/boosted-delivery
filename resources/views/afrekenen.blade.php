@@ -68,7 +68,7 @@
         </div>
     </div>
 
-    <a href="{{ url('/profiel') }}"><div class="button__next">Betalen ></div></a>
+    <a href="{{ url('/afrekenen/besteld') }}"><div class="button__next">Betalen ></div></a>
     <a href="{{ url('/abonnementen/jouw-powercrate') }}"><div class="button__back">< Terug</div></a>
 </div>
 @endsection
