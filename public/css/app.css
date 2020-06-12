@@ -12610,3 +12610,39 @@ input.qtyminus:hover {
   }
 }
 
+.besteld {
+  padding-top: 10em;
+  color: white;
+}
+
+.besteld__title {
+  font-size: 2.5em;
+}
+
+.besteld__subtitle {
+  font-size: 1.5em;
+}
+
+.besteld__subtitle__date {
+  color: #aa3935;
+}
+
+.besteld__button {
+  font-size: 2em;
+  color: #aa3935;
+}
+
+.besteld__button:hover {
+  color: #8b2e2b;
+  text-decoration: none;
+}
+
+.besteld__button__context {
+  margin-top: 1em;
+  display: inline-block;
+}
+
+.besteld__button__context:hover {
+  border-bottom: solid 2px #8b2e2b;
+}
+

@@ -66,7 +66,7 @@
     </div>
 
     <!-- This is where all the pages content comes -->
-    <main class="abonnementen">
+    <main class="abonnementen" style="width: 100%">
         @yield('content')
     </main>
 

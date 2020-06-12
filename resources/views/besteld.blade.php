@@ -9,9 +9,9 @@
 <!-- This is where the body starts and since there is a yield in the layout you can just create a section and start adding content -->
 @section('content')
 <div class="besteld">
-    <h2>Bedankt voor het kiezen van het weekelijkse Boosted PowerCrate abonnement!</h2>
-    <p>Uw eerste bestelling zal geleverd worden op: <span>22 Juni 2020</span></p>
+    <h1 class="besteld__title">Bedankt voor het kiezen van het weekelijkse Boosted PowerCrate abonnement!</h1>
+    <p class="besteld__subtitle">Uw eerste bestelling zal geleverd worden op: <span class="besteld__subtitle__date">22 Juni 2020</span></p>
 
-    <a href="{{ url('/profiel') }}"><div class="">Uw abonnement bekijken?</div></a>
+    <a href="{{ url('/profiel') }}" class="besteld__button"><div class="besteld__button__context">Uw abonnement bekijken?</div></a>
 </div>
 @endsection
