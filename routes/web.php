@@ -42,6 +42,9 @@ Route::prefix('/product')->group(function(){
 
 Route::prefix('/profiel')->middleware('auth')->group(function(){
   Route::get('/', 'HomeController@profile')->name('profiel');
+  Route::get('/mijn-gegevens', function () {
+    return view('profiel.my_info');
+  })->name('profiel.info');
 });
 
 Route::prefix('/admin')->middleware('auth')->group(function(){
