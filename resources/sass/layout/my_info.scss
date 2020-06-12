@@ -1,0 +1,144 @@
+.my_info {
+    display: flex;
+    justify-content: center;
+    padding-bottom: 10em;
+    text-align: left;
+
+    @media #{$tablet} {
+        padding-top: 5em;
+    }
+
+    @media #{$normal} {
+        padding-bottom: 0;
+        padding-left: 5em;
+        padding-top: 5em;
+    }
+
+    .wrapper {
+        margin-top: 1em;
+        width: 60%;
+        display: flex;
+        justify-content: center;
+
+        @media #{$normal} {
+            margin-top: 0;
+          }
+    }
+    
+    .container {
+        width: 100%;
+        padding: 5% 10%;
+    }
+    
+    h1 {
+        align-self: center;
+        text-shadow: none;
+    }
+    
+    form {
+        width: 100%;
+    
+        >* {
+            margin-top: 20px;
+        }
+    
+        p {
+            min-height: 50px;
+            border: 0;
+            font-size: 2rem;
+            letter-spacing: .15rem;
+            color: $color--auburn;
+            background-color: $color--dark-grey;
+            border-radius: 4px;
+        }
+    
+        label {
+            text-transform: uppercase;
+            font-size: 20px;
+            letter-spacing: 2px;
+            color: $color--white;
+        }
+    
+        h1 {
+            font-size: 24px;
+            line-height: 10px;
+            color: $color--auburn;
+            letter-spacing: 1px;
+        }
+    
+        h1:nth-of-type(2) {
+            margin-top: 10%;
+        }
+    }
+    
+    .name {
+        justify-content: space-between;
+        display: flex;
+        width: 100%;
+    
+        div {
+            width: 45%;
+        }
+    }
+    
+    .address-info {
+        display: flex;
+        justify-content: space-between;
+    
+        div {
+            width: 30%;
+        }
+    }
+    
+    .cc-info {
+        display: flex;
+        justify-content: space-between;
+    
+        div {
+            width: 45%;
+        }
+    }
+
+    .street {
+      width: 100%;
+    }
+    
+    @media (max-width: 736px) {
+        .wrapper {
+            width: 100%;
+        }
+    
+        .container {
+            width: 100%;
+        }
+    
+        form h1 {
+            text-align: center;
+        }
+    
+        .name,
+        .address-info,
+        .cc-info {
+            flex-direction: column;
+            width: 100%;
+            justify-content: space-between;
+    
+            div {
+                align-items: center;
+                flex-direction: column;
+                width: 100%;
+                display: flex;
+            }
+        }
+    
+        .street,
+        .cc-num {
+            text-align: center;
+        }
+    
+        input {
+            margin: 5px 0;
+            min-height: 30px;
+        }
+    }
+}

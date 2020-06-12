@@ -12646,3 +12646,156 @@ input.qtyminus:hover {
   border-bottom: solid 2px #8b2e2b;
 }
 
+.my_info {
+  display: flex;
+  justify-content: center;
+  padding-bottom: 10em;
+  text-align: left;
+}
+
+@media screen and (min-width: 768px) {
+  .my_info {
+    padding-top: 5em;
+  }
+}
+
+@media screen and (min-width: 992px) {
+  .my_info {
+    padding-bottom: 0;
+    padding-left: 5em;
+    padding-top: 5em;
+  }
+}
+
+.my_info .wrapper {
+  margin-top: 1em;
+  width: 60%;
+  display: flex;
+  justify-content: center;
+}
+
+@media screen and (min-width: 992px) {
+  .my_info .wrapper {
+    margin-top: 0;
+  }
+}
+
+.my_info .container {
+  width: 100%;
+  padding: 5% 10%;
+}
+
+.my_info h1 {
+  align-self: center;
+  text-shadow: none;
+}
+
+.my_info form {
+  width: 100%;
+}
+
+.my_info form > * {
+  margin-top: 20px;
+}
+
+.my_info form p {
+  min-height: 50px;
+  border: 0;
+  font-size: 2rem;
+  letter-spacing: 0.15rem;
+  color: #aa3935;
+  background-color: #1b1b1d;
+  border-radius: 4px;
+}
+
+.my_info form label {
+  text-transform: uppercase;
+  font-size: 20px;
+  letter-spacing: 2px;
+  color: #fff;
+}
+
+.my_info form h1 {
+  font-size: 24px;
+  line-height: 10px;
+  color: #aa3935;
+  letter-spacing: 1px;
+}
+
+.my_info form h1:nth-of-type(2) {
+  margin-top: 10%;
+}
+
+.my_info .name {
+  justify-content: space-between;
+  display: flex;
+  width: 100%;
+}
+
+.my_info .name div {
+  width: 45%;
+}
+
+.my_info .address-info {
+  display: flex;
+  justify-content: space-between;
+}
+
+.my_info .address-info div {
+  width: 30%;
+}
+
+.my_info .cc-info {
+  display: flex;
+  justify-content: space-between;
+}
+
+.my_info .cc-info div {
+  width: 45%;
+}
+
+.my_info .street {
+  width: 100%;
+}
+
+@media (max-width: 736px) {
+  .my_info .wrapper {
+    width: 100%;
+  }
+
+  .my_info .container {
+    width: 100%;
+  }
+
+  .my_info form h1 {
+    text-align: center;
+  }
+
+  .my_info .name,
+  .my_info .address-info,
+  .my_info .cc-info {
+    flex-direction: column;
+    width: 100%;
+    justify-content: space-between;
+  }
+
+  .my_info .name div,
+  .my_info .address-info div,
+  .my_info .cc-info div {
+    align-items: center;
+    flex-direction: column;
+    width: 100%;
+    display: flex;
+  }
+
+  .my_info .street,
+  .my_info .cc-num {
+    text-align: center;
+  }
+
+  .my_info input {
+    margin: 5px 0;
+    min-height: 30px;
+  }
+}
+

@@ -63,7 +63,6 @@
                         <option value="van_lanschot">Van Lanschot Bankiers</option>
                     </select>
                 </div>
-                <div class="cc-info">
             </form>
         </div>
     </div>
