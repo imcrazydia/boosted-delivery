@@ -19,52 +19,51 @@
                 <div class="name">
                     <div>
                         <label for="f-name">Voornaam</label>
-                        <input type="text" name="f-name">
+                        <input type="text" name="f-name" value="Joey">
                     </div>
                     <div>
                         <label for="l-name">Achternaam</label>
-                        <input type="text" name="l-name">
+                        <input type="text" name="l-name" value="Bakker">
                     </div>
                 </div>
                 <div class="street">
-                    <label for="name">Straat</label>
-                    <input type="text" name="address">
+                    <label for="address">Straat</label>
+                    <input type="text" name="address" value="Contactweg 36">
                 </div>
                 <div class="address-info">
                     <div>
                         <label for="city">Stad</label>
-                        <input type="text" name="city">
+                        <input type="text" name="city" value="Amsterdam">
                     </div>
                     <div>
                         <label for="state">Staat</label>
-                        <input type="text" name="state">
+                        <input type="text" name="state" value="Nederland">
                     </div>
                     <div>
                         <label for="zip">Postcode</label>
-                        <input type="text" name="zip">
+                        <input type="text" name="zip" value="1014 AN">
                     </div>
                 </div>
                 <h1>
                     <i class="far fa-credit-card"></i> betalingsinformatie
                 </h1>
                 <div class="cc-num">
-                    <label for="card-num">Credit Card No.</label>
-                    <input type="text" name="card-num">
+                    <label for="card-num">Bank</label>
+                    <select name="bank_choice" class="select-menu__banks">
+                        <option value="start_option">Kies uw bank</option>
+                        <option value="abn">ABN Amro</option>
+                        <option value="asn">ASN Bank</option>
+                        <option value="bunq">bunq</option>
+                        <option value="ing">ING</option>
+                        <option value="knab">knab</option>
+                        <option value="rabobank">Rabobank</option>
+                        <option value="regiobank">Regiobank</option>
+                        <option value="sns">SNS Bank</option>
+                        <option value="triodos">Triodos Bank</option>
+                        <option value="van_lanschot">Van Lanschot Bankiers</option>
+                    </select>
                 </div>
                 <div class="cc-info">
-                    <div>
-                        <label for="card-num">Exp</label>
-                        <input type="text" name="expire">
-                    </div>
-                    <div>
-                        <label for="card-num">CCV</label>
-                        <input type="text" name="security">
-                    </div>
-                </div>
-                {{-- <div class="btns">
-                    <a href="{{ url('/profiel') }}">Betalen</a>
-                    <a href="{{ url('/abonnementen/jouw-powercrate') }}">terug</a>
-                </div> --}}
             </form>
         </div>
     </div>

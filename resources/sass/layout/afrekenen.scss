@@ -191,3 +191,14 @@
         }
     }
 }
+
+.select-menu__banks {
+    width: 100%;
+    height: 50px;
+    border: 0;
+    font-size: 1.5rem;
+    letter-spacing: 0.15rem;
+    margin-top: 5px;
+    color: $color--primary;
+    border-radius: 4px;
+}
