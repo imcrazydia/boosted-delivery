@@ -4,6 +4,7 @@
 <div class="dashboard">
     <div class="dash row">
         <div class="dash-menu">
+            <a class="r-link menu__link" href="<?php echo e(route('profiel.info')); ?>"><h3 class="dash-menu-text">Mijn gegevens</h3></a>
             <a class="r-link menu__link" href="<?php echo e(route('abonnementen.overzicht')); ?>"><h3 class="dash-menu-text">Abonnement aanpassen</h3></a>
             <a class="r-link menu__link" href="<?php echo e(route('product.add')); ?>"><h3 class="dash-menu-text">Product toevoegen</h3></a>
             <a class="r-link menu__link" href="<?php echo e(route('password.request')); ?>"><h3 class="dash-menu-text">Wachtwoord resetten</h3></a>

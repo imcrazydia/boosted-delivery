@@ -1,9 +1,17 @@
-@extends('layouts.app')
+<!-- This extends the layout to this page so that I don't have to place the header in each page individually -->
+@extends('layouts.general')
+<!-- This section changes the title from the page -->
+<!-- Even though the <title> is in the <head> you can still use it like his -->
+@section('title')
+  Boosted Delivery | Profiel
+@endsection
 
+<!-- This is where the body starts and since there is a yield in the layout you can just create a section and start adding content -->
 @section('content')
 <div class="dashboard">
     <div class="dash row">
         <div class="dash-menu">
+            <a class="r-link menu__link" href="{{ route('profiel.info') }}"><h3 class="dash-menu-text">Mijn gegevens</h3></a>
             <a class="r-link menu__link" href="{{ route('abonnementen.overzicht') }}"><h3 class="dash-menu-text">Abonnement aanpassen</h3></a>
             <a class="r-link menu__link" href="{{ route('product.add') }}"><h3 class="dash-menu-text">Product toevoegen</h3></a>
             <a class="r-link menu__link" href="{{ route('password.request') }}"><h3 class="dash-menu-text">Wachtwoord resetten</h3></a>

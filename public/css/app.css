@@ -12550,15 +12550,15 @@ input.qtyminus:hover {
 
 .dashboard .dash-menu-text {
   color: #fff;
-  -webkit-text-decoration: underline white;
-          text-decoration: underline white;
+  text-decoration: none;
   cursor: pointer;
+  display: inline-block;
 }
 
 .dashboard .dash-menu-text:hover {
   color: #aa3935;
-  -webkit-text-decoration: #aa3935;
-          text-decoration: #aa3935;
+  border-bottom: solid 2px #aa3935;
+  margin-bottom: 3px;
 }
 
 .dashboard .hr2 {

@@ -63,12 +63,14 @@
 
     .dash-menu-text {
         color: $color--white;
-        text-decoration: underline white;
+        text-decoration: none;
         cursor: pointer;
+        display: inline-block;
 
         &:hover {
             color: $color--primary;
-            text-decoration: $color--primary;
+            border-bottom: solid 2px $color--primary;
+            margin-bottom: 3px;
         }
     }
 
