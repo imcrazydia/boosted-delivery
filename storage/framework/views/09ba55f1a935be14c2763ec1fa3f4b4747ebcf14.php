@@ -30,7 +30,6 @@
             <h1>Welkom, <?php echo e(Auth::user()->name); ?></h1>
             <hr class="hr2">
             <h3><span>-</span> Abonnement: Boosted PowerCrate (<span>€4.49</span>)</h3>
-            <h3><span>-</span> Dit is uw eerste week </h3>
             <h3><span>-</span> Dit is een wekelijks abonnement </h3>
             <h3><span>-</span> U heeft de volgende energie drankjes gekozen in uw Crate:</h3>
 
