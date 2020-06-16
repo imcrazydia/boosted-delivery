@@ -12805,6 +12805,7 @@ input.qtyminus:hover {
 }
 
 .product-detail__list {
+  order: 2;
   text-align: center;
   padding-right: 5em;
   margin-top: 7em;
@@ -12828,6 +12829,11 @@ input.qtyminus:hover {
   color: #fff;
   border-bottom: solid 1px #aa3935;
   margin-top: 10px;
+  cursor: pointer;
+}
+
+.product-detail__list__item:hover {
+  color: #961d19;
 }
 
 .product-detail__list__item__arrow {
@@ -12835,7 +12841,14 @@ input.qtyminus:hover {
   padding-right: 2em;
 }
 
+@media screen and (min-width: 992px) {
+  .product-detail__list {
+    order: 1;
+  }
+}
+
 .product-detail__info {
+  order: 1;
   border-left: solid 4px #aa3935;
   padding-left: 5em;
   margin-top: 7em;
@@ -12857,5 +12870,11 @@ input.qtyminus:hover {
 .product-detail__info__content__description,
 .product-detail__info__content__ingredients {
   margin-top: 2.5em;
+}
+
+@media screen and (min-width: 992px) {
+  .product-detail__info {
+    order: 2;
+  }
 }
 

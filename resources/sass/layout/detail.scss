@@ -3,6 +3,7 @@
     justify-content: center;
 
     &__list {
+        order: 2;
         text-align: center;
         padding-right: 5em;
         margin-top: 7em;
@@ -25,15 +26,25 @@
             color: $color--white;
             border-bottom: solid 1px $color--primary;
             margin-top: 10px;
+            cursor: pointer;
+
+            &:hover {
+                color: $color--alizarin-crimson-dark;
+            }
 
             &__arrow {
                 float: right;
                 padding-right: 2em;
             }
         }
+
+        @media #{$normal} {
+            order: 1;
+          }
     }
 
     &__info {
+        order: 1;
         border-left: solid 4px $color--primary;
         padding-left: 5em;
         margin-top: 7em;
@@ -54,5 +65,9 @@
                 margin-top: 2.5em;
             }
         }
+
+        @media #{$normal} {
+            order: 2;
+          }
     }
 }
