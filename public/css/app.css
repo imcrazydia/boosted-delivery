@@ -12799,3 +12799,63 @@ input.qtyminus:hover {
   }
 }
 
+.product-detail {
+  display: flex;
+  justify-content: center;
+}
+
+.product-detail__list {
+  text-align: center;
+  padding-right: 5em;
+  margin-top: 7em;
+}
+
+.product-detail__list__title {
+  color: #fff;
+  font-weight: bold;
+  margin-left: 1.5em;
+}
+
+.product-detail__list__wrapper {
+  list-style: none;
+  text-align: left;
+}
+
+.product-detail__list__item {
+  padding: 1em 0;
+  padding-left: 2em;
+  font-size: 1.2em;
+  color: #fff;
+  border-bottom: solid 1px #aa3935;
+  margin-top: 10px;
+}
+
+.product-detail__list__item__arrow {
+  float: right;
+  padding-right: 2em;
+}
+
+.product-detail__info {
+  border-left: solid 4px #aa3935;
+  padding-left: 5em;
+  margin-top: 7em;
+}
+
+.product-detail__info__image {
+  max-width: 180px;
+  height: 50vh;
+}
+
+.product-detail__info__content {
+  color: #fff;
+}
+
+.product-detail__info__content__title {
+  font-weight: bold;
+}
+
+.product-detail__info__content__description,
+.product-detail__info__content__ingredients {
+  margin-top: 2.5em;
+}
+
