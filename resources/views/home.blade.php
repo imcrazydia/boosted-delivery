@@ -112,9 +112,11 @@
                   <ul>
                     <li>Keuze uit 14 drankjes</li>
                   </ul>
-                  <div class="home__section__subscription__container__overview__card__button-wrapper col col-12 col-md-8">
-                    <a href="{{ route('abonnementen.overzicht') }}">Abonneer</a>
-                  </div>
+                  <a href="{{ route('abonnementen.overzicht') }}">
+                    <div class="home__section__subscription__container__overview__card__button-wrapper col col-12 col-md-8">
+                      Abonneer
+                    </div>
+                  </a>
                 </div>
               </div>
               <div class="home__section__subscription__container__overview__card col col-12 col-md-4">
