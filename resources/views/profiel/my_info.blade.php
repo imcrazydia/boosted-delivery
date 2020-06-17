@@ -13,8 +13,8 @@ Boosted Delivery | Mijn gegevens
         <div class="container">
             <form action="">
                 <h1>
-                    <i class="fas fa-shipping-fast"></i>
-                    Verzendgegevens
+                    <i class="fa fa-address-card"></i>
+                    Mijn gegevens
                 </h1>
                 <div class="name">
                     <div>
@@ -26,9 +26,15 @@ Boosted Delivery | Mijn gegevens
                         <p>Bakker</p>
                     </div>
                 </div>
-                <div class="street">
-                    <label for="address">Straat</label>
-                    <p>Contactweg 36</p>
+                <div class="address-info">
+                    <div>
+                        <label for="email">Email</label>
+                        <p>joeybakker@gmail.com</p>
+                    </div>
+                    <div>
+                        <label for="address">Straat</label>
+                        <p>Contactweg 36</p>
+                    </div>
                 </div>
                 <div class="address-info">
                     <div>
