@@ -12593,6 +12593,10 @@ input.qtyminus:hover {
   }
 }
 
+.dashboard .dash-menu-text {
+  font-size: 1.5em;
+}
+
 .dashboard .dash-info {
   display: flex;
   flex-direction: column;
@@ -12673,10 +12677,6 @@ input.qtyminus:hover {
 
   .dashboard h3 {
     font-size: 2rem;
-  }
-
-  .dashboard .dash {
-    transform: none;
   }
 }
 

@@ -32,6 +32,9 @@
             align-items: flex-end;
         }
 
+        &-text {
+            font-size: 1.5em;
+        }
     }
 
     .dash-info {
@@ -116,10 +119,6 @@
 
         h3 {
             font-size: 2rem;
-        }
-
-        .dash {
-            transform: none;
         }
     }
 }
