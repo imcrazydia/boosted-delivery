@@ -11845,9 +11845,9 @@ input.qtyminus:hover {
   margin-left: 10em;
 }
 
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 576px) {
   .product-list__card {
-    margin-left: 8em;
+    margin-left: 6em;
   }
 }
 

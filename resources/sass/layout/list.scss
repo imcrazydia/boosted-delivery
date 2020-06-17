@@ -21,8 +21,8 @@
         padding-bottom: 2.5em;
         margin-left: 10em;
 
-        @media #{$tablet} {
-            margin-left: 8em;
+        @media #{$mobile} {
+            margin-left: 6em;
           }
 
         @media #{$normal} {
