@@ -12808,7 +12808,15 @@ input.qtyminus:hover {
   order: 2;
   text-align: center;
   padding-right: 5em;
-  margin-top: 7em;
+  margin-top: 5em;
+  padding-bottom: 7em;
+}
+
+@media screen and (min-width: 992px) {
+  .product-detail__list {
+    margin-top: 7em;
+    padding-bottom: 0;
+  }
 }
 
 .product-detail__list__title {
@@ -12849,18 +12857,55 @@ input.qtyminus:hover {
 
 .product-detail__info {
   order: 1;
-  border-left: solid 4px #aa3935;
-  padding-left: 5em;
+  border-bottom: solid 4px #aa3935;
+  padding-bottom: 5em;
   margin-top: 7em;
+}
+
+@media screen and (min-width: 576px) {
+  .product-detail__info {
+    margin-top: 4em;
+  }
+}
+
+@media screen and (min-width: 1240px) {
+  .product-detail__info {
+    margin-top: 7em;
+  }
 }
 
 .product-detail__info__image {
   max-width: 180px;
   height: 50vh;
+  padding-bottom: 10px;
+}
+
+@media screen and (min-width: 576px) {
+  .product-detail__info__image {
+    height: 90vh;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .product-detail__info__image {
+    height: 40vh;
+  }
+}
+
+@media screen and (min-width: 992px) {
+  .product-detail__info__image {
+    height: 50vh;
+  }
 }
 
 .product-detail__info__content {
   color: #fff;
+}
+
+@media screen and (min-width: 576px) {
+  .product-detail__info__content {
+    margin-top: 2em;
+  }
 }
 
 .product-detail__info__content__title {
@@ -12875,6 +12920,10 @@ input.qtyminus:hover {
 @media screen and (min-width: 992px) {
   .product-detail__info {
     order: 2;
+    border-bottom: 0;
+    border-left: solid 4px #aa3935;
+    padding-left: 5em;
+    padding-bottom: 0;
   }
 }
 

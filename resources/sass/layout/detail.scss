@@ -6,7 +6,13 @@
         order: 2;
         text-align: center;
         padding-right: 5em;
-        margin-top: 7em;
+        margin-top: 5em;
+        padding-bottom: 7em;
+
+        @media #{$normal} {
+            margin-top: 7em;
+            padding-bottom: 0;
+        }
 
         &__title {
             color: $color--white;
@@ -45,17 +51,42 @@
 
     &__info {
         order: 1;
-        border-left: solid 4px $color--primary;
-        padding-left: 5em;
+        border-bottom: solid 4px $color--primary;
+        padding-bottom: 5em;
         margin-top: 7em;
+
+        @media #{$mobile} {
+            margin-top: 4em;
+        }
+
+        @media #{$wide} {
+            margin-top: 7em;
+        }
 
         &__image {
             max-width: 180px;
             height: 50vh;
+            padding-bottom: 10px;
+
+            @media #{$mobile} {
+                height: 90vh;
+            }
+
+            @media #{$tablet} {
+              height: 40vh; 
+            }
+
+            @media #{$normal} {
+              height: 50vh;
+            }
         }
 
         &__content {
             color: $color--white;
+
+            @media #{$mobile} {
+                margin-top: 2em;
+            }
 
             &__title {
                 font-weight: bold;
@@ -68,6 +99,10 @@
 
         @media #{$normal} {
             order: 2;
+            border-bottom: 0;
+            border-left: solid 4px $color--primary;
+            padding-left: 5em;
+            padding-bottom: 0;
           }
     }
 }
