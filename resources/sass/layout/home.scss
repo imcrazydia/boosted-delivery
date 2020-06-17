@@ -159,8 +159,7 @@ html {
             border-radius: 4px;
 
             @media #{$normal} {
-                background-image: linear-gradient(to bottom, $color--brown-red, $color--brown-red 60%, #383535 60%, $color--brown-red--dark 85%, $color--brown-red--dark 85%);
-                margin: 2em 4em;
+              margin: 2em 4em;
             }
 
             &__card {
@@ -243,7 +242,20 @@ html {
                         top: 2%;
                         max-width: 100px;
 
+                        @media #{$tablet} {
+                            visibility: hidden;
+                          }
+
                         @media #{$normal} {
+                            visibility: visible;
+                            width: 50px;
+                            right: 10%;
+                            top: 5%;
+                        }
+
+                        @media #{$wide} {
+                            width: auto;
+                            max-width: 100px;
                             right: 10%;
                             top: 1%;
                         }

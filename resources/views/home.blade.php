@@ -15,7 +15,7 @@
       <img class="home__section__header__hero" src="{{URL::to('/')}}/img/headers/header.jpg" alt="Header background" />
 
       <div class="home__section__header__wrapper row">
-        <div class="col col-12 col-md-6">
+        <div class="col col-12 col-lg-6">
           <!-- Header title -->
           <h1 class="home__section__header__title">Boosted <span class="home__section__header__title--second">Delivery</span></h1>
           <!-- Mobile header image -->
