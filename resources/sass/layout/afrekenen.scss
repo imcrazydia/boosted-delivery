@@ -154,7 +154,7 @@
 
         &__back {
             position: absolute;
-            top: 110%;
+            top: 130%;
             left: 2%;
             cursor: pointer;
             color: $color--primary;
@@ -179,7 +179,7 @@
         &__next {
             position: absolute;
             right: 2%;
-            top: 110%;
+            top: 130%;
             cursor: pointer;
             color: $color--primary;
             font-size: 1.6em;
@@ -211,4 +211,12 @@
     margin-top: 5px;
     color: $color--primary;
     border-radius: 4px;
+}
+
+.bank_choice__if {
+    color: $color--white;
+}
+
+.paypal_checkbox {
+    min-height: 20px;
 }

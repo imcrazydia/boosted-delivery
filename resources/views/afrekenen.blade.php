@@ -26,9 +26,15 @@
                         <input type="text" name="l-name" value="Bakker">
                     </div>
                 </div>
-                <div class="street">
-                    <label for="address">Straat</label>
-                    <input type="text" name="address" value="Contactweg 36">
+                <div class="name">
+                    <div>
+                        <label for="Email">Email</label>
+                        <input type="text" name="email" value="joeybakker@gmail.com">
+                    </div>
+                    <div>
+                        <label for="address">Straat</label>
+                        <input type="text" name="address" value="Contactweg 36">
+                    </div>
                 </div>
                 <div class="address-info">
                     <div>
@@ -45,23 +51,29 @@
                     </div>
                 </div>
                 <h1>
-                    <i class="far fa-credit-card"></i> betalingsinformatie
+                    <i class="far fa-credit-card"></i> Betaal keuze
                 </h1>
-                <div class="cc-num">
-                    <label for="card-num">Bank</label>
-                    <select name="bank_choice" class="select-menu__banks">
-                        <option value="start_option">Kies uw bank</option>
-                        <option value="abn">ABN Amro</option>
-                        <option value="asn">ASN Bank</option>
-                        <option value="bunq">bunq</option>
-                        <option value="ing">ING</option>
-                        <option value="knab">knab</option>
-                        <option value="rabobank">Rabobank</option>
-                        <option value="regiobank">Regiobank</option>
-                        <option value="sns">SNS Bank</option>
-                        <option value="triodos">Triodos Bank</option>
-                        <option value="van_lanschot">Van Lanschot Bankiers</option>
-                    </select>
+                <div class="name">
+                    <div>
+                        <label for="ideal">Ideal</label>
+                        <select name="bank_choice" class="select-menu__banks">
+                            <option value="start_option">Kies uw bank</option>
+                            <option value="abn">ABN Amro</option>
+                            <option value="asn">ASN Bank</option>
+                            <option value="bunq">bunq</option>
+                            <option value="ing">ING</option>
+                            <option value="knab">knab</option>
+                            <option value="rabobank">Rabobank</option>
+                            <option value="regiobank">Regiobank</option>
+                            <option value="sns">SNS Bank</option>
+                            <option value="triodos">Triodos Bank</option>
+                            <option value="van_lanschot">Van Lanschot Bankiers</option>
+                        </select>
+                    </div>
+                    <div>
+                        <label for="paypal">PayPal</label>
+                        <input type="checkbox" name="paypal" class="paypal_checkbox">
+                    </div>
                 </div>
             </form>
         </div>
