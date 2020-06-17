@@ -160,6 +160,11 @@
             color: $color--primary;
             font-size: 1.6em;
 
+            @media #{$tablet} {
+                top: 2%;
+                left: 5%;
+            }
+
             @media #{$normal} {
                 top: 2%;
                 left: 3%;
@@ -178,6 +183,11 @@
             cursor: pointer;
             color: $color--primary;
             font-size: 1.6em;
+
+            @media #{$tablet} {
+                top: 2%;
+                right: 5%;
+            }
 
             @media #{$normal} {
                 top: 2%;

@@ -12469,6 +12469,13 @@ input.qtyminus:hover {
   font-size: 1.6em;
 }
 
+@media screen and (min-width: 768px) {
+  .afrekenen .button__back {
+    top: 2%;
+    left: 5%;
+  }
+}
+
 @media screen and (min-width: 992px) {
   .afrekenen .button__back {
     top: 2%;
@@ -12488,6 +12495,13 @@ input.qtyminus:hover {
   cursor: pointer;
   color: #aa3935;
   font-size: 1.6em;
+}
+
+@media screen and (min-width: 768px) {
+  .afrekenen .button__next {
+    top: 2%;
+    right: 5%;
+  }
 }
 
 @media screen and (min-width: 992px) {
