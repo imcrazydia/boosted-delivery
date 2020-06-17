@@ -2,6 +2,10 @@
     width: 100vw;
 
     @media #{$normal} {
+        margin-left: 10em;
+    }
+
+    @media #{$wide} {
         margin-left: 18em;
     }
 
@@ -14,7 +18,7 @@
         margin-left: .5em;
 
         @media #{$normal} {
-            margin-top: 4em;
+            margin-top: 2em;
         }
     }
 
@@ -25,10 +29,14 @@
 
     &__products {
         text-align: left;
-        margin-top: 1em;
+        margin-top: 4em;
         margin-left: 1em;
         font-size: 1.5em;
         color: $color--white;
+
+        @media #{$normal} {
+            margin-top: 1em;
+        }
 
         &__total_amount {
             margin: 1em 0;
@@ -66,6 +74,16 @@
             color: $color--primary;
             font-size: 1.6em;
 
+            @media #{$mobile} {
+                top: 40%;
+                left: 3%;
+            }
+
+            @media #{$tablet} {
+                top: 18%;
+                left: 5%;
+            }
+
             @media #{$normal} {
                 top: 2%;
                 left: 3%;
@@ -84,6 +102,16 @@
             cursor: pointer;
             color: $color--primary;
             font-size: 1.6em;
+
+            @media #{$mobile} {
+                top: 40%;
+                right: 3%;
+            }
+
+            @media #{$tablet} {
+                top: 18%;
+                right: 5%;
+            }
 
             @media #{$normal} {
                 top: 2%;
