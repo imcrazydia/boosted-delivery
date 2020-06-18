@@ -56,20 +56,22 @@
             <div class="home__section__service__explanation__card col col-12 col-md-4">
               <img class="home__section__service__explanation__card__icon" src="{{URL::to('/')}}/img/icons/truck.png" alt="Truck icon" />
               <div class="home__section__service__explanation__card__text">
-                Wij bezorgen de PowerCrates zelf met een truck.
+                Wij berzorgen de eerste dag van elke week/maand jouw gepersonalizeerde PowerCrate aan uw voordeur,
+                zodat u hier meteen vanuit huis van kan genieten en de boost krijgt om uw dag te beginnen!
               </div>
             </div>
             <div class="home__section__service__explanation__card col col-12 col-md-4">
               <img class="home__section__service__explanation__card__icon" src="{{URL::to('/')}}/img/icons/cooler.png" alt="Cooler icon" />
               <div class="home__section__service__explanation__card__text">
                 Wij hebben een speciale koelbox waar de energie drankjes in worden bewaard,
-                zodat ze koel blijven. Ook is er droog ijs aanwezig in de koelbox dus wanneer je hem opent zal er een mist uitrollen voor extra effect.
+                zodat ze koel blijven. Ook is er droog ijs aanwezig in de koelbox dus wanneer uw hem opent zal er een mist uitrollen voor extra effect.
               </div>
             </div>
             <div class="home__section__service__explanation__card col col-12 col-md-4">
               <img class="home__section__service__explanation__card__icon" src="{{URL::to('/')}}/img/icons/drink.png" alt="Drink icon" />
               <div class="home__section__service__explanation__card__text">
-                Wij hebben verschillende de keuzes aan energie drank waar u zelf uit kan kiezen na het selecteren van een abonnement.
+                Wij hebben een keuze menu van 8 verschillende energie drank merken waar u uit kan kiezen,
+                nadat u een abonnement hebt geselecteerd. Ook kunt u op de producten lijst onze keuzes bekijken.
               </div>
             </div>
           </div>
