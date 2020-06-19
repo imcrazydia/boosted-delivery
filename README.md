@@ -3,3 +3,4 @@
 
 ## Links
 |- [Trello](https://trello.com/b/QbfdVs2q/boost-delivery)
+|- [Mappenstructuur](https://github.com/imcrazydia/boosted-delivery/tree/master/info/website_mappenstructuur_screenshots)
