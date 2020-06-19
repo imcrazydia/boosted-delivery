@@ -12,7 +12,7 @@ Boosted Delivery | Producten Lijst
     <div class="about__inhoud row">
         <div class="about__rij col-10 offset-1 col-md-4 offset-md-2">
             <h1 class="about__title ">Wie zijn wij?</h1>
-            <p class="about__content">Wij zijn two jongens die het een tof idee vonden om een subscriptie website te maken
+            <p class="about__content">Wij zijn twee jongens die het een tof idee vonden om een subscriptie website te maken
                 alleen moesten we daar een product voor verzinnen, dus dachten wij waarom niet iets dat alle jongeren drinken:
                 Energie Drank!
             </p>
