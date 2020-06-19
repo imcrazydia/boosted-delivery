@@ -27,7 +27,7 @@ Boosted Delivery | Producten Lijst
             </p>
         </div>
         <div class="about__img col-10 offset-1 col-md-5 offset-md-0">
-            <img src="{{URL::to('/')}}/img/logo/logo_wit.PNG" alt="Logo">
+            <img src="{{URL::to('/')}}/img/logo/logo_wit.png" alt="Logo">
         </div>
     </div>
 
