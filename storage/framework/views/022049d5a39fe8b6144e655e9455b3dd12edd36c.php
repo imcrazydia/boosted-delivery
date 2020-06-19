@@ -56,7 +56,7 @@
             <div class="home__section__service__explanation__card col col-12 col-md-4">
               <img class="home__section__service__explanation__card__icon" src="<?php echo e(URL::to('/')); ?>/img/icons/truck.png" alt="Truck icon" />
               <div class="home__section__service__explanation__card__text">
-                Wij berzorgen de eerste dag van elke week/maand jouw gepersonalizeerde PowerCrate aan uw voordeur,
+                Wij bezorgen de eerste dag van elke week/maand jouw gepersonaliseerde PowerCrate aan uw voordeur,
                 zodat u hier meteen vanuit huis van kan genieten en de boost krijgt om uw dag te beginnen!
               </div>
             </div>

@@ -204,12 +204,16 @@ html {
                     cursor: pointer;
                     background-color: $color--brown-red;
                     color: $color--secondary;
-                    font-size: 1.25em;
+                    font-size: 1em;
                     font-weight: bold;
                     line-height: 3.75em;
                     text-align: center;
                     text-transform: uppercase;
                     padding: 1em 1.5em;
+
+                    @media #{$mobile} {
+                        font-size: 1.25em;
+                    }
 
                     &:nth-of-type(1) {
                         border-radius: 10px 0 0 10px;
