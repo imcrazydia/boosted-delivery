@@ -4,3 +4,5 @@
 ## Links
 |- [Trello](https://trello.com/b/QbfdVs2q/boost-delivery) <br />
 |- [Mappenstructuur](https://github.com/imcrazydia/boosted-delivery/tree/master/info/website_mappenstructuur_screenshots)
+|- [Product onderzoek](https://github.com/imcrazydia/boosted-delivery/blob/master/info/product_onderzoek.pdf)
+|- [Doelgroep onderzoek](https://github.com/imcrazydia/boosted-delivery/blob/master/info/doelgroep_onderzoek.pdf)
