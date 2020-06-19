@@ -5,6 +5,10 @@
     <meta name="viewport"
         content="width=device-width, user-scalable=no ,initial-scale=1, maximum-scale=1.0, minimum-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta name="description" content="Onze services bezorgd energie drank bij jou aan de voordeur! ">
+
+    <!-- FavIcon -->
+    <link rel="icon" type="image/png" href="{{URL::to('/')}}/img/icons/favicon.png"/>
 
     <!-- CSRF Token -->
     <meta name="csrf-token" content="{{ csrf_token() }}">
