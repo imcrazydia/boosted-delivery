@@ -1,6 +1,10 @@
 @import './variables.scss';
 @import './typography.scss';
 
+*, html,body {
+  font-family: 'Inter', 'Open Sans';
+}
+
 body {
     max-width: 100%;
     margin: 0;

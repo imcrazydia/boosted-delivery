@@ -10882,6 +10882,12 @@ a.text-dark:focus {
   }
 }
 
+*,
+html,
+body {
+  font-family: "Inter", "Open Sans";
+}
+
 body {
   max-width: 100%;
   margin: 0;
@@ -11379,6 +11385,7 @@ html {
 }
 
 .home__section__header__title--second {
+  font-family: "Merienda", cursive;
   color: #aa3935;
 }
 
