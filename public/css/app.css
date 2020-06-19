@@ -12536,35 +12536,127 @@ input.qtyminus:hover {
 
 .about {
   width: 100vw;
+  margin-bottom: 4em;
+}
+
+@media screen and (min-width: 992px) {
+  .about {
+    margin-bottom: 150px;
+  }
+}
+
+.about h1 {
+  color: #aa3935;
+}
+
+.about p {
+  color: #fff;
 }
 
 .about__title {
-  display: flex;
-  flex-direction: row;
-  color: #fff;
-}
-
-.about__content {
-  display: flex;
-  color: #fff;
-  width: 400px;
   text-align: left;
 }
 
+.about__content {
+  text-align: left;
+}
+
+@media screen and (min-width: 992px) {
+  .about__content {
+    width: 400px;
+  }
+}
+
 .about__inhoud {
-  display: flex;
-  margin-left: 250px;
-  margin-top: 150px;
+  margin-top: 4em;
+}
+
+@media screen and (min-width: 992px) {
+  .about__inhoud {
+    margin-top: 150px;
+  }
 }
 
 .about__img img {
-  width: 60%;
+  width: 100%;
   height: auto;
 }
 
-.about__rij {
-  display: flex;
-  flex-direction: column;
+@media screen and (min-width: 768px) {
+  .about__img img {
+    margin-top: 150px;
+  }
+}
+
+@media screen and (min-width: 992px) {
+  .about__img img {
+    margin-top: 100px;
+  }
+}
+
+@media screen and (min-width: 1240px) {
+  .about__img img {
+    margin-top: 60px;
+  }
+}
+
+.about__how {
+  margin-top: 6em;
+}
+
+.about__how__text {
+  text-align: left;
+}
+
+.about__powercrate {
+  margin-top: 4em;
+}
+
+@media screen and (min-width: 992px) {
+  .about__powercrate {
+    margin-top: 150px;
+  }
+}
+
+.about__powercrate__image img {
+  width: 100%;
+  height: auto;
+}
+
+@media screen and (min-width: 768px) {
+  .about__powercrate__image img {
+    margin-top: 100px;
+  }
+}
+
+@media screen and (min-width: 992px) {
+  .about__powercrate__image img {
+    margin-top: 0;
+  }
+}
+
+@media screen and (min-width: 1240px) {
+  .about__powercrate__image img {
+    margin-top: 0;
+  }
+}
+
+.about__powercrate__content {
+  text-align: left;
+}
+
+@media screen and (max-width: 767px) {
+  .about__powercrate__content {
+    margin-top: 10px;
+  }
+}
+
+.about__return {
+  margin-top: 6em;
+}
+
+.about__return__text__address {
+  color: #bd221c;
 }
 
 .dashboard {
