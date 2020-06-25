@@ -9,3 +9,7 @@
 |- [Wireframes](https://github.com/imcrazydia/boosted-delivery/tree/master/info/wireframes) <br />
 |- [Visueel ontwerp](https://github.com/imcrazydia/boosted-delivery/tree/master/info/visueel_ontwerp) <br />
 |- [Mappenstructuur](https://github.com/imcrazydia/boosted-delivery/tree/master/info/website_mappenstructuur_screenshots) <br />
+
+## Team
+Diaquino Fortmeier
+Osman Oz
