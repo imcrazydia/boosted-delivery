@@ -11,5 +11,5 @@
 |- [Mappenstructuur](https://github.com/imcrazydia/boosted-delivery/tree/master/info/website_mappenstructuur_screenshots) <br />
 
 ## Team
-Diaquino Fortmeier
+Diaquino Fortmeier,
 Osman Oz
